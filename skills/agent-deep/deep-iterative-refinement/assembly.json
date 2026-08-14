@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-iterative-refinement",
+  "title": "Deep-agent Iterative Refinement",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Refine a deep-agent investigation in rounds: run a bounded pass, identify gaps, run the next pass on the gaps only. Depth grows where it pays off. Trigger keywords: iterative refinement, successive passes, deepen research, gap-driven, refinement rounds.",
+  "files": {
+    "md": "deep-iterative-refinement.md",
+    "json": "deep-iterative-refinement-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "sub-context-isolation",
+  "title": "Sub-agent Context Isolation",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "description": "Give each sub-agent only the context it needs and nothing more. Isolate prompts to a minimal, task-relevant slice so delegation stays cheap and focused. Trigger keywords: context isolation, sub-agent context, minimal context, prompt scoping, context budget.",
+  "files": {
+    "md": "sub-context-isolation.md",
+    "json": "sub-context-isolation-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

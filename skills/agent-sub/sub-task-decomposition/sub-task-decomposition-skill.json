@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-task-decomposition",
+  "title": "Sub-agent Task Decomposition",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Split a large goal into independently delegable units that sub-agents can own end-to-end. Decompose by boundary, not by step, so each sub-agent returns a mergeable deliverable. Trigger keywords: task decomposition, task splitting, delegation planning, divide work, sub-agent tasks.",
+  "frontmatter": {
+    "name": "sub-task-decomposition",
+    "description": "Split a large goal into independently delegable units that sub-agents can own end-to-end. Decompose by boundary, not by step, so each sub-agent returns a mergeable deliverable. Trigger keywords: task decomposition, task splitting, delegation planning, divide work, sub-agent tasks."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-task-decomposition.md",
+    "json": "sub-task-decomposition-skill.json",
+    "assembly": "assembly.json"
+  }
+}

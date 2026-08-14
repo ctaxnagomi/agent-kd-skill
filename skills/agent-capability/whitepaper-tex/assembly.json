@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "whitepaper-tex",
+  "title": "Whitepaper · LaTeX arXiv",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "description": "Author a LaTeX whitepaper ready for arXiv submission. Scaffolds the document from the bundled arXiv-style template (template.tex / template.pdf), applies the preprint rules (no page numbers or headers, standalone abstract, two-column layout, figures as separate files), and produces a PDF that passes the arXiv checker. Trigger keywords: whitepaper, arxiv, latex, .tex, preprint, technical report, paper template.",
+  "files": {
+    "md": "whitepaper-tex.md",
+    "json": "whitepaper-tex-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

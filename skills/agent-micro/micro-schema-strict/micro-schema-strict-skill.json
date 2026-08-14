@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-schema-strict",
+  "title": "Micro-agent Strict Schema",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Enforce a strict input and output schema for micro-agents so results are always parseable and failures are always catchable. No freeform, no surprises. Trigger keywords: strict schema, output schema, JSON schema, validation, structured output, parseable.",
+  "frontmatter": {
+    "name": "micro-schema-strict",
+    "description": "Enforce a strict input and output schema for micro-agents so results are always parseable and failures are always catchable. No freeform, no surprises. Trigger keywords: strict schema, output schema, JSON schema, validation, structured output, parseable."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-schema-strict.md",
+    "json": "micro-schema-strict-skill.json",
+    "assembly": "assembly.json"
+  }
+}

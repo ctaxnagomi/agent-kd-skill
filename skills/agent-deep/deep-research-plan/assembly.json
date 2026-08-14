@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-research-plan",
+  "title": "Deep-agent Research Plan",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Scope a deep research run before starting: questions, sources, depth, and stop conditions. Planning prevents open-ended exploration from burning context. Trigger keywords: research plan, deep research, scoping, research outline, investigation plan.",
+  "files": {
+    "md": "deep-research-plan.md",
+    "json": "deep-research-plan-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "sub-token-caps",
+  "title": "Sub-agent Token Caps",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "description": "Cap the context and output tokens a sub-agent may use per run, with explicit behavior at the cap. Predictable ceilings keep parallel delegation within budget. Trigger keywords: token cap, context limit, max tokens, output limit, token ceiling.",
+  "files": {
+    "md": "sub-token-caps.md",
+    "json": "sub-token-caps-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

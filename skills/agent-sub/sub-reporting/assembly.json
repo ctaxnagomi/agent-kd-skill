@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "sub-reporting",
+  "title": "Sub-agent Reporting",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "description": "Define a compact, structured reporting format for sub-agents: one-line status, key results, and blockers — no narrative dumps. Reports are parseable and cheap to aggregate. Trigger keywords: sub-agent report, status report, progress reporting, structured report, terse output.",
+  "files": {
+    "md": "sub-reporting.md",
+    "json": "sub-reporting-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

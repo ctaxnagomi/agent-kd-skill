@@ -1,0 +1,66 @@
+% Whitepaper template for arXiv submission
+% Compile: pdflatex whitepaper.tex (twice), then bibtex if a bibliography is used.
+% arXiv rules: no page numbers/headers, standalone abstract, stock TeX Live packages only.
+% Reference: https://arxiv.org/
+\documentclass[11pt]{article}
+
+% --- Page geometry: letter, 1in margins -------------------------------------
+\usepackage[letterpaper,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+
+% --- Math, symbols, fonts (Computer Modern / AMS, safe for arXiv) -----------
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[T1]{fontenc}
+
+% --- Figures, tables, floats ------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% --- References ---------------------------------------------------------------
+\usepackage[hidelinks]{hyperref} % no colored boxes in the printed PDF
+% Uncomment for a BibTeX bibliography:
+% \bibliographystyle{plain}
+
+% --- arXiv rejects numbered pages -------------------------------------------
+\pagestyle{empty}
+
+% --- Title block ---------------------------------------------------------------
+\title{Your Whitepaper Title}
+\author{
+  Author One \\ \small Affiliation One \\ \small email@example.com
+  \and
+  Author Two \\ \small Affiliation Two \\ \small email2@example.com
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Write a self-contained abstract here. It is typeset independently by arXiv,
+so it must not contain \verb|\ref|, footnotes, or hyperlinks. State the problem,
+the approach, the main result, and its significance in a few sentences.
+\end{abstract}
+
+\section{Introduction}
+Motivate the problem and state the contribution of this whitepaper.
+
+\section{Background}
+Context, related work, and definitions needed by the rest of the document.
+
+\section{Method}
+Describe the approach. Equations, algorithms, and formal definitions go here.
+
+\section{Evaluation}
+Results with figures and tables. Always caption floats.
+
+\section{Discussion}
+Interpret the results, note limitations, and outline future work.
+
+\section{Conclusion}
+Summarize the contribution and its implications.
+
+% Uncomment for a bibliography:
+% \bibliography{references}
+
+\end{document}

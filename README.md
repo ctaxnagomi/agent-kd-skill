@@ -16,7 +16,7 @@ Every skill folder is a self-contained unit of three files:
 
 ## Features
 
-- **4 agent roles** — Automated Planning, Guided Implementation, Compact Execution, and cross-platform Agent Capabilities.
+- **7 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, and Micro-agent Fleet.
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
 - **Search + filters** — filter cards by role and platform, or search by name/description.
@@ -34,7 +34,12 @@ The 3-file structure exists so a **compiler** can turn author-friendly markdown 
 
 In short: the compiler moves cost out of both the **load path** (smaller skill payloads) and the **capture path** (leaner snapDOM snapshots), which is exactly where token spend accumulates.
 
-> **Status:** the structure is compiler-ready today (every skill resolves from `assembly.json`). A first compiler pass — `scripts/compile-skills.mjs` emitting `data/compiled/*.json` + a catalog — is planned.
+> **Status:** the compiler is implemented — `scripts/compile-skills.mjs` reads every `assembly.json` and emits `data/compiled/<name>.json` artifacts plus `data/compiled/catalog.json`. Run it after adding or editing skills:
+
+> ```sh
+> node scripts/build-content.mjs   # refresh the in-browser bundle
+> node scripts/compile-skills.mjs  # refresh the token-optimized artifacts + catalog
+> ```
 
 ## Quick start
 
@@ -58,25 +63,33 @@ AGENT KD SKILL/
 ├── zip.js                  # in-browser zip bundler
 ├── logo.svg                # brand logo
 ├── data/
-│   └── skills.js           # generated bundle (auto-generated, do not edit)
+│   ├── skills.js           # generated bundle (auto-generated, do not edit)
+│   └── compiled/           # compiler output (token-optimized artifacts + catalog)
 ├── scripts/
 │   ├── build-content.mjs   # rebuilds data/skills.js from /skills
+│   ├── compile-skills.mjs  # compiler: emits data/compiled/*.json + catalog
 │   └── generate-skill-files.mjs  # converts flat .md files into 3-file skill folders
 └── skills/
     ├── agent-plan/         # AGENT PLAN · one folder per skill × 5 platforms
     ├── agent-build/        # AGENT BUILD · one folder per skill × 5 platforms
     ├── agent-compact/      # AGENT COMPACT · one folder per skill × 5 platforms
-    └── agent-capability/   # AGENT CAPABILITY · 7 universal skills
+    ├── agent-capability/   # AGENT CAPABILITY · 9 universal skills (incl. Whitepaper · LaTeX arXiv, PDF-Ready Output)
+    ├── agent-sub/          # AGENT SUB · 15 universal skills
+    ├── agent-deep/         # AGENT DEEP · 15 universal skills
+    └── agent-micro/        # AGENT MICRO · 15 universal skills
 ```
 
-### Skills inventory (22)
+### Skills inventory (69)
 
 | Role | Skills | Platform |
 | --- | --- | --- |
 | AGENT PLAN | plan | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
 | AGENT BUILD | build | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
 | AGENT COMPACT | compact | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
-| AGENT CAPABILITY | Design · Frontend Specialist · Search · Skill Authoring · Cut-Cost Token · DGUI Emitter · snapDOM · html2canvas | Universal |
+| AGENT CAPABILITY | Design · Frontend Specialist · Search · Skill Authoring · Cut-Cost Token · DGUI Emitter · snapDOM · html2canvas · Whitepaper · LaTeX arXiv · PDF-Ready Output | Universal |
+| AGENT SUB | Context Isolation · Task Decomposition · Budgeting · Parallel Fan-out · Result Synthesis · Handoff · Escalation · Verification · Reporting · File Scoping · Tool Restriction · Token Caps · Warm Start · Failure Recovery · Observability | Universal |
+| AGENT DEEP | Research Plan · Source Priority · Chunked Digestion · Multi-source · Iterative Refinement · Contradiction · Verification · Summarization · Long Context · Knowledge Graph · Citation · Checkpointing · Reasoning Trace · Context Budget · Synthesis | Universal |
+| AGENT MICRO | Single Purpose · Prompt Minimalism · Strict Schema · Tool Minimalism · No-Prose · Batching · Context Precision · Retry · Caching · Composition · Orchestration · Observability · Output Schema · Timeboxing · Reuse | Universal |
 
 ## Adding a skill
 
@@ -96,10 +109,11 @@ AGENT KD SKILL/
    ````
 
 3. Add `<skill-id>-skill.json` (skill data) and `assembly.json` (manifest).
-4. Rebuild the bundle:
+4. Rebuild the bundle and recompile the artifacts:
 
    ```sh
    node scripts/build-content.mjs
+   node scripts/compile-skills.mjs
    ```
 
 ## Install a skill in your agent

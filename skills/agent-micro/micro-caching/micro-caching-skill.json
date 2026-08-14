@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-caching",
+  "title": "Micro-agent Caching",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Cache micro-agent results keyed by input so identical calls return instantly at zero token cost. Cache pure functions; skip caching anything with side effects. Trigger keywords: cache, caching, memoize, result cache, dedupe calls, cache key.",
+  "frontmatter": {
+    "name": "micro-caching",
+    "description": "Cache micro-agent results keyed by input so identical calls return instantly at zero token cost. Cache pure functions; skip caching anything with side effects. Trigger keywords: cache, caching, memoize, result cache, dedupe calls, cache key."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-caching.md",
+    "json": "micro-caching-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-escalation",
+  "title": "Sub-agent Escalation",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Define when a sub-agent should stop and escalate to the parent instead of burning budget on uncertainty. Escalation criteria are in the prompt; low-confidence results come back flagged, never silently completed. Trigger keywords: escalation, uncertainty, ask parent, stop and escalate, low confidence.",
+  "frontmatter": {
+    "name": "sub-escalation",
+    "description": "Define when a sub-agent should stop and escalate to the parent instead of burning budget on uncertainty. Escalation criteria are in the prompt; low-confidence results come back flagged, never silently completed. Trigger keywords: escalation, uncertainty, ask parent, stop and escalate, low confidence."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-escalation.md",
+    "json": "sub-escalation-skill.json",
+    "assembly": "assembly.json"
+  }
+}

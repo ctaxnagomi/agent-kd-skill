@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-summarization",
+  "title": "Deep-agent Summarization",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Summarize deep-run findings at fixed intervals so working context stays small and the long run remains coherent. Rolling summaries keep deep agents sharp. Trigger keywords: summarize, rolling summary, context management, progressive summary, digest.",
+  "files": {
+    "md": "deep-summarization.md",
+    "json": "deep-summarization-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

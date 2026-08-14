@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-composition",
+  "title": "Micro-agent Composition",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Compose micro-agents into pipelines where each agent's strict output feeds the next agent's strict input. Composable units build complex behavior from cheap parts. Trigger keywords: composition, pipeline, chain micro-agents, composable, agent pipeline, sequence.",
+  "files": {
+    "md": "micro-composition.md",
+    "json": "micro-composition-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

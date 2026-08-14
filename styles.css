@@ -273,6 +273,9 @@ button {
 .digest-grid .digest-card:nth-child(2) { animation-delay: 0.1s; }
 .digest-grid .digest-card:nth-child(3) { animation-delay: 0.2s; }
 .digest-grid .digest-card:nth-child(4) { animation-delay: 0.3s; }
+.digest-grid .digest-card:nth-child(5) { animation-delay: 0.4s; }
+.digest-grid .digest-card:nth-child(6) { animation-delay: 0.5s; }
+.digest-grid .digest-card:nth-child(7) { animation-delay: 0.6s; }
 
 /* ---------------- digest (hero focal panel) ---------------- */
 
@@ -403,6 +406,9 @@ button {
 .digest-card.digest-build      { --digest-accent: var(--primary); }
 .digest-card.digest-compact    { --digest-accent: #1E4526; }
 .digest-card.digest-capability { --digest-accent: var(--accent-bright); }
+.digest-card.digest-sub        { --digest-accent: #56FFC0; }
+.digest-card.digest-deep       { --digest-accent: #9BFF5A; }
+.digest-card.digest-micro      { --digest-accent: #4DD8FF; }
 
 /* ---------------- toolbar ---------------- */
 
@@ -564,6 +570,9 @@ button {
 .role-chip-build      { color: var(--primary); border-color: rgba(171, 255, 167, 0.45); background: rgba(171, 255, 167, 0.08); }
 .role-chip-compact    { color: var(--text-2); border-color: var(--border-strong); background: var(--surface-2); }
 .role-chip-capability { color: #00D237; border-color: rgba(0, 210, 55, 0.5); background: rgba(0, 210, 55, 0.1); }
+.role-chip-sub        { color: #56FFC0; border-color: rgba(86, 255, 192, 0.5); background: rgba(86, 255, 192, 0.1); }
+.role-chip-deep       { color: #9BFF5A; border-color: rgba(155, 255, 90, 0.5); background: rgba(155, 255, 90, 0.1); }
+.role-chip-micro      { color: #4DD8FF; border-color: rgba(77, 216, 255, 0.5); background: rgba(77, 216, 255, 0.1); }
 
 .role-desc {
   font-size: 13.5px;
@@ -617,6 +626,9 @@ button {
 .badge-build      { color: var(--primary); border-color: rgba(171, 255, 167, 0.45); background: rgba(171, 255, 167, 0.08); }
 .badge-compact    { color: var(--text-2); border-color: var(--border-strong); background: var(--inset); }
 .badge-capability { color: #00D237; border-color: rgba(0, 210, 55, 0.5); background: rgba(0, 210, 55, 0.12); }
+.badge-sub        { color: #56FFC0; border-color: rgba(86, 255, 192, 0.5); background: rgba(86, 255, 192, 0.12); }
+.badge-deep       { color: #9BFF5A; border-color: rgba(155, 255, 90, 0.5); background: rgba(155, 255, 90, 0.12); }
+.badge-micro      { color: #4DD8FF; border-color: rgba(77, 216, 255, 0.5); background: rgba(77, 216, 255, 0.12); }
 
 .badge-platform {
   color: var(--text-2);

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-batching",
+  "title": "Micro-agent Batching",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Process many items through one micro-agent call instead of one call per item, when the function is pure and items are independent. Batch size balances tokens against latency. Trigger keywords: batching, batch processing, many items, bulk, batch micro-agent.",
+  "files": {
+    "md": "micro-batching.md",
+    "json": "micro-batching-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-no-prose",
+  "title": "Micro-agent No-Prose",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Ban explanatory prose from micro-agent output. Results are data, per the schema, full stop. Saves tokens and keeps pipelines clean. Trigger keywords: no prose, structured output only, data only, no explanation, terse output, no narration.",
+  "files": {
+    "md": "micro-no-prose.md",
+    "json": "micro-no-prose-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

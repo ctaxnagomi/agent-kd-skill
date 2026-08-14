@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-observability",
+  "title": "Sub-agent Observability",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Log a one-line structured record per sub-agent run: task, budget, status, spend, result key. Cheap telemetry that makes fan-outs auditable and calibratable. Trigger keywords: observability, sub-agent logs, telemetry, audit trail, run record, metrics.",
+  "frontmatter": {
+    "name": "sub-observability",
+    "description": "Log a one-line structured record per sub-agent run: task, budget, status, spend, result key. Cheap telemetry that makes fan-outs auditable and calibratable. Trigger keywords: observability, sub-agent logs, telemetry, audit trail, run record, metrics."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-observability.md",
+    "json": "sub-observability-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-file-scoping",
+  "title": "Sub-agent File Scoping",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Bind each sub-agent to the smallest set of files it needs via explicit path and glob whitelists. No general read access means no accidental context drag. Trigger keywords: file scoping, restrict files, path whitelist, glob limit, read access, scope to files.",
+  "frontmatter": {
+    "name": "sub-file-scoping",
+    "description": "Bind each sub-agent to the smallest set of files it needs via explicit path and glob whitelists. No general read access means no accidental context drag. Trigger keywords: file scoping, restrict files, path whitelist, glob limit, read access, scope to files."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-file-scoping.md",
+    "json": "sub-file-scoping-skill.json",
+    "assembly": "assembly.json"
+  }
+}

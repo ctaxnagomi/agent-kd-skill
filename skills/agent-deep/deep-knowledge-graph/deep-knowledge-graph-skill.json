@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-knowledge-graph",
+  "title": "Deep-agent Knowledge Graph",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Build a lightweight entity-and-relation graph of the research domain as you go, so connections surface and gaps become visible. Graph notes beat linear notes for complex topics. Trigger keywords: knowledge graph, entity relations, research map, connections, concept graph.",
+  "frontmatter": {
+    "name": "deep-knowledge-graph",
+    "description": "Build a lightweight entity-and-relation graph of the research domain as you go, so connections surface and gaps become visible. Graph notes beat linear notes for complex topics. Trigger keywords: knowledge graph, entity relations, research map, connections, concept graph."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-knowledge-graph.md",
+    "json": "deep-knowledge-graph-skill.json",
+    "assembly": "assembly.json"
+  }
+}

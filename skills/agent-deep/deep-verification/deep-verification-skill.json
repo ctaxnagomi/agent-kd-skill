@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-verification",
+  "title": "Deep-agent Verification",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Verify key facts, quotes, and numbers in a deep run before they enter the final answer. Cheap targeted checks beat re-research. Trigger keywords: verify facts, fact check, verify quote, verify number, verification pass.",
+  "frontmatter": {
+    "name": "deep-verification",
+    "description": "Verify key facts, quotes, and numbers in a deep run before they enter the final answer. Cheap targeted checks beat re-research. Trigger keywords: verify facts, fact check, verify quote, verify number, verification pass."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-verification.md",
+    "json": "deep-verification-skill.json",
+    "assembly": "assembly.json"
+  }
+}

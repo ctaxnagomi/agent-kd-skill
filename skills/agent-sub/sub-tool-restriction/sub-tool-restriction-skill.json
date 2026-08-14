@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-tool-restriction",
+  "title": "Sub-agent Tool Restriction",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Give each sub-agent only the tools its task needs. Tool whitelists reduce attack surface, prevent off-task exploration, and keep action logs small. Trigger keywords: tool restriction, limit tools, tool whitelist, disable tools, minimal tools.",
+  "frontmatter": {
+    "name": "sub-tool-restriction",
+    "description": "Give each sub-agent only the tools its task needs. Tool whitelists reduce attack surface, prevent off-task exploration, and keep action logs small. Trigger keywords: tool restriction, limit tools, tool whitelist, disable tools, minimal tools."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-tool-restriction.md",
+    "json": "sub-tool-restriction-skill.json",
+    "assembly": "assembly.json"
+  }
+}

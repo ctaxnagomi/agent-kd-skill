@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-reasoning-trace",
+  "title": "Deep-agent Reasoning Trace",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Keep a compact, replayable trace of a deep agent's reasoning: decisions, branches, and why. Audit-proof research without verbose logs. Trigger keywords: reasoning trace, decision log, audit trail, why log, transparency, replay.",
+  "frontmatter": {
+    "name": "deep-reasoning-trace",
+    "description": "Keep a compact, replayable trace of a deep agent's reasoning: decisions, branches, and why. Audit-proof research without verbose logs. Trigger keywords: reasoning trace, decision log, audit trail, why log, transparency, replay."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-reasoning-trace.md",
+    "json": "deep-reasoning-trace-skill.json",
+    "assembly": "assembly.json"
+  }
+}

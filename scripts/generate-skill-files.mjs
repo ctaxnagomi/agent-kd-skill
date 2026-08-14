@@ -14,8 +14,20 @@ const ROLE_CODE = {
   "agent-plan": "AGENT PLAN",
   "agent-build": "AGENT BUILD",
   "agent-compact": "AGENT COMPACT",
-  "agent-capability": "AGENT CAPABILITY"
+  "agent-capability": "AGENT CAPABILITY",
+  "agent-sub": "AGENT SUB",
+  "agent-deep": "AGENT DEEP",
+  "agent-micro": "AGENT MICRO"
 };
+
+// Roles whose skills are platform-agnostic ("universal"): no platform column,
+// install target is any agent's skills dir.
+const UNIVERSAL_ROLES = new Set([
+  "agent-capability",
+  "agent-sub",
+  "agent-deep",
+  "agent-micro"
+]);
 
 const PLATFORMS = {
   claudecode: {
@@ -72,7 +84,61 @@ const CAP_TITLES = {
   "skill.md": "Skill Authoring",
   "cut-cost-token.md": "Cut-Cost Token",
   "dgui-emitter-snapDOM.md": "DGUI Emitter · snapDOM",
-  "html2canvas.md": "html2canvas"
+  "html2canvas.md": "html2canvas",
+  "whitepaper-tex.md": "Whitepaper · LaTeX arXiv",
+  "pdf-ready.md": "PDF-Ready Output"
+};
+
+// Title overrides for ecosystem (universal) skills, keyed by file name.
+const ECO_TITLES = {
+  // agent-sub
+  "sub-context-isolation.md": "Sub-agent Context Isolation",
+  "sub-task-decomposition.md": "Sub-agent Task Decomposition",
+  "sub-budgeting.md": "Sub-agent Budgeting",
+  "sub-parallel-fanout.md": "Sub-agent Parallel Fan-out",
+  "sub-result-synthesis.md": "Sub-agent Result Synthesis",
+  "sub-handoff.md": "Sub-agent Handoff Protocol",
+  "sub-escalation.md": "Sub-agent Escalation",
+  "sub-verification.md": "Sub-agent Verification",
+  "sub-reporting.md": "Sub-agent Reporting",
+  "sub-file-scoping.md": "Sub-agent File Scoping",
+  "sub-tool-restriction.md": "Sub-agent Tool Restriction",
+  "sub-token-caps.md": "Sub-agent Token Caps",
+  "sub-warm-start.md": "Sub-agent Warm Start",
+  "sub-failure-recovery.md": "Sub-agent Failure Recovery",
+  "sub-observability.md": "Sub-agent Observability",
+  // agent-deep
+  "deep-research-plan.md": "Deep-agent Research Plan",
+  "deep-source-priority.md": "Deep-agent Source Priority",
+  "deep-chunked-digestion.md": "Deep-agent Chunked Digestion",
+  "deep-multi-source.md": "Deep-agent Multi-source",
+  "deep-iterative-refinement.md": "Deep-agent Iterative Refinement",
+  "deep-contradiction.md": "Deep-agent Contradiction",
+  "deep-verification.md": "Deep-agent Verification",
+  "deep-summarization.md": "Deep-agent Summarization",
+  "deep-long-context.md": "Deep-agent Long Context",
+  "deep-knowledge-graph.md": "Deep-agent Knowledge Graph",
+  "deep-citation.md": "Deep-agent Citation",
+  "deep-checkpoint.md": "Deep-agent Checkpointing",
+  "deep-reasoning-trace.md": "Deep-agent Reasoning Trace",
+  "deep-context-budget.md": "Deep-agent Context Budget",
+  "deep-synthesis.md": "Deep-agent Synthesis",
+  // agent-micro
+  "micro-single-purpose.md": "Micro-agent Single Purpose",
+  "micro-prompt-minimalism.md": "Micro-agent Prompt Minimalism",
+  "micro-schema-strict.md": "Micro-agent Strict Schema",
+  "micro-tool-minimalism.md": "Micro-agent Tool Minimalism",
+  "micro-no-prose.md": "Micro-agent No-Prose",
+  "micro-batching.md": "Micro-agent Batching",
+  "micro-context-precision.md": "Micro-agent Context Precision",
+  "micro-retry.md": "Micro-agent Retry",
+  "micro-caching.md": "Micro-agent Caching",
+  "micro-composition.md": "Micro-agent Composition",
+  "micro-orchestration.md": "Micro-agent Orchestration",
+  "micro-observability.md": "Micro-agent Observability",
+  "micro-output-schema.md": "Micro-agent Output Schema",
+  "micro-timeboxing.md": "Micro-agent Timeboxing",
+  "micro-reuse.md": "Micro-agent Reuse"
 };
 
 function walk(dir) {
@@ -130,7 +196,7 @@ function main() {
   for (const file of files) {
     const rel = path.relative(skillsDir, file).replace(/\\/g, "/");
     const parts = rel.split("/");
-    const roleDir = parts[0]; // agent-plan | agent-build | agent-compact | agent-capability
+    const roleDir = parts[0]; // agent-plan | agent-build | agent-compact | agent-capability | agent-sub | agent-deep | agent-micro
     const fileName = parts[parts.length - 1];
     const role = roleDir.replace("agent-", "");
     const roleCode = ROLE_CODE[roleDir];
@@ -139,18 +205,18 @@ function main() {
     const text = fs.readFileSync(file, "utf8");
     const { fm, body } = parseFrontmatter(text);
 
-    const isCapability = roleDir === "agent-capability";
-    const platform = isCapability ? null : skillId.replace(role + "-", "");
-    const plat = isCapability ? null : PLATFORMS[platform];
-    const title = isCapability
-      ? CAP_TITLES[fileName]
+    const isUniversal = UNIVERSAL_ROLES.has(roleDir);
+    const platform = isUniversal ? null : skillId.replace(role + "-", "");
+    const plat = isUniversal ? null : PLATFORMS[platform];
+    const title = isUniversal
+      ? (ECO_TITLES[fileName] || CAP_TITLES[fileName] || skillId)
       : roleCode + " · " + plat.name;
 
-    const install = isCapability
+    const install = isUniversal
       ? [{ level: "universal", path: "<agent>/skills/<name>/SKILL.md" }]
       : plat.install.map((i) => ({ ...i, path: i.path.replace("<name>", fm.name || skillId) }));
 
-    const invoke = isCapability
+    const invoke = isUniversal
       ? "Universal skill: load it in any compatible agent by description match."
       : plat.invoke;
 
@@ -174,7 +240,7 @@ function main() {
       role,
       roleCode,
       platform,
-      platformName: isCapability ? "Universal" : plat.name,
+      platformName: isUniversal ? "Universal" : plat.name,
       description: fm.description || "",
       frontmatter: fm,
       install,

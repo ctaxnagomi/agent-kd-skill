@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-warm-start",
+  "title": "Sub-agent Warm Start",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Reuse a prepared sub-agent template, seed data, or cached result so repeated dispatches skip setup and start cold-to-hot fast. Warm starts cut overhead on recurring delegation. Trigger keywords: warm start, reuse template, cached sub-agent, reusable dispatch, prebuilt prompt.",
+  "frontmatter": {
+    "name": "sub-warm-start",
+    "description": "Reuse a prepared sub-agent template, seed data, or cached result so repeated dispatches skip setup and start cold-to-hot fast. Warm starts cut overhead on recurring delegation. Trigger keywords: warm start, reuse template, cached sub-agent, reusable dispatch, prebuilt prompt."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-warm-start.md",
+    "json": "sub-warm-start-skill.json",
+    "assembly": "assembly.json"
+  }
+}

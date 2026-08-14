@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-long-context",
+  "title": "Deep-agent Long Context",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Structure long-context deep runs so important details stay retrievable: an index, a working summary, and bounded reads. Prevent context decay over many steps. Trigger keywords: long context, context management, context retention, index, working memory.",
+  "files": {
+    "md": "deep-long-context.md",
+    "json": "deep-long-context-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

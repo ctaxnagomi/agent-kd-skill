@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "sub-agent-budgeting",
+  "title": "Sub-agent Budgeting",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "description": "Set token, time, and tool budgets per sub-agent before dispatch so no child runs away. Cap depth, retries, and output size, and kill overruns early. Trigger keywords: sub-agent budget, token budget, time limit, cost cap, runaway agent, budget cap.",
+  "files": {
+    "md": "sub-budgeting.md",
+    "json": "sub-budgeting-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-output-schema",
+  "title": "Micro-agent Output Schema",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Define the exact output shape a micro-agent must return and validate it before accepting. Output contracts make micro-agents composable and reliable. Trigger keywords: output schema, output contract, validate output, return shape, expected output.",
+  "files": {
+    "md": "micro-output-schema.md",
+    "json": "micro-output-schema-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

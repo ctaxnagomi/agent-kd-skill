@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-citation",
+  "title": "Deep-agent Citation",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Attach a source reference to every claim in a deep run and keep a citation trail as the run progresses. Traceable claims that don't need re-verification. Trigger keywords: citation, source reference, cite, provenance, traceability, citation trail.",
+  "files": {
+    "md": "deep-citation.md",
+    "json": "deep-citation-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

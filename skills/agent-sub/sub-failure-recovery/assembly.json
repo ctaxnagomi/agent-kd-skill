@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "sub-failure-recovery",
+  "title": "Sub-agent Failure Recovery",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "description": "Handle failed or partial sub-agent runs with a retry ladder: classify the failure, retry cheaply if fixable, and fall back to a slower path when not. No blind re-runs. Trigger keywords: failure recovery, retry, fallback, failed sub-agent, partial result, error handling.",
+  "files": {
+    "md": "sub-failure-recovery.md",
+    "json": "sub-failure-recovery-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-source-priority",
+  "title": "Deep-agent Source Priority",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Rank sources by authority and relevance before reading, so the deep agent reads the best sources deeply and skims or skips the rest. Trigger keywords: source priority, source ranking, authority, source selection, information hierarchy.",
+  "files": {
+    "md": "deep-source-priority.md",
+    "json": "deep-source-priority-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

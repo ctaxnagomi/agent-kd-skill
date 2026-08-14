@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-synthesis",
+  "title": "Deep-agent Synthesis",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Compress a deep run's findings into a single decision-ready answer: key findings, confidence, contradictions, and open questions. Output-shaped for the consumer. Trigger keywords: synthesis, final answer, report, summary output, decision-ready, compress findings.",
+  "files": {
+    "md": "deep-synthesis.md",
+    "json": "deep-synthesis-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

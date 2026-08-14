@@ -1,0 +1,715 @@
+{
+  "$schema": "https://agentkd.skill/catalog-v1",
+  "version": 1,
+  "generated": "2026-08-14T18:23:19.053Z",
+  "count": 69,
+  "snapdom": {
+    "drop": [
+      "script",
+      "style",
+      "link",
+      "meta",
+      "noscript",
+      "svg",
+      "canvas",
+      "iframe",
+      "template"
+    ],
+    "inlineAssets": true,
+    "pruneEmpty": true,
+    "maxDepth": 12,
+    "maxChildren": 64
+  },
+  "skills": [
+    {
+      "id": "build-claudecode",
+      "name": "agent-build-claudecode",
+      "role": "build",
+      "roleCode": "AGENT BUILD",
+      "platform": "claudecode",
+      "platformName": null,
+      "title": "AGENT BUILD · Claude Code",
+      "description": "Implementation agent skill for Claude Code. Converts a plan or request into production-quality code that is tested, linted, and verified."
+    },
+    {
+      "id": "build-codex",
+      "name": "agent-build-codex",
+      "role": "build",
+      "roleCode": "AGENT BUILD",
+      "platform": "codex",
+      "platformName": null,
+      "title": "AGENT BUILD · Codex CLI",
+      "description": "Implementation agent skill for OpenAI Codex CLI. Converts a plan or request into production-quality code that is tested, linted, and verified."
+    },
+    {
+      "id": "build-cursor",
+      "name": "agent-build-cursor",
+      "role": "build",
+      "roleCode": "AGENT BUILD",
+      "platform": "cursor",
+      "platformName": null,
+      "title": "AGENT BUILD · Cursor",
+      "description": "Implementation agent skill for Cursor. Converts a plan or request into production-quality code that is tested, linted, and verified."
+    },
+    {
+      "id": "build-gemini-cli",
+      "name": "agent-build-gemini-cli",
+      "role": "build",
+      "roleCode": "AGENT BUILD",
+      "platform": "gemini-cli",
+      "platformName": null,
+      "title": "AGENT BUILD · Gemini CLI",
+      "description": "Implementation agent skill for Gemini CLI. Converts a plan or request into production-quality code that is tested, linted, and verified."
+    },
+    {
+      "id": "build-opencode",
+      "name": "agent-build-opencode",
+      "role": "build",
+      "roleCode": "AGENT BUILD",
+      "platform": "opencode",
+      "platformName": null,
+      "title": "AGENT BUILD · opencode",
+      "description": "Implementation agent skill for opencode. Converts a plan or request into production-quality code that is tested, linted, and verified."
+    },
+    {
+      "id": "cut-cost-token",
+      "name": "cut-cost-token",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Cut-Cost Token",
+      "description": "Token and cost optimization for agent sessions. Reduce context usage during browser/web tasks with grep-before-read, batched run calls, targeted evaluate, and signal-based waits. Trigger keywords: cut cost, save tokens, token usage, cheaper, reduce context."
+    },
+    {
+      "id": "design",
+      "name": "design",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Design",
+      "description": "UI/UX design capability for agents. Produce cohesive design systems (tokens, typography, spacing, color, components), wireframes, and polished visual output in code. Use for design, theming, UI, or styling requests."
+    },
+    {
+      "id": "dgui-emitter-snapDOM",
+      "name": "dgui-emitter-snapDOM",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "DGUI Emitter · snapDOM",
+      "description": "Emit lightweight DOM snapshots of visited pages. Uses snapDOM — a direct DOM serialization — instead of html2canvas, converting modern heavy pages into old-school lightweight pages that keep text, links, and structure. Superior to html2canvas for archiving and re-rendering."
+    },
+    {
+      "id": "frontend-specialist",
+      "name": "frontend-specialist",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Frontend Specialist",
+      "description": "Frontend implementation capability. Build production-quality, accessible, responsive HTML/CSS/JS or framework UI from specs or designs. Use for frontend development, web pages, UI implementation, or styling."
+    },
+    {
+      "id": "html2canvas",
+      "name": "html2canvas",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "html2canvas",
+      "description": "Pixel screenshot capability using html2canvas. Renders the live DOM to a canvas and exports it as an image. Use when a true pixel-accurate screenshot of a complex rendered page is required — not for archiving, text preservation, or editing."
+    },
+    {
+      "id": "pdf-ready",
+      "name": "pdf-ready",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "PDF-Ready Output",
+      "description": "Turn any deliverable into a PDF-ready artifact. Pick the right renderer (LaTeX, browser print-to-PDF, headless Chromium), set page geometry and fonts, embed images and links, verify text extraction and file size, and validate against the target venue (arXiv, publisher, web upload). Trigger keywords: pdf, pdf-ready, export to pdf, printable, print layout, pdf validation."
+    },
+    {
+      "id": "search",
+      "name": "search",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Search",
+      "description": "Efficient search and research capability. Locate files, symbols, documentation, and web resources quickly using the right tools in the right order. Use for searching, researching, or finding anything."
+    },
+    {
+      "id": "skill",
+      "name": "skill",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Skill Authoring",
+      "description": "Meta-skill authoring capability. Write, structure, and validate SKILL.md files for AI agents, including YAML frontmatter, discoverability, and platform compatibility. Use for creating, editing, or reviewing agent skills."
+    },
+    {
+      "id": "whitepaper-tex",
+      "name": "whitepaper-tex",
+      "role": "capability",
+      "roleCode": "AGENT CAPABILITY",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Whitepaper · LaTeX arXiv",
+      "description": "Author a LaTeX whitepaper ready for arXiv submission. Scaffolds the document from the bundled arXiv-style template (template.tex / template.pdf), applies the preprint rules (no page numbers or headers, standalone abstract, two-column layout, figures as separate files), and produces a PDF that passes the arXiv checker. Trigger keywords: whitepaper, arxiv, latex, .tex, preprint, technical report, paper template."
+    },
+    {
+      "id": "compact-claudecode",
+      "name": "agent-compact-claudecode",
+      "role": "compact",
+      "roleCode": "AGENT COMPACT",
+      "platform": "claudecode",
+      "platformName": null,
+      "title": "AGENT COMPACT · Claude Code",
+      "description": "Compact, token-efficient agent skill for Claude Code. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+    },
+    {
+      "id": "compact-codex",
+      "name": "agent-compact-codex",
+      "role": "compact",
+      "roleCode": "AGENT COMPACT",
+      "platform": "codex",
+      "platformName": null,
+      "title": "AGENT COMPACT · Codex CLI",
+      "description": "Compact, token-efficient agent skill for OpenAI Codex CLI. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+    },
+    {
+      "id": "compact-cursor",
+      "name": "agent-compact-cursor",
+      "role": "compact",
+      "roleCode": "AGENT COMPACT",
+      "platform": "cursor",
+      "platformName": null,
+      "title": "AGENT COMPACT · Cursor",
+      "description": "Compact, token-efficient agent skill for Cursor. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+    },
+    {
+      "id": "compact-gemini-cli",
+      "name": "agent-compact-gemini-cli",
+      "role": "compact",
+      "roleCode": "AGENT COMPACT",
+      "platform": "gemini-cli",
+      "platformName": null,
+      "title": "AGENT COMPACT · Gemini CLI",
+      "description": "Compact, token-efficient agent skill for Gemini CLI. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+    },
+    {
+      "id": "compact-opencode",
+      "name": "agent-compact-opencode",
+      "role": "compact",
+      "roleCode": "AGENT COMPACT",
+      "platform": "opencode",
+      "platformName": null,
+      "title": "AGENT COMPACT · opencode",
+      "description": "Compact, token-efficient agent skill for opencode. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+    },
+    {
+      "id": "deep-checkpoint",
+      "name": "deep-checkpoint",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Checkpointing",
+      "description": "Save deep-run state at checkpoints so a long investigation can resume from the last fold, not from scratch. Interruptible and resumable deep work. Trigger keywords: checkpoint, resume, save state, restart, long-running, interrupt."
+    },
+    {
+      "id": "deep-chunked-digestion",
+      "name": "deep-chunked-digestion",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Chunked Digestion",
+      "description": "Read large documents in chunks with per-chunk notes instead of one giant context load. Keep only extracted facts in working context. Trigger keywords: chunked reading, document digestion, large document, chunking, summarization by chunk."
+    },
+    {
+      "id": "deep-citation",
+      "name": "deep-citation",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Citation",
+      "description": "Attach a source reference to every claim in a deep run and keep a citation trail as the run progresses. Traceable claims that don't need re-verification. Trigger keywords: citation, source reference, cite, provenance, traceability, citation trail."
+    },
+    {
+      "id": "deep-context-budget",
+      "name": "deep-context-budget",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Context Budget",
+      "description": "Allocate the deep run's context budget across phases — scoping, gathering, verification, synthesis — before starting. Prevent one phase from starving the rest. Trigger keywords: context budget, budget allocation, phase budgeting, context planning, spend allocation."
+    },
+    {
+      "id": "deep-contradiction",
+      "name": "deep-contradiction",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Contradiction",
+      "description": "Surface and resolve contradictory evidence explicitly instead of smoothing it over. Contradictions get flagged, weighted, and only then resolved. Trigger keywords: contradiction, conflicting evidence, disagreement, resolve conflict, conflicting sources."
+    },
+    {
+      "id": "deep-iterative-refinement",
+      "name": "deep-iterative-refinement",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Iterative Refinement",
+      "description": "Refine a deep-agent investigation in rounds: run a bounded pass, identify gaps, run the next pass on the gaps only. Depth grows where it pays off. Trigger keywords: iterative refinement, successive passes, deepen research, gap-driven, refinement rounds."
+    },
+    {
+      "id": "deep-knowledge-graph",
+      "name": "deep-knowledge-graph",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Knowledge Graph",
+      "description": "Build a lightweight entity-and-relation graph of the research domain as you go, so connections surface and gaps become visible. Graph notes beat linear notes for complex topics. Trigger keywords: knowledge graph, entity relations, research map, connections, concept graph."
+    },
+    {
+      "id": "deep-long-context",
+      "name": "deep-long-context",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Long Context",
+      "description": "Structure long-context deep runs so important details stay retrievable: an index, a working summary, and bounded reads. Prevent context decay over many steps. Trigger keywords: long context, context management, context retention, index, working memory."
+    },
+    {
+      "id": "deep-multi-source",
+      "name": "deep-multi-source",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Multi-source",
+      "description": "Cross-check findings across independent sources, prioritizing the best evidence and flagging weak confirmations. Multi-source depth without reading duplicates. Trigger keywords: multi-source, cross-check, triangulation, corroborate, independent sources."
+    },
+    {
+      "id": "deep-reasoning-trace",
+      "name": "deep-reasoning-trace",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Reasoning Trace",
+      "description": "Keep a compact, replayable trace of a deep agent's reasoning: decisions, branches, and why. Audit-proof research without verbose logs. Trigger keywords: reasoning trace, decision log, audit trail, why log, transparency, replay."
+    },
+    {
+      "id": "deep-research-plan",
+      "name": "deep-research-plan",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Research Plan",
+      "description": "Scope a deep research run before starting: questions, sources, depth, and stop conditions. Planning prevents open-ended exploration from burning context. Trigger keywords: research plan, deep research, scoping, research outline, investigation plan."
+    },
+    {
+      "id": "deep-source-priority",
+      "name": "deep-source-priority",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Source Priority",
+      "description": "Rank sources by authority and relevance before reading, so the deep agent reads the best sources deeply and skims or skips the rest. Trigger keywords: source priority, source ranking, authority, source selection, information hierarchy."
+    },
+    {
+      "id": "deep-summarization",
+      "name": "deep-summarization",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Summarization",
+      "description": "Summarize deep-run findings at fixed intervals so working context stays small and the long run remains coherent. Rolling summaries keep deep agents sharp. Trigger keywords: summarize, rolling summary, context management, progressive summary, digest."
+    },
+    {
+      "id": "deep-synthesis",
+      "name": "deep-synthesis",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Synthesis",
+      "description": "Compress a deep run's findings into a single decision-ready answer: key findings, confidence, contradictions, and open questions. Output-shaped for the consumer. Trigger keywords: synthesis, final answer, report, summary output, decision-ready, compress findings."
+    },
+    {
+      "id": "deep-verification",
+      "name": "deep-verification",
+      "role": "deep",
+      "roleCode": "AGENT DEEP",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Deep-agent Verification",
+      "description": "Verify key facts, quotes, and numbers in a deep run before they enter the final answer. Cheap targeted checks beat re-research. Trigger keywords: verify facts, fact check, verify quote, verify number, verification pass."
+    },
+    {
+      "id": "micro-batching",
+      "name": "micro-batching",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Batching",
+      "description": "Process many items through one micro-agent call instead of one call per item, when the function is pure and items are independent. Batch size balances tokens against latency. Trigger keywords: batching, batch processing, many items, bulk, batch micro-agent."
+    },
+    {
+      "id": "micro-caching",
+      "name": "micro-caching",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Caching",
+      "description": "Cache micro-agent results keyed by input so identical calls return instantly at zero token cost. Cache pure functions; skip caching anything with side effects. Trigger keywords: cache, caching, memoize, result cache, dedupe calls, cache key."
+    },
+    {
+      "id": "micro-composition",
+      "name": "micro-composition",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Composition",
+      "description": "Compose micro-agents into pipelines where each agent's strict output feeds the next agent's strict input. Composable units build complex behavior from cheap parts. Trigger keywords: composition, pipeline, chain micro-agents, composable, agent pipeline, sequence."
+    },
+    {
+      "id": "micro-context-precision",
+      "name": "micro-context-precision",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Context Precision",
+      "description": "Inject exactly the context a micro-agent's single function needs — nothing more. Precise context keeps tiny prompts tiny and output accurate. Trigger keywords: context precision, precise context, minimal context, inject context, context injection."
+    },
+    {
+      "id": "micro-no-prose",
+      "name": "micro-no-prose",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent No-Prose",
+      "description": "Ban explanatory prose from micro-agent output. Results are data, per the schema, full stop. Saves tokens and keeps pipelines clean. Trigger keywords: no prose, structured output only, data only, no explanation, terse output, no narration."
+    },
+    {
+      "id": "micro-observability",
+      "name": "micro-observability",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Observability",
+      "description": "Emit one structured log line per micro-agent call: function, input key, status, latency, tokens. Cheap telemetry that turns a micro-agent fleet into a measurable system. Trigger keywords: micro-agent observability, telemetry, metrics, log line, monitor, analytics."
+    },
+    {
+      "id": "micro-orchestration",
+      "name": "micro-orchestration",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Orchestration",
+      "description": "Route work to the right micro-agent with a thin orchestrator that matches tasks to agents by schema and capability. Cheap dispatch beats big prompt engineering. Trigger keywords: orchestration, router, dispatch, task routing, orchestrator, agent selection."
+    },
+    {
+      "id": "micro-output-schema",
+      "name": "micro-output-schema",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Output Schema",
+      "description": "Define the exact output shape a micro-agent must return and validate it before accepting. Output contracts make micro-agents composable and reliable. Trigger keywords: output schema, output contract, validate output, return shape, expected output."
+    },
+    {
+      "id": "micro-prompt-minimalism",
+      "name": "micro-prompt-minimalism",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Prompt Minimalism",
+      "description": "Strip a micro-agent prompt to the fewest tokens that still produce correct output. Minimal prompts load faster, cost less, and drift less. Trigger keywords: minimal prompt, prompt reduction, shorten prompt, token minimalism, compact prompt."
+    },
+    {
+      "id": "micro-retry",
+      "name": "micro-retry",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Retry",
+      "description": "Give micro-agents a bounded, fixed retry policy with different tactics per attempt — never blind identical re-runs. Small agents fail cheaply and recover cheaply. Trigger keywords: retry, retry policy, backoff, bounded retries, recover, retry tactics."
+    },
+    {
+      "id": "micro-reuse",
+      "name": "micro-reuse",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Reuse",
+      "description": "Reuse proven micro-agents across tasks by keeping them versioned, documented, and registered. A library of vetted micro-agents compounds in value. Trigger keywords: reuse, library, registry, proven agents, versioned, share micro-agents, DRY agents."
+    },
+    {
+      "id": "micro-schema-strict",
+      "name": "micro-schema-strict",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Strict Schema",
+      "description": "Enforce a strict input and output schema for micro-agents so results are always parseable and failures are always catchable. No freeform, no surprises. Trigger keywords: strict schema, output schema, JSON schema, validation, structured output, parseable."
+    },
+    {
+      "id": "micro-single-purpose",
+      "name": "micro-single-purpose",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Single Purpose",
+      "description": "Scope each micro-agent to exactly one function so its prompt, tools, and schema stay tiny. One job per agent keeps micro-agents cheap and composable. Trigger keywords: micro-agent, single purpose, one function, minimal agent, tiny agent."
+    },
+    {
+      "id": "micro-timeboxing",
+      "name": "micro-timeboxing",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Timeboxing",
+      "description": "Give micro-agents a hard time or step limit with a defined partial-result behavior. Timeboxing guarantees every call terminates quickly. Trigger keywords: timebox, time limit, timeout, deadline, quick response, latency cap."
+    },
+    {
+      "id": "micro-tool-minimalism",
+      "name": "micro-tool-minimalism",
+      "role": "micro",
+      "roleCode": "AGENT MICRO",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Micro-agent Tool Minimalism",
+      "description": "Give micro-agents the fewest tools possible — ideally zero. Tools add cost, risk, and failure modes; remove every tool that isn't required by the function. Trigger keywords: minimal tools, no tools, tool restriction, zero-tool agent, reduce tools."
+    },
+    {
+      "id": "plan-claudecode",
+      "name": "agent-plan-claudecode",
+      "role": "plan",
+      "roleCode": "AGENT PLAN",
+      "platform": "claudecode",
+      "platformName": null,
+      "title": "AGENT PLAN · Claude Code",
+      "description": "Plan-first agent skill for Claude Code. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+    },
+    {
+      "id": "plan-codex",
+      "name": "agent-plan-codex",
+      "role": "plan",
+      "roleCode": "AGENT PLAN",
+      "platform": "codex",
+      "platformName": null,
+      "title": "AGENT PLAN · Codex CLI",
+      "description": "Plan-first agent skill for OpenAI Codex CLI. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+    },
+    {
+      "id": "plan-cursor",
+      "name": "agent-plan-cursor",
+      "role": "plan",
+      "roleCode": "AGENT PLAN",
+      "platform": "cursor",
+      "platformName": null,
+      "title": "AGENT PLAN · Cursor",
+      "description": "Plan-first agent skill for Cursor. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+    },
+    {
+      "id": "plan-gemini-cli",
+      "name": "agent-plan-gemini-cli",
+      "role": "plan",
+      "roleCode": "AGENT PLAN",
+      "platform": "gemini-cli",
+      "platformName": null,
+      "title": "AGENT PLAN · Gemini CLI",
+      "description": "Plan-first agent skill for Gemini CLI. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+    },
+    {
+      "id": "plan-opencode",
+      "name": "agent-plan-opencode",
+      "role": "plan",
+      "roleCode": "AGENT PLAN",
+      "platform": "opencode",
+      "platformName": null,
+      "title": "AGENT PLAN · opencode",
+      "description": "Plan-first agent skill for opencode. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+    },
+    {
+      "id": "sub-budgeting",
+      "name": "sub-agent-budgeting",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Budgeting",
+      "description": "Set token, time, and tool budgets per sub-agent before dispatch so no child runs away. Cap depth, retries, and output size, and kill overruns early. Trigger keywords: sub-agent budget, token budget, time limit, cost cap, runaway agent, budget cap."
+    },
+    {
+      "id": "sub-context-isolation",
+      "name": "sub-context-isolation",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Context Isolation",
+      "description": "Give each sub-agent only the context it needs and nothing more. Isolate prompts to a minimal, task-relevant slice so delegation stays cheap and focused. Trigger keywords: context isolation, sub-agent context, minimal context, prompt scoping, context budget."
+    },
+    {
+      "id": "sub-escalation",
+      "name": "sub-escalation",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Escalation",
+      "description": "Define when a sub-agent should stop and escalate to the parent instead of burning budget on uncertainty. Escalation criteria are in the prompt; low-confidence results come back flagged, never silently completed. Trigger keywords: escalation, uncertainty, ask parent, stop and escalate, low confidence."
+    },
+    {
+      "id": "sub-failure-recovery",
+      "name": "sub-failure-recovery",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Failure Recovery",
+      "description": "Handle failed or partial sub-agent runs with a retry ladder: classify the failure, retry cheaply if fixable, and fall back to a slower path when not. No blind re-runs. Trigger keywords: failure recovery, retry, fallback, failed sub-agent, partial result, error handling."
+    },
+    {
+      "id": "sub-file-scoping",
+      "name": "sub-file-scoping",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent File Scoping",
+      "description": "Bind each sub-agent to the smallest set of files it needs via explicit path and glob whitelists. No general read access means no accidental context drag. Trigger keywords: file scoping, restrict files, path whitelist, glob limit, read access, scope to files."
+    },
+    {
+      "id": "sub-handoff",
+      "name": "sub-handoff",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Handoff Protocol",
+      "description": "Pass work between sub-agents with an explicit handoff artifact: state, next task, constraints, and open questions. No conversational memory is shared, so the handoff is the only contract. Trigger keywords: handoff, handoff protocol, pass work, context transfer, sub-agent handoff."
+    },
+    {
+      "id": "sub-observability",
+      "name": "sub-observability",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Observability",
+      "description": "Log a one-line structured record per sub-agent run: task, budget, status, spend, result key. Cheap telemetry that makes fan-outs auditable and calibratable. Trigger keywords: observability, sub-agent logs, telemetry, audit trail, run record, metrics."
+    },
+    {
+      "id": "sub-parallel-fanout",
+      "name": "sub-parallel-fanout",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Parallel Fan-out",
+      "description": "Dispatch many independent sub-agents at once and collect results in one wait cycle instead of one-by-one. Fan out in background, aggregate as they complete, and merge deterministic outputs. Trigger keywords: parallel sub-agents, fan-out, dispatch many, parallel delegation, concurrent agents."
+    },
+    {
+      "id": "sub-reporting",
+      "name": "sub-reporting",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Reporting",
+      "description": "Define a compact, structured reporting format for sub-agents: one-line status, key results, and blockers — no narrative dumps. Reports are parseable and cheap to aggregate. Trigger keywords: sub-agent report, status report, progress reporting, structured report, terse output."
+    },
+    {
+      "id": "sub-result-synthesis",
+      "name": "sub-result-synthesis",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Result Synthesis",
+      "description": "Merge and compress sub-agent outputs into a single coherent deliverable without re-reading every source. Synthesize by schema, dedupe, and cite each sub-agent. Trigger keywords: result synthesis, merge sub-agent results, aggregate outputs, combine results, synthesis."
+    },
+    {
+      "id": "sub-task-decomposition",
+      "name": "sub-task-decomposition",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Task Decomposition",
+      "description": "Split a large goal into independently delegable units that sub-agents can own end-to-end. Decompose by boundary, not by step, so each sub-agent returns a mergeable deliverable. Trigger keywords: task decomposition, task splitting, delegation planning, divide work, sub-agent tasks."
+    },
+    {
+      "id": "sub-token-caps",
+      "name": "sub-token-caps",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Token Caps",
+      "description": "Cap the context and output tokens a sub-agent may use per run, with explicit behavior at the cap. Predictable ceilings keep parallel delegation within budget. Trigger keywords: token cap, context limit, max tokens, output limit, token ceiling."
+    },
+    {
+      "id": "sub-tool-restriction",
+      "name": "sub-tool-restriction",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Tool Restriction",
+      "description": "Give each sub-agent only the tools its task needs. Tool whitelists reduce attack surface, prevent off-task exploration, and keep action logs small. Trigger keywords: tool restriction, limit tools, tool whitelist, disable tools, minimal tools."
+    },
+    {
+      "id": "sub-verification",
+      "name": "sub-verification",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Verification",
+      "description": "Add a cheap verification pass to sub-agent output: checks, edge cases, and sanity rules that run before the parent accepts the result. Verify by running checks, not by re-reading. Trigger keywords: verification sub-agent, check work, validate output, sanity check, QA pass."
+    },
+    {
+      "id": "sub-warm-start",
+      "name": "sub-warm-start",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Sub-agent Warm Start",
+      "description": "Reuse a prepared sub-agent template, seed data, or cached result so repeated dispatches skip setup and start cold-to-hot fast. Warm starts cut overhead on recurring delegation. Trigger keywords: warm start, reuse template, cached sub-agent, reusable dispatch, prebuilt prompt."
+    }
+  ]
+}

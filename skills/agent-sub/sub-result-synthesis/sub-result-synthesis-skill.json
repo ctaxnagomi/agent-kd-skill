@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-result-synthesis",
+  "title": "Sub-agent Result Synthesis",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Merge and compress sub-agent outputs into a single coherent deliverable without re-reading every source. Synthesize by schema, dedupe, and cite each sub-agent. Trigger keywords: result synthesis, merge sub-agent results, aggregate outputs, combine results, synthesis.",
+  "frontmatter": {
+    "name": "sub-result-synthesis",
+    "description": "Merge and compress sub-agent outputs into a single coherent deliverable without re-reading every source. Synthesize by schema, dedupe, and cite each sub-agent. Trigger keywords: result synthesis, merge sub-agent results, aggregate outputs, combine results, synthesis."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-result-synthesis.md",
+    "json": "sub-result-synthesis-skill.json",
+    "assembly": "assembly.json"
+  }
+}

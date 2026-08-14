@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "sub-parallel-fanout",
+  "title": "Sub-agent Parallel Fan-out",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "description": "Dispatch many independent sub-agents at once and collect results in one wait cycle instead of one-by-one. Fan out in background, aggregate as they complete, and merge deterministic outputs. Trigger keywords: parallel sub-agents, fan-out, dispatch many, parallel delegation, concurrent agents.",
+  "files": {
+    "md": "sub-parallel-fanout.md",
+    "json": "sub-parallel-fanout-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

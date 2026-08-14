@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-contradiction",
+  "title": "Deep-agent Contradiction",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Surface and resolve contradictory evidence explicitly instead of smoothing it over. Contradictions get flagged, weighted, and only then resolved. Trigger keywords: contradiction, conflicting evidence, disagreement, resolve conflict, conflicting sources.",
+  "frontmatter": {
+    "name": "deep-contradiction",
+    "description": "Surface and resolve contradictory evidence explicitly instead of smoothing it over. Contradictions get flagged, weighted, and only then resolved. Trigger keywords: contradiction, conflicting evidence, disagreement, resolve conflict, conflicting sources."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-contradiction.md",
+    "json": "deep-contradiction-skill.json",
+    "assembly": "assembly.json"
+  }
+}

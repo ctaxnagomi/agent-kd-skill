@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-single-purpose",
+  "title": "Micro-agent Single Purpose",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Scope each micro-agent to exactly one function so its prompt, tools, and schema stay tiny. One job per agent keeps micro-agents cheap and composable. Trigger keywords: micro-agent, single purpose, one function, minimal agent, tiny agent.",
+  "frontmatter": {
+    "name": "micro-single-purpose",
+    "description": "Scope each micro-agent to exactly one function so its prompt, tools, and schema stay tiny. One job per agent keeps micro-agents cheap and composable. Trigger keywords: micro-agent, single purpose, one function, minimal agent, tiny agent."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-single-purpose.md",
+    "json": "micro-single-purpose-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -9,7 +9,10 @@
     { id: "plan", code: "AGENT PLAN", accent: "plan" },
     { id: "build", code: "AGENT BUILD", accent: "build" },
     { id: "compact", code: "AGENT COMPACT", accent: "compact" },
-    { id: "capability", code: "AGENT CAPABILITY", accent: "capability" }
+    { id: "capability", code: "AGENT CAPABILITY", accent: "capability" },
+    { id: "sub", code: "AGENT SUB", accent: "sub" },
+    { id: "deep", code: "AGENT DEEP", accent: "deep" },
+    { id: "micro", code: "AGENT MICRO", accent: "micro" }
   ];
 
   var PLATFORMS = [
@@ -92,7 +95,54 @@
     { id: "cap-skill", role: "capability", platform: null, file: "agent-capability/skill/skill.md", title: "Skill Authoring" },
     { id: "cap-cut-cost-token", role: "capability", platform: null, file: "agent-capability/cut-cost-token/cut-cost-token.md", title: "Cut-Cost Token" },
     { id: "cap-dgui-snapdom", role: "capability", platform: null, file: "agent-capability/dgui-emitter-snapDOM/dgui-emitter-snapDOM.md", title: "DGUI Emitter · snapDOM" },
-    { id: "cap-html2canvas", role: "capability", platform: null, file: "agent-capability/html2canvas/html2canvas.md", title: "html2canvas" }
+    { id: "cap-html2canvas", role: "capability", platform: null, file: "agent-capability/html2canvas/html2canvas.md", title: "html2canvas" },
+    { id: "cap-whitepaper-tex", role: "capability", platform: null, file: "agent-capability/whitepaper-tex/whitepaper-tex.md", title: "Whitepaper · LaTeX arXiv" },
+    { id: "cap-pdf-ready", role: "capability", platform: null, file: "agent-capability/pdf-ready/pdf-ready.md", title: "PDF-Ready Output" },
+    { id: "sub-context-isolation", role: "sub", platform: null, file: "agent-sub/sub-context-isolation/sub-context-isolation.md" },
+    { id: "sub-task-decomposition", role: "sub", platform: null, file: "agent-sub/sub-task-decomposition/sub-task-decomposition.md" },
+    { id: "sub-budgeting", role: "sub", platform: null, file: "agent-sub/sub-budgeting/sub-budgeting.md" },
+    { id: "sub-parallel-fanout", role: "sub", platform: null, file: "agent-sub/sub-parallel-fanout/sub-parallel-fanout.md" },
+    { id: "sub-result-synthesis", role: "sub", platform: null, file: "agent-sub/sub-result-synthesis/sub-result-synthesis.md" },
+    { id: "sub-handoff", role: "sub", platform: null, file: "agent-sub/sub-handoff/sub-handoff.md" },
+    { id: "sub-escalation", role: "sub", platform: null, file: "agent-sub/sub-escalation/sub-escalation.md" },
+    { id: "sub-verification", role: "sub", platform: null, file: "agent-sub/sub-verification/sub-verification.md" },
+    { id: "sub-reporting", role: "sub", platform: null, file: "agent-sub/sub-reporting/sub-reporting.md" },
+    { id: "sub-file-scoping", role: "sub", platform: null, file: "agent-sub/sub-file-scoping/sub-file-scoping.md" },
+    { id: "sub-tool-restriction", role: "sub", platform: null, file: "agent-sub/sub-tool-restriction/sub-tool-restriction.md" },
+    { id: "sub-token-caps", role: "sub", platform: null, file: "agent-sub/sub-token-caps/sub-token-caps.md" },
+    { id: "sub-warm-start", role: "sub", platform: null, file: "agent-sub/sub-warm-start/sub-warm-start.md" },
+    { id: "sub-failure-recovery", role: "sub", platform: null, file: "agent-sub/sub-failure-recovery/sub-failure-recovery.md" },
+    { id: "sub-observability", role: "sub", platform: null, file: "agent-sub/sub-observability/sub-observability.md" },
+    { id: "deep-research-plan", role: "deep", platform: null, file: "agent-deep/deep-research-plan/deep-research-plan.md" },
+    { id: "deep-source-priority", role: "deep", platform: null, file: "agent-deep/deep-source-priority/deep-source-priority.md" },
+    { id: "deep-chunked-digestion", role: "deep", platform: null, file: "agent-deep/deep-chunked-digestion/deep-chunked-digestion.md" },
+    { id: "deep-multi-source", role: "deep", platform: null, file: "agent-deep/deep-multi-source/deep-multi-source.md" },
+    { id: "deep-iterative-refinement", role: "deep", platform: null, file: "agent-deep/deep-iterative-refinement/deep-iterative-refinement.md" },
+    { id: "deep-contradiction", role: "deep", platform: null, file: "agent-deep/deep-contradiction/deep-contradiction.md" },
+    { id: "deep-verification", role: "deep", platform: null, file: "agent-deep/deep-verification/deep-verification.md" },
+    { id: "deep-summarization", role: "deep", platform: null, file: "agent-deep/deep-summarization/deep-summarization.md" },
+    { id: "deep-long-context", role: "deep", platform: null, file: "agent-deep/deep-long-context/deep-long-context.md" },
+    { id: "deep-knowledge-graph", role: "deep", platform: null, file: "agent-deep/deep-knowledge-graph/deep-knowledge-graph.md" },
+    { id: "deep-citation", role: "deep", platform: null, file: "agent-deep/deep-citation/deep-citation.md" },
+    { id: "deep-checkpoint", role: "deep", platform: null, file: "agent-deep/deep-checkpoint/deep-checkpoint.md" },
+    { id: "deep-reasoning-trace", role: "deep", platform: null, file: "agent-deep/deep-reasoning-trace/deep-reasoning-trace.md" },
+    { id: "deep-context-budget", role: "deep", platform: null, file: "agent-deep/deep-context-budget/deep-context-budget.md" },
+    { id: "deep-synthesis", role: "deep", platform: null, file: "agent-deep/deep-synthesis/deep-synthesis.md" },
+    { id: "micro-single-purpose", role: "micro", platform: null, file: "agent-micro/micro-single-purpose/micro-single-purpose.md" },
+    { id: "micro-prompt-minimalism", role: "micro", platform: null, file: "agent-micro/micro-prompt-minimalism/micro-prompt-minimalism.md" },
+    { id: "micro-schema-strict", role: "micro", platform: null, file: "agent-micro/micro-schema-strict/micro-schema-strict.md" },
+    { id: "micro-tool-minimalism", role: "micro", platform: null, file: "agent-micro/micro-tool-minimalism/micro-tool-minimalism.md" },
+    { id: "micro-no-prose", role: "micro", platform: null, file: "agent-micro/micro-no-prose/micro-no-prose.md" },
+    { id: "micro-batching", role: "micro", platform: null, file: "agent-micro/micro-batching/micro-batching.md" },
+    { id: "micro-context-precision", role: "micro", platform: null, file: "agent-micro/micro-context-precision/micro-context-precision.md" },
+    { id: "micro-retry", role: "micro", platform: null, file: "agent-micro/micro-retry/micro-retry.md" },
+    { id: "micro-caching", role: "micro", platform: null, file: "agent-micro/micro-caching/micro-caching.md" },
+    { id: "micro-composition", role: "micro", platform: null, file: "agent-micro/micro-composition/micro-composition.md" },
+    { id: "micro-orchestration", role: "micro", platform: null, file: "agent-micro/micro-orchestration/micro-orchestration.md" },
+    { id: "micro-observability", role: "micro", platform: null, file: "agent-micro/micro-observability/micro-observability.md" },
+    { id: "micro-output-schema", role: "micro", platform: null, file: "agent-micro/micro-output-schema/micro-output-schema.md" },
+    { id: "micro-timeboxing", role: "micro", platform: null, file: "agent-micro/micro-timeboxing/micro-timeboxing.md" },
+    { id: "micro-reuse", role: "micro", platform: null, file: "agent-micro/micro-reuse/micro-reuse.md" }
   ];
 
   /* ---------------- i18n ---------------- */
@@ -111,6 +161,12 @@
       digestCompactDesc: "Minimal token footprint for fast, targeted subagent work.",
       digestCapabilityTitle: "Agent Capabilities",
       digestCapabilityDesc: "Cross-platform skill files: design, search, cost-cutting, and page capture methods.",
+      digestSubTitle: "Sub-agent Orchestration",
+      digestSubDesc: "Delegate work in isolated slices: context isolation, fan-out, budgets, handoffs, and synthesis.",
+      digestDeepTitle: "Deep Research",
+      digestDeepDesc: "Long-run efficiency: planning, source priority, chunked digestion, verification, and synthesis.",
+      digestMicroTitle: "Micro-agent Fleet",
+      digestMicroDesc: "Tiny single-purpose agents: strict schemas, minimal prompts, caching, and composition.",
       digestVariantLabel: "variants",
       statSkills: "skills",
       statRoles: "roles",
@@ -142,6 +198,9 @@
       roleDescBuild: "Implementation skills: convert plans into production-quality, verified code.",
       roleDescCompact: "Compact skills: a minimal token footprint for fast, targeted subagent work.",
       roleDescCapability: "Platform-agnostic capabilities: design, search, cost-cutting, and page capture skills.",
+      roleDescSub: "Sub-agent efficiency: delegate in isolated slices with budgets, handoffs, and cheap synthesis.",
+      roleDescDeep: "Deep-agent efficiency: plan, prioritize sources, digest in chunks, and synthesize with citations.",
+      roleDescMicro: "Micro-agent efficiency: tiny single-purpose agents with strict schemas and minimal prompts.",
       platformDescClaudecode: "Anthropic's terminal coding agent. Skills auto-load by description; invoke with #.",
       platformDescOpencode: "Open-source terminal agent with a native skill tool; loads by description.",
       platformDescCodex: "OpenAI's terminal agent. Skills follow the open standard; $skill-name forces invocation.",
@@ -172,6 +231,12 @@
       digestCompactDesc: "以极低 token 占用完成快速、精准的子代理任务。",
       digestCapabilityTitle: "代理能力",
       digestCapabilityDesc: "跨平台技能文件：设计、搜索、成本控制与页面捕获方法。",
+      digestSubTitle: "子代理编排",
+      digestSubDesc: "隔离切片委派：上下文隔离、并行扇出、预算、交接与结果合成。",
+      digestDeepTitle: "深度研究",
+      digestDeepDesc: "长时运行效率：规划、源优先级、分块消化、验证与合成。",
+      digestMicroTitle: "微代理集群",
+      digestMicroDesc: "小型单一用途代理：严格 schema、极简提示、缓存与组合。",
       digestVariantLabel: "个变体",
       statSkills: "个技能",
       statRoles: "个角色",
@@ -203,6 +268,9 @@
       roleDescBuild: "实现技能：把计划转化为经过测试、校验的生产级代码。",
       roleDescCompact: "紧凑技能：极低 token 占用，适合快速、精准的子代理任务。",
       roleDescCapability: "跨平台能力：设计、搜索、成本控制与页面捕获技能。",
+      roleDescSub: "子代理效率：隔离切片委派，带预算、交接与低成本合成。",
+      roleDescDeep: "深度代理效率：规划、源优先级、分块消化，带引用的合成。",
+      roleDescMicro: "微代理效率：严格 schema 与极简提示的小型单一用途代理。",
       platformDescClaudecode: "Anthropic 终端编码代理。按描述自动加载，通过 # 调用。",
       platformDescOpencode: "开源终端代理，内置 skill 工具，按描述加载。",
       platformDescCodex: "OpenAI 终端代理。遵循开放标准，$skill-name 强制调用。",
@@ -258,15 +326,46 @@
 
   function cardDesc(skill) {
     if (skill.platform === null) {
-      return lang === "zh"
-        ? "跨平台代理能力，适用于所有 Agent。"
-        : "Cross-platform agent capability, works in any agent.";
+      var universalText = {
+        capability: { en: "Cross-platform agent capability, works in any agent.", zh: "跨平台代理能力，适用于所有 Agent。" },
+        sub: { en: "Efficiency pattern for orchestrating sub-agents.", zh: "面向子代理编排的效率模式。" },
+        deep: { en: "Efficiency pattern for long-running deep research agents.", zh: "面向长时间深度研究代理的效率模式。" },
+        micro: { en: "Efficiency pattern for tiny single-purpose micro-agents.", zh: "面向小型单一用途微代理的效率模式。" }
+      };
+      var txt = universalText[skill.role] || universalText.capability;
+      return lang === "zh" ? txt.zh : txt.en;
     }
     var p = platformById(skill.platform);
     var r = roleById(skill.role);
     return lang === "zh"
       ? r.code + " 变体，适用于 " + p.name + "。"
       : r.code + " variant for " + p.name + ".";
+  }
+
+  function titleFromId(id) {
+    return id
+      .replace(/^[a-z]+-/, "")
+      .split(/[-_]/)
+      .map(function (w) {
+        return w.charAt(0).toUpperCase() + w.slice(1);
+      })
+      .join(" ");
+  }
+
+  // Universal skills carry their display title in <id>-skill.json; fall back to
+  // the name derived from the id so cards never render an undefined heading.
+  function universalTitle(skill) {
+    if (skill.title) return skill.title;
+    var jsonText = window.SKILLS_CONTENT && window.SKILLS_CONTENT[skillFiles(skill).json];
+    if (jsonText) {
+      try {
+        var data = JSON.parse(jsonText);
+        if (data.title) return data.title;
+      } catch (e) {
+        /* ignore malformed embedded json */
+      }
+    }
+    return titleFromId(skill.id);
   }
 
   function skillMatches(skill) {
@@ -442,7 +541,7 @@
   function cardHtml(skill, idx) {
     var r = roleById(skill.role);
     var p = skill.platform === null ? null : platformById(skill.platform);
-    var title = p ? r.code + " · " + escapeHtml(p.name) : escapeHtml(skill.title);
+    var title = p ? r.code + " · " + escapeHtml(p.name) : escapeHtml(universalTitle(skill));
     var platBadge = p
       ? '<span class="badge badge-platform">' + escapeHtml(p.name) + "</span>"
       : '<span class="badge badge-platform">' + escapeHtml(t("universal")) + "</span>";

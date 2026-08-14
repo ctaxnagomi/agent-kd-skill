@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-verification",
+  "title": "Sub-agent Verification",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Add a cheap verification pass to sub-agent output: checks, edge cases, and sanity rules that run before the parent accepts the result. Verify by running checks, not by re-reading. Trigger keywords: verification sub-agent, check work, validate output, sanity check, QA pass.",
+  "frontmatter": {
+    "name": "sub-verification",
+    "description": "Add a cheap verification pass to sub-agent output: checks, edge cases, and sanity rules that run before the parent accepts the result. Verify by running checks, not by re-reading. Trigger keywords: verification sub-agent, check work, validate output, sanity check, QA pass."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-verification.md",
+    "json": "sub-verification-skill.json",
+    "assembly": "assembly.json"
+  }
+}

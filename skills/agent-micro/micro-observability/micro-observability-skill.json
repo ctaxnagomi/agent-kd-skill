@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-observability",
+  "title": "Micro-agent Observability",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Emit one structured log line per micro-agent call: function, input key, status, latency, tokens. Cheap telemetry that turns a micro-agent fleet into a measurable system. Trigger keywords: micro-agent observability, telemetry, metrics, log line, monitor, analytics.",
+  "frontmatter": {
+    "name": "micro-observability",
+    "description": "Emit one structured log line per micro-agent call: function, input key, status, latency, tokens. Cheap telemetry that turns a micro-agent fleet into a measurable system. Trigger keywords: micro-agent observability, telemetry, metrics, log line, monitor, analytics."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-observability.md",
+    "json": "micro-observability-skill.json",
+    "assembly": "assembly.json"
+  }
+}

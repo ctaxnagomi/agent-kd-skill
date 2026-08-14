@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-context-budget",
+  "title": "Deep-agent Context Budget",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Allocate the deep run's context budget across phases — scoping, gathering, verification, synthesis — before starting. Prevent one phase from starving the rest. Trigger keywords: context budget, budget allocation, phase budgeting, context planning, spend allocation.",
+  "frontmatter": {
+    "name": "deep-context-budget",
+    "description": "Allocate the deep run's context budget across phases — scoping, gathering, verification, synthesis — before starting. Prevent one phase from starving the rest. Trigger keywords: context budget, budget allocation, phase budgeting, context planning, spend allocation."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-context-budget.md",
+    "json": "deep-context-budget-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-context-precision",
+  "title": "Micro-agent Context Precision",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Inject exactly the context a micro-agent's single function needs — nothing more. Precise context keeps tiny prompts tiny and output accurate. Trigger keywords: context precision, precise context, minimal context, inject context, context injection.",
+  "frontmatter": {
+    "name": "micro-context-precision",
+    "description": "Inject exactly the context a micro-agent's single function needs — nothing more. Precise context keeps tiny prompts tiny and output accurate. Trigger keywords: context precision, precise context, minimal context, inject context, context injection."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-context-precision.md",
+    "json": "micro-context-precision-skill.json",
+    "assembly": "assembly.json"
+  }
+}

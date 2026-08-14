@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-retry",
+  "title": "Micro-agent Retry",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Give micro-agents a bounded, fixed retry policy with different tactics per attempt — never blind identical re-runs. Small agents fail cheaply and recover cheaply. Trigger keywords: retry, retry policy, backoff, bounded retries, recover, retry tactics.",
+  "frontmatter": {
+    "name": "micro-retry",
+    "description": "Give micro-agents a bounded, fixed retry policy with different tactics per attempt — never blind identical re-runs. Small agents fail cheaply and recover cheaply. Trigger keywords: retry, retry policy, backoff, bounded retries, recover, retry tactics."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-retry.md",
+    "json": "micro-retry-skill.json",
+    "assembly": "assembly.json"
+  }
+}

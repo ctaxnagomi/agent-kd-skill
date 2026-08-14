@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "pdf-ready",
+  "title": "PDF-Ready Output",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "description": "Turn any deliverable into a PDF-ready artifact. Pick the right renderer (LaTeX, browser print-to-PDF, headless Chromium), set page geometry and fonts, embed images and links, verify text extraction and file size, and validate against the target venue (arXiv, publisher, web upload). Trigger keywords: pdf, pdf-ready, export to pdf, printable, print layout, pdf validation.",
+  "files": {
+    "md": "pdf-ready.md",
+    "json": "pdf-ready-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

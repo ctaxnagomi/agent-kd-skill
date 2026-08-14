@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "sub-handoff",
+  "title": "Sub-agent Handoff Protocol",
+  "role": "sub",
+  "roleCode": "AGENT SUB",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Pass work between sub-agents with an explicit handoff artifact: state, next task, constraints, and open questions. No conversational memory is shared, so the handoff is the only contract. Trigger keywords: handoff, handoff protocol, pass work, context transfer, sub-agent handoff.",
+  "frontmatter": {
+    "name": "sub-handoff",
+    "description": "Pass work between sub-agents with an explicit handoff artifact: state, next task, constraints, and open questions. No conversational memory is shared, so the handoff is the only contract. Trigger keywords: handoff, handoff protocol, pass work, context transfer, sub-agent handoff."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "sub-handoff.md",
+    "json": "sub-handoff-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-checkpoint",
+  "title": "Deep-agent Checkpointing",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Save deep-run state at checkpoints so a long investigation can resume from the last fold, not from scratch. Interruptible and resumable deep work. Trigger keywords: checkpoint, resume, save state, restart, long-running, interrupt.",
+  "frontmatter": {
+    "name": "deep-checkpoint",
+    "description": "Save deep-run state at checkpoints so a long investigation can resume from the last fold, not from scratch. Interruptible and resumable deep work. Trigger keywords: checkpoint, resume, save state, restart, long-running, interrupt."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-checkpoint.md",
+    "json": "deep-checkpoint-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "deep-chunked-digestion",
+  "title": "Deep-agent Chunked Digestion",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Read large documents in chunks with per-chunk notes instead of one giant context load. Keep only extracted facts in working context. Trigger keywords: chunked reading, document digestion, large document, chunking, summarization by chunk.",
+  "frontmatter": {
+    "name": "deep-chunked-digestion",
+    "description": "Read large documents in chunks with per-chunk notes instead of one giant context load. Keep only extracted facts in working context. Trigger keywords: chunked reading, document digestion, large document, chunking, summarization by chunk."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "deep-chunked-digestion.md",
+    "json": "deep-chunked-digestion-skill.json",
+    "assembly": "assembly.json"
+  }
+}

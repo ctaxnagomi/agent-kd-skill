@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-prompt-minimalism",
+  "title": "Micro-agent Prompt Minimalism",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Strip a micro-agent prompt to the fewest tokens that still produce correct output. Minimal prompts load faster, cost less, and drift less. Trigger keywords: minimal prompt, prompt reduction, shorten prompt, token minimalism, compact prompt.",
+  "files": {
+    "md": "micro-prompt-minimalism.md",
+    "json": "micro-prompt-minimalism-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

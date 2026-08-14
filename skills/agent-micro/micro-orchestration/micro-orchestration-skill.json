@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "micro-orchestration",
+  "title": "Micro-agent Orchestration",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Route work to the right micro-agent with a thin orchestrator that matches tasks to agents by schema and capability. Cheap dispatch beats big prompt engineering. Trigger keywords: orchestration, router, dispatch, task routing, orchestrator, agent selection.",
+  "frontmatter": {
+    "name": "micro-orchestration",
+    "description": "Route work to the right micro-agent with a thin orchestrator that matches tasks to agents by schema and capability. Cheap dispatch beats big prompt engineering. Trigger keywords: orchestration, router, dispatch, task routing, orchestrator, agent selection."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "micro-orchestration.md",
+    "json": "micro-orchestration-skill.json",
+    "assembly": "assembly.json"
+  }
+}

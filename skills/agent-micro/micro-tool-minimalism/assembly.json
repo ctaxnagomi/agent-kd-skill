@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-tool-minimalism",
+  "title": "Micro-agent Tool Minimalism",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Give micro-agents the fewest tools possible — ideally zero. Tools add cost, risk, and failure modes; remove every tool that isn't required by the function. Trigger keywords: minimal tools, no tools, tool restriction, zero-tool agent, reduce tools.",
+  "files": {
+    "md": "micro-tool-minimalism.md",
+    "json": "micro-tool-minimalism-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Whitepaper Title</title>
+<style>
+  @page { size: letter; margin: 1in; }
+  :root { --rule: #666; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Times New Roman", Georgia, "Liberation Serif", serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    color: #000;
+  }
+  .title { text-align: center; font-size: 16pt; font-weight: bold; margin: 0 0 10px; }
+  .authors { text-align: center; margin: 0 0 2px; }
+  .affil { text-align: center; font-size: 9.5pt; color: #333; margin: 0 0 2px; }
+  .email { text-align: center; font-size: 9.5pt; color: #333; margin: 0 0 14px; }
+  .abstract-wrap {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 8px 0;
+    margin: 0 0 16px;
+  }
+  .abstract-label { text-align: center; font-size: 9.5pt; font-weight: bold; margin: 0 0 4px; }
+  .abstract { margin: 0; text-align: justify; }
+  .body { column-count: 2; column-gap: 22px; text-align: justify; }
+  h2 {
+    font-size: 11.5pt;
+    margin: 14px 0 6px;
+    font-weight: bold;
+    column-span: none;
+  }
+  p { margin: 0 0 8px; }
+</style>
+</head>
+<body>
+
+  <h1 class="title">Your Whitepaper Title</h1>
+  <p class="authors">Author One and Author Two</p>
+  <p class="affil">Affiliation One &middot; Affiliation Two</p>
+  <p class="email">email@example.com &middot; email2@example.com</p>
+
+  <div class="abstract-wrap">
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract">
+      Write a self-contained abstract here. It is typeset independently by arXiv,
+      so it must not contain cross-references, footnotes, or hyperlinks. State the
+      problem, the approach, the main result, and its significance in a few sentences.
+    </p>
+  </div>
+
+  <div class="body">
+    <h2>1 Introduction</h2>
+    <p>Motivate the problem and state the contribution of this whitepaper. Context,
+    related work, and definitions needed by the rest of the document appear in the
+    background section that follows.</p>
+
+    <h2>2 Background</h2>
+    <p>Describe the setting: prior art, notation, and the precise problem statement
+    the method addresses. Keep definitions explicit so later sections can rely on them.</p>
+
+    <h2>3 Method</h2>
+    <p>Describe the approach. Equations, algorithms, and formal definitions belong
+    here. Each claim should map to the evaluation in the next section.</p>
+
+    <h2>4 Evaluation</h2>
+    <p>Report results with figures and tables. Caption every float, reference every
+    figure from the text, and state the experimental conditions used.</p>
+
+    <h2>5 Discussion</h2>
+    <p>Interpret the results, note limitations, and outline future work. This section
+    is where trade-offs and open questions are made explicit.</p>
+
+    <h2>6 Conclusion</h2>
+    <p>Summarize the contribution and its implications in a few sentences.</p>
+  </div>
+
+</body>
+</html>

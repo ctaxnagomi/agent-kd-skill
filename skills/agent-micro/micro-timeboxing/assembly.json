@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-timeboxing",
+  "title": "Micro-agent Timeboxing",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Give micro-agents a hard time or step limit with a defined partial-result behavior. Timeboxing guarantees every call terminates quickly. Trigger keywords: timebox, time limit, timeout, deadline, quick response, latency cap.",
+  "files": {
+    "md": "micro-timeboxing.md",
+    "json": "micro-timeboxing-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

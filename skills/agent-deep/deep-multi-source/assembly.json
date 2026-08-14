@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "deep-multi-source",
+  "title": "Deep-agent Multi-source",
+  "role": "deep",
+  "roleCode": "AGENT DEEP",
+  "platform": null,
+  "description": "Cross-check findings across independent sources, prioritizing the best evidence and flagging weak confirmations. Multi-source depth without reading duplicates. Trigger keywords: multi-source, cross-check, triangulation, corroborate, independent sources.",
+  "files": {
+    "md": "deep-multi-source.md",
+    "json": "deep-multi-source-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

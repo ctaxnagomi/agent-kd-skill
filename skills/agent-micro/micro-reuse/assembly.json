@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "micro-reuse",
+  "title": "Micro-agent Reuse",
+  "role": "micro",
+  "roleCode": "AGENT MICRO",
+  "platform": null,
+  "description": "Reuse proven micro-agents across tasks by keeping them versioned, documented, and registered. A library of vetted micro-agents compounds in value. Trigger keywords: reuse, library, registry, proven agents, versioned, share micro-agents, DRY agents.",
+  "files": {
+    "md": "micro-reuse.md",
+    "json": "micro-reuse-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}
