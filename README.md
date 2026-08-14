@@ -1,8 +1,18 @@
 # AGENT KD SKILL
 
-A gallery of **SKILL.md** variants for AI coding agents — categorized by agent role, filterable by platform, with live preview and download. Every skill ships as a **3-file bundle** in its own folder.
+A gallery of **SKILL.md** variants for AI coding agents — organized by agent role, filterable by platform, with live preview and download. Every skill ships as a **3-file bundle** in its own folder, anchored by an `assembly.json` manifest.
 
 Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor, and Gemini CLI.
+
+## Why assembly.json matters
+
+Every skill folder is a self-contained unit of three files:
+
+- `<name>-SKILL.md` — hybrid markdown (markdown body with **JSON frontmatter**).
+- `<name>-skill.json` — machine-readable skill data (schema, role, platform, frontmatter, install, invoke).
+- `assembly.json` — the **assembly manifest**: the single source of truth that binds the other two.
+
+`assembly.json` is the key a **compiler reads**. It declares *what* the skill is (name, title, role, platform), *which* files compose it (`files.md`, `files.json`, `files.assembly`), and *how* it is installed and invoked (`install`, `invoke`). Any tooling — a build pipeline, an agent loader, or a compiler — can resolve a complete, installable skill from `assembly.json` alone, without parsing prose. The markdown stays author-friendly; `assembly.json` stays machine-first.
 
 ## Features
 
@@ -12,10 +22,19 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 - **Search + filters** — filter cards by role and platform, or search by name/description.
 - **Download all (.zip)** — bundles every skill as a complete 3-file package plus an install guide.
 - **Bilingual** — English and Chinese UI.
-- **3-file skill format** — every skill folder contains:
-  - `<name>-SKILL.md` — hybrid markdown (markdown body with JSON frontmatter).
-  - `<name>-skill.json` — machine-readable skill data (schema, role, platform, frontmatter, install, invoke).
-  - `assembly.json` — assembly manifest combining the md + json (name, role, platform, files).
+- **Compiler-ready structure** — every skill resolves from its `assembly.json` manifest.
+
+## Skill compiler (token optimization)
+
+The 3-file structure exists so a **compiler** can turn author-friendly markdown into a **token-optimized artifact** the agent actually reads. The compiler consumes `assembly.json` as its input contract and emits, per skill:
+
+1. **A minified, deduplicated JSON artifact** — instruction text condensed, redundant fields removed, headers/formatting stripped. The agent loads this instead of the full prose, so **loading a skill costs a fraction of the tokens**.
+2. **A baked-in snapshot profile for snapDOM** — the compiler embeds snapDOM emit rules (drop scripts/styles, inline assets, prune empty nodes, cap depth) straight into the artifact. That means **every DOM snapshot the agent captures is lighter at runtime**, not just on load: `html2canvas`-style raster output never happens, and each serialized snapshot carries only what is needed.
+3. **A catalog index** — one small JSON listing all skills (id, role, platform, description) so an agent can pick the right skill for ~1% of the tokens it would cost to scan the gallery.
+
+In short: the compiler moves cost out of both the **load path** (smaller skill payloads) and the **capture path** (leaner snapDOM snapshots), which is exactly where token spend accumulates.
+
+> **Status:** the structure is compiler-ready today (every skill resolves from `assembly.json`). A first compiler pass — `scripts/compile-skills.mjs` emitting `data/compiled/*.json` + a catalog — is planned.
 
 ## Quick start
 
@@ -88,7 +107,7 @@ AGENT KD SKILL/
 1. Pick a variant folder, e.g. `skills/agent-plan/plan-opencode/`.
 2. Create the matching folder under your platform's skills directory.
 3. Copy the `SKILL.md` file into that folder (folder name = skill name).
-4. Keep `<name>-skill.json` and `assembly.json` alongside it for tooling/portability.
+4. Keep `<name>-skill.json` and `assembly.json` alongside it for tooling/portability — the agent's compiler/loader can consume them directly.
 5. Restart the agent session, then trigger it by description or the platform's invocation shortcut.
 
 Platform paths:
