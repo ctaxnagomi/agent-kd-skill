@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-plan-opencode",
+  "title": "AGENT PLAN · opencode",
+  "role": "plan",
+  "roleCode": "AGENT PLAN",
+  "platform": "opencode",
+  "platformName": "opencode",
+  "description": "Plan-first agent skill for opencode. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests.",
+  "frontmatter": {
+    "name": "agent-plan-opencode",
+    "description": "Plan-first agent skill for opencode. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+  },
+  "install": [
+    {
+      "level": "project",
+      "path": ".opencode/skills/agent-plan-opencode/SKILL.md"
+    },
+    {
+      "level": "global",
+      "path": "~/.config/opencode/skills/agent-plan-opencode/SKILL.md"
+    }
+  ],
+  "invoke": "The native `skill` tool loads it on demand by description; also exposed as a slash command.",
+  "files": {
+    "md": "plan-opencode-SKILL.md",
+    "json": "plan-opencode-skill.json",
+    "assembly": "assembly.json"
+  }
+}

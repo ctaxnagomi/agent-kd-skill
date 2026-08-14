@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-compact-gemini-cli",
+  "title": "AGENT COMPACT · Gemini CLI",
+  "role": "compact",
+  "roleCode": "AGENT COMPACT",
+  "platform": "gemini-cli",
+  "platformName": "Gemini CLI",
+  "description": "Compact, token-efficient agent skill for Gemini CLI. Minimal output, fast targeted edits, low context burn for subagents and long sessions.",
+  "frontmatter": {
+    "name": "agent-compact-gemini-cli",
+    "description": "Compact, token-efficient agent skill for Gemini CLI. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.gemini/skills/agent-compact-gemini-cli/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".gemini/skills/agent-compact-gemini-cli/SKILL.md"
+    }
+  ],
+  "invoke": "Activated through the activate_skill tool after a consent prompt.",
+  "files": {
+    "md": "compact-gemini-cli-SKILL.md",
+    "json": "compact-gemini-cli-skill.json",
+    "assembly": "assembly.json"
+  }
+}

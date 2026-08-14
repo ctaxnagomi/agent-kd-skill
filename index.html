@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AGENT KD SKILL — a gallery of SKILL.md variants for AI coding agents, categorized by agent role with per-platform compatibility, preview, and download.">
+  <title>AGENT KD SKILL — SKILL.md Gallery</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23023500'/%3E%3Crect width='100' height='100' rx='20' fill='none' stroke='%230AF700' stroke-width='6'/%3E%3Ctext x='50' y='64' font-size='40' text-anchor='middle' fill='%23ABFFA7' font-family='monospace' font-weight='bold'%3EKD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="eyebrow" data-i18n="eyebrow"></span>
+        <h1 class="brand-logo-wrap animate-rise"><img class="brand-logo" src="logo.svg" alt="AGENT KD SKILL"></h1>
+        <p class="tagline animate-rise" data-i18n="tagline"></p>
+      </div>
+      <div class="header-actions animate-rise">
+        <div class="stats" id="stats" role="list"></div>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="digest wrap">
+      <div class="digest-head">
+        <span class="eyebrow" data-i18n="digestEyebrow"></span>
+        <h2 class="digest-title"><em data-i18n="digestTitle"></em></h2>
+      </div>
+      <div class="digest-grid">
+        <article class="digest-card digest-plan animate-rise">
+          <div class="digest-top">
+            <span class="digest-chip">AGENT PLAN</span>
+            <span class="digest-index">01</span>
+          </div>
+          <h3 class="digest-title2" data-i18n="digestPlanTitle"></h3>
+          <p class="digest-desc" data-i18n="digestPlanDesc"></p>
+          <div class="digest-metric">
+            <b class="digest-count" data-count="plan"></b>
+            <span class="digest-unit" data-i18n="digestVariantLabel"></span>
+          </div>
+        </article>
+        <article class="digest-card digest-build animate-rise">
+          <div class="digest-top">
+            <span class="digest-chip">AGENT BUILD</span>
+            <span class="digest-index">02</span>
+          </div>
+          <h3 class="digest-title2" data-i18n="digestBuildTitle"></h3>
+          <p class="digest-desc" data-i18n="digestBuildDesc"></p>
+          <div class="digest-metric">
+            <b class="digest-count" data-count="build"></b>
+            <span class="digest-unit" data-i18n="digestVariantLabel"></span>
+          </div>
+        </article>
+        <article class="digest-card digest-compact animate-rise">
+          <div class="digest-top">
+            <span class="digest-chip">AGENT COMPACT</span>
+            <span class="digest-index">03</span>
+          </div>
+          <h3 class="digest-title2" data-i18n="digestCompactTitle"></h3>
+          <p class="digest-desc" data-i18n="digestCompactDesc"></p>
+          <div class="digest-metric">
+            <b class="digest-count" data-count="compact"></b>
+            <span class="digest-unit" data-i18n="digestVariantLabel"></span>
+          </div>
+        </article>
+        <article class="digest-card digest-capability animate-rise">
+          <div class="digest-top">
+            <span class="digest-chip">AGENT CAPABILITY</span>
+            <span class="digest-index">04</span>
+          </div>
+          <h3 class="digest-title2" data-i18n="digestCapabilityTitle"></h3>
+          <p class="digest-desc" data-i18n="digestCapabilityDesc"></p>
+          <div class="digest-metric">
+            <b class="digest-count" data-count="capability"></b>
+            <span class="digest-unit" data-i18n="digestVariantLabel"></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="toolbar wrap reveal">
+      <div class="toolbar-row">
+        <input type="search" id="search" class="search" placeholder="Search skills…" autocomplete="off" aria-label="Search">
+        <button class="btn btn-primary" id="downloadAll" type="button" data-i18n="downloadAll"></button>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label" data-i18n="filterByRole"></span>
+        <div class="pills" id="rolePills"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label" data-i18n="filterByPlatform"></span>
+        <div class="pills" id="platformPills"></div>
+      </div>
+    </section>
+
+    <section id="grid" class="grid wrap"></section>
+
+    <section class="platforms wrap reveal">
+      <h2 class="section-title" data-i18n="platformsTitle"></h2>
+      <p class="section-note" data-i18n="standardsNote"></p>
+      <div id="platformsGrid" class="platforms-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p data-i18n="footer"></p>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="modalTitle"></h3>
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close">&times;</button>
+      </div>
+      <pre class="modal-body"><code id="modalCode"></code></pre>
+      <div class="modal-actions">
+        <button class="btn" id="modalCopy" type="button" data-i18n="copy"></button>
+        <button class="btn btn-primary" id="modalDownload" type="button" data-i18n="download"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data/skills.js"></script>
+  <script src="zip.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

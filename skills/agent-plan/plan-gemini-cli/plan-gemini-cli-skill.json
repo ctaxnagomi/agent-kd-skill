@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-plan-gemini-cli",
+  "title": "AGENT PLAN · Gemini CLI",
+  "role": "plan",
+  "roleCode": "AGENT PLAN",
+  "platform": "gemini-cli",
+  "platformName": "Gemini CLI",
+  "description": "Plan-first agent skill for Gemini CLI. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests.",
+  "frontmatter": {
+    "name": "agent-plan-gemini-cli",
+    "description": "Plan-first agent skill for Gemini CLI. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.gemini/skills/agent-plan-gemini-cli/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".gemini/skills/agent-plan-gemini-cli/SKILL.md"
+    }
+  ],
+  "invoke": "Activated through the activate_skill tool after a consent prompt.",
+  "files": {
+    "md": "plan-gemini-cli-SKILL.md",
+    "json": "plan-gemini-cli-skill.json",
+    "assembly": "assembly.json"
+  }
+}

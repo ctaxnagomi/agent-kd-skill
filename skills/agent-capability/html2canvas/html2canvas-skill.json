@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "html2canvas",
+  "title": "html2canvas",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Pixel screenshot capability using html2canvas. Renders the live DOM to a canvas and exports it as an image. Use when a true pixel-accurate screenshot of a complex rendered page is required — not for archiving, text preservation, or editing.",
+  "frontmatter": {
+    "name": "html2canvas",
+    "description": "Pixel screenshot capability using html2canvas. Renders the live DOM to a canvas and exports it as an image. Use when a true pixel-accurate screenshot of a complex rendered page is required — not for archiving, text preservation, or editing."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "html2canvas.md",
+    "json": "html2canvas-skill.json",
+    "assembly": "assembly.json"
+  }
+}

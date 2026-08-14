@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-plan-claudecode",
+  "title": "AGENT PLAN · Claude Code",
+  "role": "plan",
+  "roleCode": "AGENT PLAN",
+  "platform": "claudecode",
+  "platformName": "Claude Code",
+  "description": "Plan-first agent skill for Claude Code. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests.",
+  "frontmatter": {
+    "name": "agent-plan-claudecode",
+    "description": "Plan-first agent skill for Claude Code. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests.",
+    "allowed-tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Bash",
+      "WebFetch"
+    ]
+  },
+  "install": [
+    {
+      "level": "personal",
+      "path": "~/.claude/skills/agent-plan-claudecode/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".claude/skills/agent-plan-claudecode/SKILL.md"
+    }
+  ],
+  "invoke": "Press \"#\" and pick the skill, or let it auto-load when your prompt matches the description.",
+  "files": {
+    "md": "plan-claudecode-SKILL.md",
+    "json": "plan-claudecode-skill.json",
+    "assembly": "assembly.json"
+  }
+}

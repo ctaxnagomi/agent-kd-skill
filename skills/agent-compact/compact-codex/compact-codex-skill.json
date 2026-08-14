@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-compact-codex",
+  "title": "AGENT COMPACT · Codex CLI",
+  "role": "compact",
+  "roleCode": "AGENT COMPACT",
+  "platform": "codex",
+  "platformName": "Codex CLI",
+  "description": "Compact, token-efficient agent skill for OpenAI Codex CLI. Minimal output, fast targeted edits, low context burn for subagents and long sessions.",
+  "frontmatter": {
+    "name": "agent-compact-codex",
+    "description": "Compact, token-efficient agent skill for OpenAI Codex CLI. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.codex/skills/agent-compact-codex/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".codex/skills/agent-compact-codex/SKILL.md"
+    }
+  ],
+  "invoke": "Auto-loads by description; force it with $<skill-name>.",
+  "files": {
+    "md": "compact-codex-SKILL.md",
+    "json": "compact-codex-skill.json",
+    "assembly": "assembly.json"
+  }
+}

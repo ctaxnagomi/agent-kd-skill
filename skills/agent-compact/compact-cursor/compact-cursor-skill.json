@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-compact-cursor",
+  "title": "AGENT COMPACT · Cursor",
+  "role": "compact",
+  "roleCode": "AGENT COMPACT",
+  "platform": "cursor",
+  "platformName": "Cursor",
+  "description": "Compact, token-efficient agent skill for Cursor. Minimal output, fast targeted edits, low context burn for subagents and long sessions.",
+  "frontmatter": {
+    "name": "agent-compact-cursor",
+    "description": "Compact, token-efficient agent skill for Cursor. Minimal output, fast targeted edits, low context burn for subagents and long sessions."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.cursor/skills/agent-compact-cursor/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".cursor/skills/agent-compact-cursor/SKILL.md"
+    }
+  ],
+  "invoke": "Type @skill-name or /skill-name, or let Cursor auto-route by description.",
+  "files": {
+    "md": "compact-cursor-SKILL.md",
+    "json": "compact-cursor-skill.json",
+    "assembly": "assembly.json"
+  }
+}

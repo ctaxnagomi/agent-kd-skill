@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-plan-cursor",
+  "title": "AGENT PLAN · Cursor",
+  "role": "plan",
+  "roleCode": "AGENT PLAN",
+  "platform": "cursor",
+  "platformName": "Cursor",
+  "description": "Plan-first agent skill for Cursor. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests.",
+  "frontmatter": {
+    "name": "agent-plan-cursor",
+    "description": "Plan-first agent skill for Cursor. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.cursor/skills/agent-plan-cursor/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".cursor/skills/agent-plan-cursor/SKILL.md"
+    }
+  ],
+  "invoke": "Type @skill-name or /skill-name, or let Cursor auto-route by description.",
+  "files": {
+    "md": "plan-cursor-SKILL.md",
+    "json": "plan-cursor-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "cut-cost-token",
+  "title": "Cut-Cost Token",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Token and cost optimization for agent sessions. Reduce context usage during browser/web tasks with grep-before-read, batched run calls, targeted evaluate, and signal-based waits. Trigger keywords: cut cost, save tokens, token usage, cheaper, reduce context.",
+  "frontmatter": {
+    "name": "cut-cost-token",
+    "description": "Token and cost optimization for agent sessions. Reduce context usage during browser/web tasks with grep-before-read, batched run calls, targeted evaluate, and signal-based waits. Trigger keywords: cut cost, save tokens, token usage, cheaper, reduce context."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "cut-cost-token.md",
+    "json": "cut-cost-token-skill.json",
+    "assembly": "assembly.json"
+  }
+}

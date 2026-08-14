@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "agent-build-gemini-cli",
+  "title": "AGENT BUILD · Gemini CLI",
+  "role": "build",
+  "roleCode": "AGENT BUILD",
+  "platform": "gemini-cli",
+  "description": "Implementation agent skill for Gemini CLI. Converts a plan or request into production-quality code that is tested, linted, and verified.",
+  "files": {
+    "md": "build-gemini-cli-SKILL.md",
+    "json": "build-gemini-cli-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.gemini/skills/agent-build-gemini-cli/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".gemini/skills/agent-build-gemini-cli/SKILL.md"
+    }
+  ],
+  "invoke": "Activated through the activate_skill tool after a consent prompt."
+}

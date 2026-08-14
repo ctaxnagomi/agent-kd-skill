@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "agent-build-opencode",
+  "title": "AGENT BUILD · opencode",
+  "role": "build",
+  "roleCode": "AGENT BUILD",
+  "platform": "opencode",
+  "description": "Implementation agent skill for opencode. Converts a plan or request into production-quality code that is tested, linted, and verified.",
+  "files": {
+    "md": "build-opencode-SKILL.md",
+    "json": "build-opencode-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "project",
+      "path": ".opencode/skills/agent-build-opencode/SKILL.md"
+    },
+    {
+      "level": "global",
+      "path": "~/.config/opencode/skills/agent-build-opencode/SKILL.md"
+    }
+  ],
+  "invoke": "The native `skill` tool loads it on demand by description; also exposed as a slash command."
+}

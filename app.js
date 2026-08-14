@@ -1,0 +1,689 @@
+/* AGENT KD SKILL — catalog app.
+   Loaded after data/skills.js (window.SKILLS_CONTENT) and zip.js (window.makeZip). */
+(function () {
+  "use strict";
+
+  /* ---------------- data ---------------- */
+
+  var ROLES = [
+    { id: "plan", code: "AGENT PLAN", accent: "plan" },
+    { id: "build", code: "AGENT BUILD", accent: "build" },
+    { id: "compact", code: "AGENT COMPACT", accent: "compact" },
+    { id: "capability", code: "AGENT CAPABILITY", accent: "capability" }
+  ];
+
+  var PLATFORMS = [
+    {
+      id: "claudecode",
+      name: "Claude Code",
+      vendor: "Anthropic",
+      short: "CC",
+      install: [
+        { level: "personal", path: "~/.claude/skills/<name>/SKILL.md" },
+        { level: "project", path: ".claude/skills/<name>/SKILL.md" }
+      ],
+      fm: ["name", "description", "allowed-tools", "disable-model-invocation", "paths", "model", "effort"]
+    },
+    {
+      id: "opencode",
+      name: "opencode",
+      vendor: "SST",
+      short: "OC",
+      install: [
+        { level: "project", path: ".opencode/skills/<name>/SKILL.md" },
+        { level: "global", path: "~/.config/opencode/skills/<name>/SKILL.md" }
+      ],
+      fm: ["name", "description", "license", "compatibility", "metadata", "agent"]
+    },
+    {
+      id: "codex",
+      name: "Codex CLI",
+      vendor: "OpenAI",
+      short: "CX",
+      install: [
+        { level: "user", path: "~/.codex/skills/<name>/SKILL.md" },
+        { level: "project", path: ".codex/skills/<name>/SKILL.md" }
+      ],
+      fm: ["name", "description", "license", "compatibility", "metadata", "allowed-tools (experimental)"]
+    },
+    {
+      id: "cursor",
+      name: "Cursor",
+      vendor: "Anysphere",
+      short: "CR",
+      install: [
+        { level: "user", path: "~/.cursor/skills/<name>/SKILL.md" },
+        { level: "project", path: ".cursor/skills/<name>/SKILL.md" }
+      ],
+      fm: ["name", "description", "paths", "globs", "disable-model-invocation"]
+    },
+    {
+      id: "gemini-cli",
+      name: "Gemini CLI",
+      vendor: "Google",
+      short: "GC",
+      install: [
+        { level: "user", path: "~/.gemini/skills/<name>/SKILL.md" },
+        { level: "project", path: ".gemini/skills/<name>/SKILL.md" }
+      ],
+      fm: ["name", "description"]
+    }
+  ];
+
+  var SKILLS = [
+    { id: "plan-claudecode", role: "plan", platform: "claudecode", file: "agent-plan/plan-claudecode/plan-claudecode-SKILL.md" },
+    { id: "plan-opencode", role: "plan", platform: "opencode", file: "agent-plan/plan-opencode/plan-opencode-SKILL.md" },
+    { id: "plan-codex", role: "plan", platform: "codex", file: "agent-plan/plan-codex/plan-codex-SKILL.md" },
+    { id: "plan-cursor", role: "plan", platform: "cursor", file: "agent-plan/plan-cursor/plan-cursor-SKILL.md" },
+    { id: "plan-gemini-cli", role: "plan", platform: "gemini-cli", file: "agent-plan/plan-gemini-cli/plan-gemini-cli-SKILL.md" },
+    { id: "build-claudecode", role: "build", platform: "claudecode", file: "agent-build/build-claudecode/build-claudecode-SKILL.md" },
+    { id: "build-opencode", role: "build", platform: "opencode", file: "agent-build/build-opencode/build-opencode-SKILL.md" },
+    { id: "build-codex", role: "build", platform: "codex", file: "agent-build/build-codex/build-codex-SKILL.md" },
+    { id: "build-cursor", role: "build", platform: "cursor", file: "agent-build/build-cursor/build-cursor-SKILL.md" },
+    { id: "build-gemini-cli", role: "build", platform: "gemini-cli", file: "agent-build/build-gemini-cli/build-gemini-cli-SKILL.md" },
+    { id: "compact-claudecode", role: "compact", platform: "claudecode", file: "agent-compact/compact-claudecode/compact-claudecode-SKILL.md" },
+    { id: "compact-opencode", role: "compact", platform: "opencode", file: "agent-compact/compact-opencode/compact-opencode-SKILL.md" },
+    { id: "compact-codex", role: "compact", platform: "codex", file: "agent-compact/compact-codex/compact-codex-SKILL.md" },
+    { id: "compact-cursor", role: "compact", platform: "cursor", file: "agent-compact/compact-cursor/compact-cursor-SKILL.md" },
+    { id: "compact-gemini-cli", role: "compact", platform: "gemini-cli", file: "agent-compact/compact-gemini-cli/compact-gemini-cli-SKILL.md" },
+    { id: "cap-design", role: "capability", platform: null, file: "agent-capability/design/design.md", title: "Design" },
+    { id: "cap-frontend-specialist", role: "capability", platform: null, file: "agent-capability/frontend-specialist/frontend-specialist.md", title: "Frontend Specialist" },
+    { id: "cap-search", role: "capability", platform: null, file: "agent-capability/search/search.md", title: "Search" },
+    { id: "cap-skill", role: "capability", platform: null, file: "agent-capability/skill/skill.md", title: "Skill Authoring" },
+    { id: "cap-cut-cost-token", role: "capability", platform: null, file: "agent-capability/cut-cost-token/cut-cost-token.md", title: "Cut-Cost Token" },
+    { id: "cap-dgui-snapdom", role: "capability", platform: null, file: "agent-capability/dgui-emitter-snapDOM/dgui-emitter-snapDOM.md", title: "DGUI Emitter · snapDOM" },
+    { id: "cap-html2canvas", role: "capability", platform: null, file: "agent-capability/html2canvas/html2canvas.md", title: "html2canvas" }
+  ];
+
+  /* ---------------- i18n ---------------- */
+
+  var I18N = {
+    en: {
+      tagline: "A gallery of SKILL.md variants for AI coding agents. Browse by agent role, filter by platform, preview, and download.",
+      eyebrow: "SKILL.MD · GALLERY",
+      digestEyebrow: "MODULES",
+      digestTitle: "Operational digest",
+      digestPlanTitle: "Automated Planning",
+      digestPlanDesc: "Research, scope, and sequence work before any code is written.",
+      digestBuildTitle: "Guided Implementation",
+      digestBuildDesc: "Turn plans into verified, production-grade code.",
+      digestCompactTitle: "Compact Execution",
+      digestCompactDesc: "Minimal token footprint for fast, targeted subagent work.",
+      digestCapabilityTitle: "Agent Capabilities",
+      digestCapabilityDesc: "Cross-platform skill files: design, search, cost-cutting, and page capture methods.",
+      digestVariantLabel: "variants",
+      statSkills: "skills",
+      statRoles: "roles",
+      statPlatforms: "platforms",
+      filterByRole: "Agent role",
+      filterByPlatform: "Platform",
+      allRoles: "All roles",
+      allPlatforms: "All",
+      universal: "Universal",
+      searchPlaceholder: "Search skills…",
+      downloadAll: "Download all (.zip)",
+      download: "Download",
+      preview: "Preview",
+      copy: "Copy",
+      copied: "Copied ✓",
+      close: "Close",
+      noResults: "No skills match your filters.",
+      platformsTitle: "Platform Compatibility",
+      standardsNote: "All variants follow the open Agent Skills standard (SKILL.md + name/description frontmatter), so every file also runs in any compatible agent that reads the same format.",
+      install: "Install",
+      frontmatter: "Frontmatter",
+      invocation: "Invocation",
+      levelPersonal: "Personal",
+      levelProject: "Project",
+      levelGlobal: "Global",
+      levelUser: "User",
+      footer: "AGENT KD SKILL — a static gallery of SKILL.md variants. Drop new files under /skills and run node scripts/build-content.mjs to regenerate.",
+      roleDescPlan: "Plan-first skills: research, scope, and sequence work before any code is written.",
+      roleDescBuild: "Implementation skills: convert plans into production-quality, verified code.",
+      roleDescCompact: "Compact skills: a minimal token footprint for fast, targeted subagent work.",
+      roleDescCapability: "Platform-agnostic capabilities: design, search, cost-cutting, and page capture skills.",
+      platformDescClaudecode: "Anthropic's terminal coding agent. Skills auto-load by description; invoke with #.",
+      platformDescOpencode: "Open-source terminal agent with a native skill tool; loads by description.",
+      platformDescCodex: "OpenAI's terminal agent. Skills follow the open standard; $skill-name forces invocation.",
+      platformDescCursor: "Code-first IDE agent. Use @skill / /skill or let it auto-route by description.",
+      platformDescGeminiCli: "Google's terminal agent. Skills activate through activate_skill with a consent prompt.",
+      platformInvokeClaudecode: 'Press "#" and pick the skill, or let it auto-load when your prompt matches the description.',
+      platformInvokeOpencode: "The native `skill` tool loads it on demand by description; also exposed as a slash command.",
+      platformInvokeCodex: "Auto-loads by description; force it with $<skill-name>.",
+      platformInvokeCursor: "Type @skill-name or /skill-name, or let Cursor auto-route by description.",
+      platformInvokeGeminiCli: "Activated through the activate_skill tool after a consent prompt.",
+      platformNoteClaudecode: "The same file is read by other open-format agents; keep a personal copy under ~/.claude/skills/.",
+      platformNoteOpencode: "Also discovers .claude/skills/ and .agents/skills/, so one file works in opencode and Claude Code.",
+      platformNoteCodex: ".agents/skills/ is the project-level alias if you prefer a shared standard layout.",
+      platformNoteCursor: "The folder name must match name: for discovery.",
+      platformNoteGeminiCli: ".agents/skills/ works as an alias for the same files.",
+      langToggle: "中文"
+    },
+    zh: {
+      tagline: "面向 AI 编码代理的 SKILL.md 变体图鉴。按代理角色浏览、按平台筛选，支持预览与下载。",
+      eyebrow: "SKILL.MD · 图鉴",
+      digestEyebrow: "模块",
+      digestTitle: "运行概览",
+      digestPlanTitle: "自动化规划",
+      digestPlanDesc: "在编写任何代码之前完成调研、范围界定与任务排序。",
+      digestBuildTitle: "引导式实现",
+      digestBuildDesc: "将计划转化为经过测试、校验的生产级代码。",
+      digestCompactTitle: "紧凑执行",
+      digestCompactDesc: "以极低 token 占用完成快速、精准的子代理任务。",
+      digestCapabilityTitle: "代理能力",
+      digestCapabilityDesc: "跨平台技能文件：设计、搜索、成本控制与页面捕获方法。",
+      digestVariantLabel: "个变体",
+      statSkills: "个技能",
+      statRoles: "个角色",
+      statPlatforms: "个平台",
+      filterByRole: "代理角色",
+      filterByPlatform: "平台",
+      allRoles: "全部角色",
+      allPlatforms: "全部",
+      universal: "通用",
+      searchPlaceholder: "搜索技能…",
+      downloadAll: "下载全部 (.zip)",
+      download: "下载",
+      preview: "预览",
+      copy: "复制",
+      copied: "已复制 ✓",
+      close: "关闭",
+      noResults: "没有匹配的技能。",
+      platformsTitle: "平台兼容性",
+      standardsNote: "所有变体均遵循开放 Agent Skills 标准（SKILL.md + name/description 前置元数据），任何兼容该格式的代理都可直接使用。",
+      install: "安装路径",
+      frontmatter: "Frontmatter",
+      invocation: "调用方式",
+      levelPersonal: "个人级",
+      levelProject: "项目级",
+      levelGlobal: "全局级",
+      levelUser: "用户级",
+      footer: "AGENT KD SKILL —— SKILL.md 变体静态图鉴。在 /skills 下添加文件后运行 node scripts/build-content.mjs 重新生成。",
+      roleDescPlan: "计划优先技能：在写任何代码之前完成调研、范围界定与任务排序。",
+      roleDescBuild: "实现技能：把计划转化为经过测试、校验的生产级代码。",
+      roleDescCompact: "紧凑技能：极低 token 占用，适合快速、精准的子代理任务。",
+      roleDescCapability: "跨平台能力：设计、搜索、成本控制与页面捕获技能。",
+      platformDescClaudecode: "Anthropic 终端编码代理。按描述自动加载，通过 # 调用。",
+      platformDescOpencode: "开源终端代理，内置 skill 工具，按描述加载。",
+      platformDescCodex: "OpenAI 终端代理。遵循开放标准，$skill-name 强制调用。",
+      platformDescCursor: "IDE 编码代理。可用 @skill / /skill，或按描述自动路由。",
+      platformDescGeminiCli: "Google 终端代理。通过 activate_skill 激活（需确认）。",
+      platformInvokeClaudecode: '按 "#" 选择技能，或由 Claude 在描述匹配时自动加载。',
+      platformInvokeOpencode: "原生 `skill` 工具按描述按需加载，也可作为斜杠命令使用。",
+      platformInvokeCodex: "按描述自动加载；使用 $<skill-name> 强制调用。",
+      platformInvokeCursor: "输入 @skill-name 或 /skill-name，或由 Cursor 按描述自动路由。",
+      platformInvokeGeminiCli: "通过 activate_skill 工具激活，激活前需确认。",
+      platformNoteClaudecode: "其他开放格式代理同样会读取该文件；个人副本位于 ~/.claude/skills/。",
+      platformNoteOpencode: "同时发现 .claude/skills/ 与 .agents/skills/，一个文件即可用于 opencode 与 Claude Code。",
+      platformNoteCodex: "若希望采用通用标准目录，项目级别名可使用 .agents/skills/。",
+      platformNoteCursor: "目录名必须与 name: 一致才能被发现。",
+      platformNoteGeminiCli: ".agents/skills/ 可作同一文件的别名目录。",
+      langToggle: "EN"
+    }
+  };
+
+  /* ---------------- state ---------------- */
+
+  var lang = localStorage.getItem("agks-lang") === "zh" ? "zh" : "en";
+  var state = { role: "all", platform: "all", search: "" };
+  var modalSkillId = null;
+
+  function t(key) {
+    return I18N[lang][key] !== undefined ? I18N[lang][key] : key;
+  }
+
+  function roleById(id) {
+    for (var i = 0; i < ROLES.length; i++) if (ROLES[i].id === id) return ROLES[i];
+    return null;
+  }
+
+  function platformById(id) {
+    for (var i = 0; i < PLATFORMS.length; i++) if (PLATFORMS[i].id === id) return PLATFORMS[i];
+    return null;
+  }
+
+  function skillById(id) {
+    for (var i = 0; i < SKILLS.length; i++) if (SKILLS[i].id === id) return SKILLS[i];
+    return null;
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function cardDesc(skill) {
+    if (skill.platform === null) {
+      return lang === "zh"
+        ? "跨平台代理能力，适用于所有 Agent。"
+        : "Cross-platform agent capability, works in any agent.";
+    }
+    var p = platformById(skill.platform);
+    var r = roleById(skill.role);
+    return lang === "zh"
+      ? r.code + " 变体，适用于 " + p.name + "。"
+      : r.code + " variant for " + p.name + ".";
+  }
+
+  function skillMatches(skill) {
+    if (state.role !== "all" && skill.role !== state.role) return false;
+    if (state.platform !== "all" && skill.platform !== null && skill.platform !== state.platform) return false;
+    if (state.search) {
+      var q = state.search.toLowerCase();
+      var platName = skill.platform === null ? t("universal") : platformById(skill.platform).name;
+      var hay = (skill.id + " " + cardDesc(skill) + " " + platName + " " + (skill.title || "") + " " + roleById(skill.role).code).toLowerCase();
+      if (hay.indexOf(q) === -1) return false;
+    }
+    return true;
+  }
+
+  function getContent(skill) {
+    return new Promise(function (resolve, reject) {
+      if (window.SKILLS_CONTENT && window.SKILLS_CONTENT[skill.file]) {
+        resolve(window.SKILLS_CONTENT[skill.file]);
+        return;
+      }
+      fetch("skills/" + skill.file)
+        .then(function (r) {
+          return r.ok ? r.text() : Promise.reject(new Error("HTTP " + r.status));
+        })
+        .then(resolve)
+        .catch(reject);
+    });
+  }
+
+  function basename(file) {
+    return file.split("/").pop();
+  }
+
+  // Every skill is a per-skill folder with 3 files: hybrid md + <skill>-skill.json + assembly.json
+  function skillFiles(skill) {
+    var dir = skill.file.split("/").slice(0, -1).join("/");
+    var base = basename(skill.file).replace(/\.md$/, "").replace(/-SKILL$/, "");
+    return {
+      md: skill.file,
+      json: dir + "/" + base + "-skill.json",
+      assembly: dir + "/assembly.json"
+    };
+  }
+
+  /* ---------------- rendering ---------------- */
+
+  var revealObserver = null;
+  var revealWired = false;
+
+  function revealInView() {
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var nodes = document.querySelectorAll(".reveal:not(.in)");
+    for (var i = 0; i < nodes.length; i++) {
+      var r = nodes[i].getBoundingClientRect();
+      if (r.top < vh * 0.94 && r.bottom > 0) nodes[i].classList.add("in");
+    }
+  }
+
+  function initReveal() {
+    if ("IntersectionObserver" in window) {
+      if (revealObserver) revealObserver.disconnect();
+      revealObserver = new IntersectionObserver(function (entries) {
+        for (var e = 0; e < entries.length; e++) {
+          if (entries[e].isIntersecting) {
+            entries[e].target.classList.add("in");
+            revealObserver.unobserve(entries[e].target);
+          }
+        }
+      }, { threshold: 0.08 });
+      var nodes = document.querySelectorAll(".reveal:not(.in)");
+      for (var i = 0; i < nodes.length; i++) revealObserver.observe(nodes[i]);
+    }
+    revealInView();
+  }
+
+  function wireReveal() {
+    if (revealWired) return;
+    revealWired = true;
+    window.addEventListener("scroll", revealInView, { passive: true });
+    document.addEventListener("scroll", revealInView, true);
+    var ticks = 0;
+    var timer = setInterval(function () {
+      ticks++;
+      if (ticks > 10) {
+        clearInterval(timer);
+        return;
+      }
+      revealInView();
+    }, 300);
+  }
+
+  function setI18nNodes() {
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      nodes[i].textContent = t(nodes[i].getAttribute("data-i18n"));
+    }
+    document.querySelector("html").setAttribute("lang", lang);
+    document.getElementById("search").placeholder = t("searchPlaceholder");
+    document.getElementById("langToggle").textContent = t("langToggle");
+    document.title = lang === "zh" ? "AGENT KD SKILL —— SKILL.md 图鉴" : "AGENT KD SKILL — SKILL.md Gallery";
+    renderStats();
+  }
+
+  function renderStats() {
+    var el = document.getElementById("stats");
+    el.innerHTML =
+      '<div class="stat"><b>' + SKILLS.length + "</b><span>" + t("statSkills") + "</span></div>" +
+      '<div class="stat"><b>' + ROLES.length + "</b><span>" + t("statRoles") + "</span></div>" +
+      '<div class="stat"><b>' + PLATFORMS.length + "</b><span>" + t("statPlatforms") + "</span></div>";
+  }
+
+  function renderDigest() {
+    var nodes = document.querySelectorAll("[data-count]");
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i];
+      var role = el.getAttribute("data-count");
+      var n = 0;
+      for (var j = 0; j < SKILLS.length; j++) if (SKILLS[j].role === role) n++;
+      el.textContent = n;
+    }
+  }
+
+  function renderPills() {
+    var roleEl = document.getElementById("rolePills");
+    var platEl = document.getElementById("platformPills");
+    var html = '<button class="pill" data-role="all" data-active="' + (state.role === "all") + '">' + escapeHtml(t("allRoles")) + "</button>";
+    for (var i = 0; i < ROLES.length; i++) {
+      var r = ROLES[i];
+      html += '<button class="pill pill-' + r.accent + '" data-role="' + r.id + '" data-active="' + (state.role === r.id) + '">' + r.code + "</button>";
+    }
+    roleEl.innerHTML = html;
+
+    html = '<button class="pill" data-platform="all" data-active="' + (state.platform === "all") + '">' + escapeHtml(t("allPlatforms")) + "</button>";
+    for (var j = 0; j < PLATFORMS.length; j++) {
+      var p = PLATFORMS[j];
+      html += '<button class="pill" data-platform="' + p.id + '" data-active="' + (state.platform === p.id) + '">' + escapeHtml(p.name) + "</button>";
+    }
+    platEl.innerHTML = html;
+  }
+
+  function renderGrid() {
+    var el = document.getElementById("grid");
+    var out = "";
+    var any = false;
+
+    for (var i = 0; i < ROLES.length; i++) {
+      var role = ROLES[i];
+      var cards = SKILLS.filter(function (s) {
+        return s.role === role.id && skillMatches(s);
+      });
+      if (!cards.length) continue;
+      any = true;
+      out +=
+        '<section class="role-section reveal">' +
+        '<div class="role-head">' +
+        '<span class="role-chip role-chip-' + role.accent + '">' + role.code + "</span>" +
+        '<p class="role-desc">' + escapeHtml(t("roleDesc" + role.id.charAt(0).toUpperCase() + role.id.slice(1))) + "</p>" +
+        "</div>" +
+        '<div class="role-grid">';
+      for (var c = 0; c < cards.length; c++) {
+        out += cardHtml(cards[c], c);
+      }
+      out += "</div></section>";
+    }
+
+    if (!any) {
+      out = '<p class="empty">' + escapeHtml(t("noResults")) + "</p>";
+    }
+    el.innerHTML = out;
+    initReveal();
+  }
+
+  function cardHtml(skill, idx) {
+    var r = roleById(skill.role);
+    var p = skill.platform === null ? null : platformById(skill.platform);
+    var title = p ? r.code + " · " + escapeHtml(p.name) : escapeHtml(skill.title);
+    var platBadge = p
+      ? '<span class="badge badge-platform">' + escapeHtml(p.name) + "</span>"
+      : '<span class="badge badge-platform">' + escapeHtml(t("universal")) + "</span>";
+    return (
+      '<article class="skill-card reveal" style="--i:' + idx + '">' +
+      '<div class="card-top">' +
+      '<span class="badge badge-' + r.accent + '">' + r.code + "</span>" +
+      platBadge +
+      "</div>" +
+      '<h3 class="card-title">' + title + "</h3>" +
+      '<p class="card-desc">' + escapeHtml(cardDesc(skill)) + "</p>" +
+      '<code class="card-file">' + escapeHtml(basename(skill.file)) + "</code>" +
+      '<div class="card-actions">' +
+      '<button class="btn" type="button" data-action="preview" data-id="' + skill.id + '">' + escapeHtml(t("preview")) + "</button>" +
+      '<button class="btn btn-primary" type="button" data-action="download" data-id="' + skill.id + '">' + escapeHtml(t("download")) + "</button>" +
+      "</div>" +
+      "</article>"
+    );
+  }
+
+  function renderPlatforms() {
+    var el = document.getElementById("platformsGrid");
+    var out = "";
+    for (var i = 0; i < PLATFORMS.length; i++) {
+      var p = PLATFORMS[i];
+      var paths = "";
+      for (var k = 0; k < p.install.length; k++) {
+        var item = p.install[k];
+        paths +=
+          "<div class=\"install-path\"><code>" + escapeHtml(item.path) + "</code><span>" +
+          escapeHtml(t("level" + item.level.charAt(0).toUpperCase() + item.level.slice(1))) +
+          "</span></div>";
+      }
+      out +=
+        '<article class="platform-card reveal" style="--i:' + i + '">' +
+        '<div class="plat-head">' +
+        '<span class="plat-icon">' + p.short + "</span>" +
+        "<div>" +
+        "<h3>" + escapeHtml(p.name) + "</h3>" +
+        '<span class="plat-vendor">' + escapeHtml(p.vendor) + "</span>" +
+        "</div>" +
+        "</div>" +
+        '<p class="plat-desc">' + escapeHtml(t("platformDesc" + p.id.charAt(0).toUpperCase() + p.id.slice(1))) + "</p>" +
+        "<dl>" +
+        "<dt>" + escapeHtml(t("install")) + "</dt>" +
+        "<dd>" + paths + "</dd>" +
+        "<dt>" + escapeHtml(t("frontmatter")) + "</dt>" +
+        "<dd><code>" + escapeHtml(p.fm.join(", ")) + "</code></dd>" +
+        "<dt>" + escapeHtml(t("invocation")) + "</dt>" +
+        "<dd>" + escapeHtml(t("platformInvoke" + p.id.charAt(0).toUpperCase() + p.id.slice(1))) + "</dd>" +
+        "</dl>" +
+        '<p class="plat-note">' + escapeHtml(t("platformNote" + p.id.charAt(0).toUpperCase() + p.id.slice(1))) + "</p>" +
+        "</article>";
+    }
+    el.innerHTML = out;
+    initReveal();
+  }
+
+  function render() {
+    setI18nNodes();
+    renderDigest();
+    renderPills();
+    renderGrid();
+    renderPlatforms();
+    initReveal();
+  }
+
+  /* ---------------- actions ---------------- */
+
+  function downloadSingle(skill) {
+    getContent(skill)
+      .then(function (text) {
+        downloadBlob(new Blob([text], { type: "text/markdown" }), basename(skill.file));
+      })
+      .catch(function () {
+        alert("Could not load " + skill.file);
+      });
+  }
+
+  function buildInstallGuide() {
+    var lines = [];
+    lines.push("# AGENT KD SKILL — install guide");
+    lines.push("");
+    lines.push("Every skill ships as a 3-file bundle in its own folder:");
+    lines.push("- `<name>-SKILL.md` — hybrid markdown (markdown body, JSON frontmatter).");
+    lines.push("- `<name>-skill.json` — machine-readable skill data (schema, role, platform, frontmatter, install, invoke).");
+    lines.push("- `assembly.json` — assembly manifest combining the md + json (name, role, platform, files).");
+    lines.push("");
+    lines.push("For the Agent Skills open standard, install the SKILL.md (or the hybrid markdown file) at the path your platform expects, with frontmatter `name` and `description`.");
+    lines.push("");
+    for (var i = 0; i < PLATFORMS.length; i++) {
+      var p = PLATFORMS[i];
+      lines.push("## " + p.name + " (" + p.vendor + ")");
+      for (var k = 0; k < p.install.length; k++) {
+        var item = p.install[k];
+        lines.push("- " + item.level + ": " + item.path.replace("<name>", "your-skill-folder"));
+      }
+      lines.push("");
+    }
+    lines.push("## Install steps");
+    lines.push("1. Pick a variant folder, e.g. skills/agent-plan/plan-opencode/.");
+    lines.push("2. Create the matching folder under your platform's skills directory.");
+    lines.push("3. Copy the SKILL.md file into that folder (folder name = skill name).");
+    lines.push("4. Keep <name>-skill.json and assembly.json alongside it for tooling/portability.");
+    lines.push("5. Restart the agent session, then trigger it by description or the platform's invocation shortcut.");
+    return lines.join("\n");
+  }
+
+  function downloadAll() {
+    var entries = [];
+    var failed = false;
+    for (var i = 0; i < SKILLS.length; i++) {
+      var skill = SKILLS[i];
+      var files = skillFiles(skill);
+      entries.push({ name: "skills/" + files.json, text: (window.SKILLS_CONTENT && window.SKILLS_CONTENT[files.json]) || "" });
+      entries.push({ name: "skills/" + files.assembly, text: (window.SKILLS_CONTENT && window.SKILLS_CONTENT[files.assembly]) || "" });
+      if (window.SKILLS_CONTENT && window.SKILLS_CONTENT[skill.file]) {
+        entries.push({ name: "skills/" + skill.file, text: window.SKILLS_CONTENT[skill.file] });
+      } else {
+        failed = true;
+        entries.push({ name: "skills/" + skill.file, text: "" });
+      }
+    }
+    entries.unshift({ name: "INSTALL.md", text: buildInstallGuide() });
+    if (failed) {
+      console.warn("AGENT KD SKILL: some embedded contents were missing (window.SKILLS_CONTENT). Run node scripts/build-content.mjs.");
+    }
+    downloadBlob(makeZip(entries), "agent-kd-skill-bundle.zip");
+  }
+
+  function openPreview(skill) {
+    getContent(skill)
+      .then(function (text) {
+        modalSkillId = skill.id;
+        document.getElementById("modalTitle").textContent = t("preview") + " · " + basename(skill.file);
+        document.getElementById("modalCode").textContent = text;
+        document.getElementById("modal").hidden = false;
+      })
+      .catch(function () {
+        alert("Could not load " + skill.file);
+      });
+  }
+
+  function closePreview() {
+    document.getElementById("modal").hidden = true;
+    modalSkillId = null;
+  }
+
+  function copyModal() {
+    var code = document.getElementById("modalCode").textContent;
+    var btn = document.getElementById("modalCopy");
+    function done() {
+      btn.textContent = t("copied");
+      setTimeout(function () {
+        btn.textContent = t("copy");
+      }, 1200);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(done, function () {
+        fallbackCopy(code);
+        done();
+      });
+    } else {
+      fallbackCopy(code);
+      done();
+    }
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+    } catch (e) {
+      /* ignore */
+    }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------------- events ---------------- */
+
+  function bindEvents() {
+    document.getElementById("langToggle").addEventListener("click", function () {
+      lang = lang === "zh" ? "en" : "zh";
+      localStorage.setItem("agks-lang", lang);
+      render();
+    });
+
+    document.getElementById("search").addEventListener("input", function (e) {
+      state.search = e.target.value.trim();
+      renderGrid();
+    });
+
+    document.getElementById("rolePills").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-role]");
+      if (!b) return;
+      state.role = b.getAttribute("data-role");
+      renderPills();
+      renderGrid();
+    });
+
+    document.getElementById("platformPills").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-platform]");
+      if (!b) return;
+      state.platform = b.getAttribute("data-platform");
+      renderPills();
+      renderGrid();
+    });
+
+    document.getElementById("grid").addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-action]");
+      if (!b) return;
+      var skill = skillById(b.getAttribute("data-id"));
+      if (!skill) return;
+      if (b.getAttribute("data-action") === "download") downloadSingle(skill);
+      else openPreview(skill);
+    });
+
+    document.getElementById("downloadAll").addEventListener("click", downloadAll);
+
+    document.getElementById("modalClose").addEventListener("click", closePreview);
+    document.getElementById("modalCopy").addEventListener("click", copyModal);
+    document.getElementById("modalDownload").addEventListener("click", function () {
+      if (!modalSkillId) return;
+      downloadSingle(skillById(modalSkillId));
+    });
+    document.getElementById("modal").addEventListener("click", function (e) {
+      if (e.target === this) closePreview();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !document.getElementById("modal").hidden) closePreview();
+    });
+  }
+
+  /* ---------------- init ---------------- */
+
+  render();
+  bindEvents();
+  wireReveal();
+})();

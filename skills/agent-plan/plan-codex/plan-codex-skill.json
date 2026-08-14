@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-plan-codex",
+  "title": "AGENT PLAN · Codex CLI",
+  "role": "plan",
+  "roleCode": "AGENT PLAN",
+  "platform": "codex",
+  "platformName": "Codex CLI",
+  "description": "Plan-first agent skill for OpenAI Codex CLI. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests.",
+  "frontmatter": {
+    "name": "agent-plan-codex",
+    "description": "Plan-first agent skill for OpenAI Codex CLI. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.codex/skills/agent-plan-codex/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".codex/skills/agent-plan-codex/SKILL.md"
+    }
+  ],
+  "invoke": "Auto-loads by description; force it with $<skill-name>.",
+  "files": {
+    "md": "plan-codex-SKILL.md",
+    "json": "plan-codex-skill.json",
+    "assembly": "assembly.json"
+  }
+}

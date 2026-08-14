@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "search",
+  "title": "Search",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "description": "Efficient search and research capability. Locate files, symbols, documentation, and web resources quickly using the right tools in the right order. Use for searching, researching, or finding anything.",
+  "files": {
+    "md": "search.md",
+    "json": "search-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-compact-claudecode",
+  "title": "AGENT COMPACT · Claude Code",
+  "role": "compact",
+  "roleCode": "AGENT COMPACT",
+  "platform": "claudecode",
+  "platformName": "Claude Code",
+  "description": "Compact, token-efficient agent skill for Claude Code. Minimal output, fast targeted edits, low context burn for subagents and long sessions.",
+  "frontmatter": {
+    "name": "agent-compact-claudecode",
+    "description": "Compact, token-efficient agent skill for Claude Code. Minimal output, fast targeted edits, low context burn for subagents and long sessions.",
+    "allowed-tools": [
+      "Read",
+      "Grep",
+      "Bash",
+      "Edit"
+    ]
+  },
+  "install": [
+    {
+      "level": "personal",
+      "path": "~/.claude/skills/agent-compact-claudecode/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".claude/skills/agent-compact-claudecode/SKILL.md"
+    }
+  ],
+  "invoke": "Press \"#\" and pick the skill, or let it auto-load when your prompt matches the description.",
+  "files": {
+    "md": "compact-claudecode-SKILL.md",
+    "json": "compact-claudecode-skill.json",
+    "assembly": "assembly.json"
+  }
+}

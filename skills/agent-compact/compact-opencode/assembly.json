@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "agent-compact-opencode",
+  "title": "AGENT COMPACT · opencode",
+  "role": "compact",
+  "roleCode": "AGENT COMPACT",
+  "platform": "opencode",
+  "description": "Compact, token-efficient agent skill for opencode. Minimal output, fast targeted edits, low context burn for subagents and long sessions.",
+  "files": {
+    "md": "compact-opencode-SKILL.md",
+    "json": "compact-opencode-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "project",
+      "path": ".opencode/skills/agent-compact-opencode/SKILL.md"
+    },
+    {
+      "level": "global",
+      "path": "~/.config/opencode/skills/agent-compact-opencode/SKILL.md"
+    }
+  ],
+  "invoke": "The native `skill` tool loads it on demand by description; also exposed as a slash command."
+}

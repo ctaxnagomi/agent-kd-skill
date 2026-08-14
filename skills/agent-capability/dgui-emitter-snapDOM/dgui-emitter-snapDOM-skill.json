@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "dgui-emitter-snapDOM",
+  "title": "DGUI Emitter · snapDOM",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Emit lightweight DOM snapshots of visited pages. Uses snapDOM — a direct DOM serialization — instead of html2canvas, converting modern heavy pages into old-school lightweight pages that keep text, links, and structure. Superior to html2canvas for archiving and re-rendering.",
+  "frontmatter": {
+    "name": "dgui-emitter-snapDOM",
+    "description": "Emit lightweight DOM snapshots of visited pages. Uses snapDOM — a direct DOM serialization — instead of html2canvas, converting modern heavy pages into old-school lightweight pages that keep text, links, and structure. Superior to html2canvas for archiving and re-rendering."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "dgui-emitter-snapDOM.md",
+    "json": "dgui-emitter-snapDOM-skill.json",
+    "assembly": "assembly.json"
+  }
+}

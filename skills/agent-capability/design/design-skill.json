@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "design",
+  "title": "Design",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "UI/UX design capability for agents. Produce cohesive design systems (tokens, typography, spacing, color, components), wireframes, and polished visual output in code. Use for design, theming, UI, or styling requests.",
+  "frontmatter": {
+    "name": "design",
+    "description": "UI/UX design capability for agents. Produce cohesive design systems (tokens, typography, spacing, color, components), wireframes, and polished visual output in code. Use for design, theming, UI, or styling requests."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "design.md",
+    "json": "design-skill.json",
+    "assembly": "assembly.json"
+  }
+}

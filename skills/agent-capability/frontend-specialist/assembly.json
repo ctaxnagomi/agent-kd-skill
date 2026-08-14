@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "frontend-specialist",
+  "title": "Frontend Specialist",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "description": "Frontend implementation capability. Build production-quality, accessible, responsive HTML/CSS/JS or framework UI from specs or designs. Use for frontend development, web pages, UI implementation, or styling.",
+  "files": {
+    "md": "frontend-specialist.md",
+    "json": "frontend-specialist-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match."
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-build-cursor",
+  "title": "AGENT BUILD · Cursor",
+  "role": "build",
+  "roleCode": "AGENT BUILD",
+  "platform": "cursor",
+  "platformName": "Cursor",
+  "description": "Implementation agent skill for Cursor. Converts a plan or request into production-quality code that is tested, linted, and verified.",
+  "frontmatter": {
+    "name": "agent-build-cursor",
+    "description": "Implementation agent skill for Cursor. Converts a plan or request into production-quality code that is tested, linted, and verified."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.cursor/skills/agent-build-cursor/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".cursor/skills/agent-build-cursor/SKILL.md"
+    }
+  ],
+  "invoke": "Type @skill-name or /skill-name, or let Cursor auto-route by description.",
+  "files": {
+    "md": "build-cursor-SKILL.md",
+    "json": "build-cursor-skill.json",
+    "assembly": "assembly.json"
+  }
+}

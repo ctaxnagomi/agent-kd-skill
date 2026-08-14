@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "skill",
+  "title": "Skill Authoring",
+  "role": "capability",
+  "roleCode": "AGENT CAPABILITY",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Meta-skill authoring capability. Write, structure, and validate SKILL.md files for AI agents, including YAML frontmatter, discoverability, and platform compatibility. Use for creating, editing, or reviewing agent skills.",
+  "frontmatter": {
+    "name": "skill",
+    "description": "Meta-skill authoring capability. Write, structure, and validate SKILL.md files for AI agents, including YAML frontmatter, discoverability, and platform compatibility. Use for creating, editing, or reviewing agent skills."
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Universal skill: load it in any compatible agent by description match.",
+  "files": {
+    "md": "skill.md",
+    "json": "skill-skill.json",
+    "assembly": "assembly.json"
+  }
+}

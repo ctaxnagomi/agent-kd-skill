@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-build-codex",
+  "title": "AGENT BUILD · Codex CLI",
+  "role": "build",
+  "roleCode": "AGENT BUILD",
+  "platform": "codex",
+  "platformName": "Codex CLI",
+  "description": "Implementation agent skill for OpenAI Codex CLI. Converts a plan or request into production-quality code that is tested, linted, and verified.",
+  "frontmatter": {
+    "name": "agent-build-codex",
+    "description": "Implementation agent skill for OpenAI Codex CLI. Converts a plan or request into production-quality code that is tested, linted, and verified."
+  },
+  "install": [
+    {
+      "level": "user",
+      "path": "~/.codex/skills/agent-build-codex/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".codex/skills/agent-build-codex/SKILL.md"
+    }
+  ],
+  "invoke": "Auto-loads by description; force it with $<skill-name>.",
+  "files": {
+    "md": "build-codex-SKILL.md",
+    "json": "build-codex-skill.json",
+    "assembly": "assembly.json"
+  }
+}

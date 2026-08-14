@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "agent-build-claudecode",
+  "title": "AGENT BUILD · Claude Code",
+  "role": "build",
+  "roleCode": "AGENT BUILD",
+  "platform": "claudecode",
+  "description": "Implementation agent skill for Claude Code. Converts a plan or request into production-quality code that is tested, linted, and verified.",
+  "files": {
+    "md": "build-claudecode-SKILL.md",
+    "json": "build-claudecode-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "personal",
+      "path": "~/.claude/skills/agent-build-claudecode/SKILL.md"
+    },
+    {
+      "level": "project",
+      "path": ".claude/skills/agent-build-claudecode/SKILL.md"
+    }
+  ],
+  "invoke": "Press \"#\" and pick the skill, or let it auto-load when your prompt matches the description."
+}
