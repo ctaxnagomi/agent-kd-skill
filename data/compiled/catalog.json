@@ -1,8 +1,8 @@
 {
   "$schema": "https://agentkd.skill/catalog-v1",
   "version": 1,
-  "generated": "2026-08-14T18:23:19.053Z",
-  "count": 69,
+  "generated": "2026-08-20T10:26:52.192Z",
+  "count": 70,
   "snapdom": {
     "drop": [
       "script",
@@ -560,6 +560,16 @@
       "platformName": null,
       "title": "AGENT PLAN · opencode",
       "description": "Plan-first agent skill for opencode. Turns a vague request into a researched, scoped, sequenced execution plan before any code is written. Use for planning, architecture, or task breakdown requests."
+    },
+    {
+      "id": "grill-me",
+      "name": "grill-me",
+      "role": "sub",
+      "roleCode": "AGENT SUB",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Grill Me",
+      "description": "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions 'grill me'."
     },
     {
       "id": "sub-budgeting",
