@@ -46,9 +46,7 @@
 
 html {
   scroll-behavior: smooth;
-  touch-action: pan-y;
   overflow-x: hidden;
-  overscroll-behavior-y: contain;
 }
 
 body {
@@ -60,7 +58,7 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   overflow-x: hidden;
-  overscroll-behavior: none;
+  overscroll-behavior-x: none;
   -webkit-font-smoothing: antialiased;
   animation: page-in 0.4s ease-out;
 }

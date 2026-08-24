@@ -930,6 +930,7 @@
 
   function initOverscrollGuard() {
     if (!("ontouchstart" in window)) return;
+    if (window.innerWidth > 768) return;
     var startY = 0;
     document.addEventListener("touchstart", function (e) {
       startY = e.touches[0].clientY;
