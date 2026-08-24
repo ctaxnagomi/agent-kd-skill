@@ -4,6 +4,18 @@ A gallery of **SKILL.md** variants for AI coding agents — organized by agent r
 
 Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor, and Gemini CLI.
 
+## What's new?
+
+- **Matt Peacock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
+- **Hero section** — "MATT PEACOCK SKILL MD is Here!" banner with toxic green accent glow.
+- **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
+- **Cassette-style sidebar** — Pixelated toxic green sidebar on desktop with 45% opacity hover. Slides out on hover, snaps back on leave.
+- **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
+- **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
+- **Viewport lock** — No horizontal drag/scroll, no rubber-band overscroll on mobile.
+- **Lazy loading** — Deferred scripts, lazy-loaded images, page fade-in transition.
+- **Bilingual UI** — English and Chinese interface.
+
 ## Why assembly.json matters
 
 Every skill folder is a self-contained unit of three files:
@@ -16,11 +28,14 @@ Every skill folder is a self-contained unit of three files:
 
 ## Features
 
-- **7 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, and Micro-agent Fleet.
+- **8 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, and **Custom Skill** (community-contributed).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
+- **31 Matt Peacock skills** — Productivity, engineering, and workflow skills with star ratings.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
 - **Search + filters** — filter cards by role and platform, or search by name/description.
 - **Download all (.zip)** — bundles every skill as a complete 3-file package plus an install guide.
+- **Horizontal carousel** — auto-scrolling marquee of custom skills.
+- **Star rating** — rate each custom skill 0–5 stars, persisted in localStorage.
 - **Bilingual** — English and Chinese UI.
 - **Compiler-ready structure** — every skill resolves from its `assembly.json` manifest.
 
@@ -57,9 +72,9 @@ Then open http://127.0.0.1:8765/index.html
 
 ```
 AGENT KD SKILL/
-├── index.html              # gallery page
-├── styles.css              # green-on-black theme
-├── app.js                  # gallery logic (roles, platforms, i18n, download)
+├── index.html              # gallery page (hero, carousel, grid, sidebar)
+├── styles.css              # green-on-black theme, cassette sidebar, star rating
+├── app.js                  # gallery logic (roles, platforms, i18n, carousel, stars, pull-to-refresh)
 ├── zip.js                  # in-browser zip bundler
 ├── logo.svg                # brand logo
 ├── data/
@@ -73,23 +88,25 @@ AGENT KD SKILL/
     ├── agent-plan/         # AGENT PLAN · one folder per skill × 5 platforms
     ├── agent-build/        # AGENT BUILD · one folder per skill × 5 platforms
     ├── agent-compact/      # AGENT COMPACT · one folder per skill × 5 platforms
-    ├── agent-capability/   # AGENT CAPABILITY · 9 universal skills (incl. Whitepaper · LaTeX arXiv, PDF-Ready Output)
-    ├── agent-sub/          # AGENT SUB · 15 universal skills
+    ├── agent-capability/   # AGENT CAPABILITY · 9 universal skills
+    ├── agent-sub/          # AGENT SUB · 15 universal skills + grill-me
     ├── agent-deep/         # AGENT DEEP · 15 universal skills
-    └── agent-micro/        # AGENT MICRO · 15 universal skills
+    ├── agent-micro/        # AGENT MICRO · 15 universal skills
+    └── custom/             # CUSTOM SKILL · 31 Matt Peacock skills (3-file bundles)
 ```
 
-### Skills inventory (69)
+### Skills inventory (100)
 
-| Role | Skills | Platform |
-| --- | --- | --- |
-| AGENT PLAN | plan | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
-| AGENT BUILD | build | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
-| AGENT COMPACT | compact | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
-| AGENT CAPABILITY | Design · Frontend Specialist · Search · Skill Authoring · Cut-Cost Token · DGUI Emitter · snapDOM · html2canvas · Whitepaper · LaTeX arXiv · PDF-Ready Output | Universal |
-| AGENT SUB | Context Isolation · Task Decomposition · Budgeting · Parallel Fan-out · Result Synthesis · Handoff · Escalation · Verification · Reporting · File Scoping · Tool Restriction · Token Caps · Warm Start · Failure Recovery · Observability | Universal |
-| AGENT DEEP | Research Plan · Source Priority · Chunked Digestion · Multi-source · Iterative Refinement · Contradiction · Verification · Summarization · Long Context · Knowledge Graph · Citation · Checkpointing · Reasoning Trace · Context Budget · Synthesis | Universal |
-| AGENT MICRO | Single Purpose · Prompt Minimalism · Strict Schema · Tool Minimalism · No-Prose · Batching · Context Precision · Retry · Caching · Composition · Orchestration · Observability · Output Schema · Timeboxing · Reuse | Universal |
+| Role | Count | Skills | Platform |
+| --- | --- | --- | --- |
+| AGENT PLAN | 5 | plan | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
+| AGENT BUILD | 5 | build | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
+| AGENT COMPACT | 5 | compact | Claude Code · opencode · Codex CLI · Cursor · Gemini CLI |
+| AGENT CAPABILITY | 9 | Design · Frontend Specialist · Search · Skill Authoring · Cut-Cost Token · DGUI Emitter · snapDOM · html2canvas · Whitepaper · LaTeX arXiv · PDF-Ready Output | Universal |
+| AGENT SUB | 16 | Context Isolation · Task Decomposition · Budgeting · Parallel Fan-out · Result Synthesis · Handoff · Escalation · Verification · Reporting · File Scoping · Tool Restriction · Token Caps · Warm Start · Failure Recovery · Observability · Grill Me | Universal |
+| AGENT DEEP | 15 | Research Plan · Source Priority · Chunked Digestion · Multi-source · Iterative Refinement · Contradiction · Verification · Summarization · Long Context · Knowledge Graph · Citation · Checkpointing · Reasoning Trace · Context Budget · Synthesis | Universal |
+| AGENT MICRO | 15 | Single Purpose · Prompt Minimalism · Strict Schema · Tool Minimalism · No-Prose · Batching · Context Precision · Retry · Caching · Composition · Orchestration · Observability · Output Schema · Timeboxing · Reuse | Universal |
+| CUSTOM SKILL | 31 | Agent Memory · Ask Matt · Code Review · Codebase Design · Diagnosing Bugs · Domain Modeling · Git Guardrails · Grill Me · Grill With Docs · Handoff · Implement · Improve Architecture · Migrate to Shoehorn · Prototype · Research · Resolving Merge Conflicts · Scaffold Exercises · Setup Matt Pocock Skills · Setup Pre-Commit · Teach · TDD · To Questionnaire · To Spec · To Tickets · Triage · Wait What · Wayfinder · Wizard · Writing for Agents | Universal |
 
 ## Adding a skill
 
@@ -109,7 +126,8 @@ AGENT KD SKILL/
    ````
 
 3. Add `<skill-id>-skill.json` (skill data) and `assembly.json` (manifest).
-4. Rebuild the bundle and recompile the artifacts:
+4. Add an entry to the `SKILLS` array in `app.js`.
+5. Rebuild the bundle and recompile the artifacts:
 
    ```sh
    node scripts/build-content.mjs
