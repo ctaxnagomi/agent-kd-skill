@@ -123,6 +123,20 @@ button {
   padding-inline: clamp(20px, 4vw, 32px);
 }
 
+/* ---------------- ascii title ---------------- */
+
+.ascii-title {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(6px, 1.1vw, 14px);
+  line-height: 1.15;
+  color: var(--accent-bright);
+  margin: var(--sp-3) 0;
+  white-space: pre;
+  user-select: none;
+  text-shadow: 0 0 20px rgba(10, 247, 0, 0.3);
+}
+
 /* ---------------- header ---------------- */
 
 .site-header {
