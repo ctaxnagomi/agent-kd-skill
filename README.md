@@ -6,10 +6,12 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 
 ## What's new?
 
+- **Skewed glass card system** — Translucent panels with per-category color gradients, floating glass orbs, and frosted content panels. Cards unskew on hover for a reveal effect.
+- **Neon border-trace buttons** — Four animated border lines that chase clockwise around the button perimeter with triple-layer glow on hover.
+- **Minimalistic translucent iOS sidebar** — `backdrop-filter: blur(20px) saturate(1.4)` glass panel with smooth expand/collapse on hover.
 - **Matt Peacock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
 - **Hero section** — "MATT PEACOCK SKILL MD is Here!" banner with toxic green accent glow.
 - **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
-- **Cassette-style sidebar** — Pixelated toxic green sidebar on desktop with 45% opacity hover. Slides out on hover, snaps back on leave.
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
 - **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
 - **Viewport lock** — No horizontal drag/scroll, no rubber-band overscroll on mobile.
@@ -151,6 +153,18 @@ Platform paths:
 | Codex CLI | `~/.codex/skills/<name>/SKILL.md` · `.codex/skills/<name>/SKILL.md` |
 | Cursor | `~/.cursor/skills/<name>/SKILL.md` · `.cursor/skills/<name>/SKILL.md` |
 | Gemini CLI | `~/.gemini/skills/<name>/SKILL.md` · `.gemini/skills/<name>/SKILL.md` |
+
+## Credits
+
+Design inspiration and code snippets adapted from:
+
+| Component | Source | Author |
+| --- | --- | --- |
+| Skewed glass cards | User-provided HTML/CSS template | Melvin (KrackedDevs) |
+| Neon border-trace buttons | [CodePen — Neon Button](https://codepen.io/Kyon-Jordan/full/xxNOmNJ) | [Kyon Jordan](https://codepen.io/Kyon-Jordan) |
+| Translucent iOS sidebar | Adapted from Apple HIG glass morphism patterns | Melvin (KrackedDevs) |
+
+Original snippets were restyled to use the KrackedDevs toxic green theme (`#0AF700`) and integrated into the gallery's design system.
 
 ## Developer
 
