@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs — AGENT KD SKILL</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23023500'/%3E%3Crect width='100' height='100' rx='20' fill='none' stroke='%230AF700' stroke-width='6'/%3E%3Ctext x='50' y='64' font-size='40' text-anchor='middle' fill='%23ABFFA7' font-family='monospace' font-weight='bold'%3EKD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="eyebrow">KRACKEDDEVS</span>
+        <h1 class="brand-logo-wrap animate-rise"><a href="index.html"><img class="brand-logo" src="logo.svg" alt="AGENT KD SKILL"></a></h1>
+        <p class="tagline">Frequently Asked Questions</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="faq-section">
+      <h2 class="section-title">FAQs</h2>
+      <p class="section-note">Everything you need to know about AGENT KD SKILL — installing, using, and contributing skills.</p>
+
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary class="faq-q">What is AGENT KD SKILL?</summary>
+          <div class="faq-a">
+            <p>AGENT KD SKILL is a gallery of <code>SKILL.md</code> variants for AI coding agents. Every skill ships as a 3-file bundle (markdown, JSON, assembly manifest) organized by agent role and filterable by platform. It supports Claude Code, opencode, Codex CLI, Cursor, and Gemini CLI.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What is a SKILL.md file?</summary>
+          <div class="faq-a">
+            <p>A <code>SKILL.md</code> is a markdown file with JSON frontmatter that tells an AI agent how to behave in a specific domain. It contains instructions, rules, processes, and constraints that the agent follows when the skill is loaded. Think of it as a reusable prompt template for specialized tasks.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How do I install a skill?</summary>
+          <div class="faq-a">
+            <p>1. Find the skill card in the gallery and click <strong>Download</strong>.<br>
+            2. Create a folder in your agent's skills directory (e.g. <code>~/.config/opencode/skills/my-skill/</code>).<br>
+            3. Copy the downloaded <code>SKILL.md</code> into that folder.<br>
+            4. Restart your agent session. The skill auto-loads based on its description.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Where do I put the SKILL.md file?</summary>
+          <div class="faq-a">
+            <p>Each agent has its own skills directory:</p>
+            <p><strong>opencode:</strong> <code>~/.config/opencode/skills/&lt;name&gt;/SKILL.md</code><br>
+            <strong>Claude Code:</strong> <code>~/.claude/skills/&lt;name&gt;/SKILL.md</code><br>
+            <strong>Codex CLI:</strong> <code>~/.codex/skills/&lt;name&gt;/SKILL.md</code><br>
+            <strong>Cursor:</strong> <code>~/.cursor/skills/&lt;name&gt;/SKILL.md</code><br>
+            <strong>Gemini CLI:</strong> <code>~/.gemini/skills/&lt;name&gt;/SKILL.md</code></p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What is the 3-file bundle?</summary>
+          <div class="faq-a">
+            <p>Every skill ships with three files:</p>
+            <p><strong>SKILL.md</strong> — The human-readable instructions (markdown + JSON frontmatter).<br>
+            <strong>&lt;name&gt;-skill.json</strong> — Machine-readable metadata (role, platform, description, install paths).<br>
+            <strong>assembly.json</strong> — The assembly manifest that binds the other two. This is what compilers and loaders read to resolve a complete, installable skill.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What does "assembly.json" do?</summary>
+          <div class="faq-a">
+            <p><code>assembly.json</code> is the single source of truth for a skill. It declares the skill's name, title, role, platform, which files compose it, and how it's installed and invoked. Any tooling — a build pipeline, agent loader, or compiler — can resolve a complete skill from <code>assembly.json</code> alone without parsing prose.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What are the role categories?</summary>
+          <div class="faq-a">
+            <p>Skills are organized by agent role:</p>
+            <p><strong>AGENT PLAN</strong> — Research, scope, and sequence work before coding.<br>
+            <strong>AGENT BUILD</strong> — Convert plans into production code.<br>
+            <strong>AGENT COMPACT</strong> — Minimal token footprint for fast subagent work.<br>
+            <strong>AGENT CAPABILITY</strong> — Platform-agnostic capabilities (design, search, capture).<br>
+            <strong>AGENT SUB</strong> — Sub-agent orchestration (isolation, budgets, handoffs).<br>
+            <strong>AGENT DEEP</strong> — Deep research (planning, chunked digestion, synthesis).<br>
+            <strong>AGENT MICRO</strong> — Tiny single-purpose agents (strict schemas, minimal prompts).<br>
+            <strong>CUSTOM SKILL</strong> — Curated third-party skills (e.g. Matt Peacock's collection).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How do I use a skill after installing it?</summary>
+          <div class="faq-a">
+            <p>Restart your agent session, then invoke the skill by typing <code>@&lt;skill-name&gt;</code> or by asking the agent something related to the skill's purpose. The agent will follow the instructions in the SKILL.md file automatically.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Can I use these skills with any agent?</summary>
+          <div class="faq-a">
+            <p>Yes. All skills follow the open Agent Skills standard (<code>SKILL.md</code> + name/description frontmatter). Any agent that reads this format — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI, or future agents — can use them without modification.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What is the "How to use?" guide on each card?</summary>
+          <div class="faq-a">
+            <p>Every skill card includes a step-by-step installation guide: download the file, copy it to your agent's skills directory, restart your session, and verify. The guide is also embedded inside each <code>SKILL.md</code> file itself.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How do I add my own skill to the gallery?</summary>
+          <div class="faq-a">
+            <p>1. Create a folder under <code>skills/custom/&lt;your-skill&gt;/</code>.<br>
+            2. Add three files: <code>SKILL.md</code>, <code>&lt;name&gt;-skill.json</code>, and <code>assembly.json</code>.<br>
+            3. Add your skill entry to the <code>SKILLS</code> array in <code>app.js</code>.<br>
+            4. Run <code>node scripts/build-content.mjs</code> to regenerate the catalog.<br>
+            5. Submit a pull request to the GitHub repo.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What is the star rating system?</summary>
+          <div class="faq-a">
+            <p>Every CUSTOM SKILL card has a 0–5 star rating (Least Used → Most Popular). Click a star to rate the skill. Your ratings are saved in your browser's localStorage and persist across sessions. This helps you track which skills you use most.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Who created these skills?</summary>
+          <div class="faq-a">
+            <p>The platform skills (PLAN, BUILD, COMPACT) were built by <strong>Melvin @ KrackedDevs</strong>. The CUSTOM SKILL collection (31 skills) is curated from <strong>Matt Peacock's</strong> open-source <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a> repository (MIT license). Design snippets are credited in the README.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is this project open source?</summary>
+          <div class="faq-a">
+            <p>Yes. The full source code is on <a href="https://github.com/ctaxnagomi/agent-kd-skill" target="_blank" rel="noopener">GitHub</a>. You can fork it, add your own skills, and submit pull requests. The gallery is a static site — no server required.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How do I rebuild the gallery after adding skills?</summary>
+          <div class="faq-a">
+            <p>Run these commands from the project root:</p>
+            <p><code>node scripts/build-content.mjs</code> — Rebuilds <code>data/skills.js</code> with all skill entries.<br>
+            <code>node scripts/compile-skills.mjs</code> — Compiles token-optimized artifacts under <code>data/compiled/</code>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Does the gallery work on mobile?</summary>
+          <div class="faq-a">
+            <p>Yes. The gallery is fully responsive. On mobile, the sidebar becomes a centered "Home" pill. You can pull down to navigate to <a href="https://www.krackeddevs.com" target="_blank" rel="noopener">krackeddevs.com</a>. Cards use lazy loading and batched rendering for smooth scrolling on all devices.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">What browsers are supported?</summary>
+          <div class="faq-a">
+            <p>All modern browsers: Chrome, Firefox, Safari, Edge. The gallery uses <code>backdrop-filter</code> for glass effects (supported in all major browsers). Reduced-motion preferences are respected for users who disable animations.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>AGENT KD SKILL — a static gallery of SKILL.md variants.</p>
+    <nav class="footer-nav">
+      <a href="index.html" class="footer-link">Home</a>
+      <a href="https://github.com/ctaxnagomi/agent-kd-skill" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.krackeddevs.com" class="footer-link" target="_blank" rel="noopener">KrackedDevs</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

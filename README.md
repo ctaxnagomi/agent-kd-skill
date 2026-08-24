@@ -14,6 +14,9 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 - **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
 - **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
+- **How to use? guide** — Every SKILL.md includes beginner-friendly installation instructions. Every product card shows a "How to use?" monospace link.
+- **FAQs page** — 17 frequently asked questions covering installation, usage, roles, and contribution.
+- **Footer navigation** — FAQs, GitHub, and KrackedDevs links in the site footer.
 - **Viewport lock** — No horizontal drag/scroll, no rubber-band overscroll on mobile.
 - **Lazy loading** — Deferred scripts, lazy-loaded images, page fade-in transition.
 - **Bilingual UI** — English and Chinese interface.

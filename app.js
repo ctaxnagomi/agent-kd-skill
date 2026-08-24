@@ -215,6 +215,7 @@
       copied: "Copied ✓",
       close: "Close",
       noResults: "No skills match your filters.",
+      howTo: "How to use? →",
       platformsTitle: "Platform Compatibility",
       standardsNote: "All variants follow the open Agent Skills standard (SKILL.md + name/description frontmatter), so every file also runs in any compatible agent that reads the same format.",
       install: "Install",
@@ -286,6 +287,7 @@
       copied: "已复制 ✓",
       close: "关闭",
       noResults: "没有匹配的技能。",
+      howTo: "如何使用？→",
       platformsTitle: "平台兼容性",
       standardsNote: "所有变体均遵循开放 Agent Skills 标准（SKILL.md + name/description 前置元数据），任何兼容该格式的代理都可直接使用。",
       install: "安装路径",
@@ -633,6 +635,7 @@
       '<p class="card-desc">' + escapeHtml(cardDesc(skill)) + "</p>" +
       stars +
       '<code class="card-file">' + escapeHtml(basename(skill.file)) + "</code>" +
+      '<p class="card-howto">' + escapeHtml(t("howTo")) + "</p>" +
       '<div class="card-actions">' +
       '<button class="btn" type="button" data-action="preview" data-id="' + skill.id + '"><span></span><span></span><span></span><span></span>' + escapeHtml(t("preview")) + "</button>" +
       '<button class="btn btn-primary" type="button" data-action="download" data-id="' + skill.id + '"><span></span><span></span><span></span><span></span>' + escapeHtml(t("download")) + "</button>" +

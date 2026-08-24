@@ -164,6 +164,7 @@ ctaxnagomi@users.noreply.github.com
 
 | Hash | Message |
 |------|---------|
+| `da779f9` | Rename all custom skill .md to SKILL.md for opencode discovery, update assembly.json refs |
 | `73c56dd` | Lazy loading: batched RAF rendering (16/frame), carousel pause-offscreen, content-visibility:auto, search debounce, RAF-throttled scroll reveal |
 | `c51ac4b` | README: credits for design snippets (Kyon Jordan neon buttons, Melvin glass cards) |
 | `6097508` | Neon border-trace buttons with glow hover, design.md updated with button component |
@@ -200,6 +201,10 @@ ctaxnagomi@users.noreply.github.com
 10. **Search debounce**: RAF debounce prevents rapid re-renders while typing.
 11. **Design template**: Created `skills/custom/design/` as a 3-file bundle documenting the full design system.
 12. **Agent memory**: Created `.memory/agent-memory.md` for persistent project context across sessions.
+13. **SKILL.md naming**: Renamed all custom skill `.md` files to `SKILL.md` so opencode can discover them via `@` mentions.
+14. **How to use? guide**: Embedded beginner installation instructions in every SKILL.md and added monospace "How to use? →" placeholder on every product card.
+15. **FAQs page**: Created `faq.html` with 17 Q&As covering installation, usage, roles, contribution, and technical details.
+16. **Footer nav**: Added FAQs, GitHub, and KrackedDevs links to site footer.
 
 ### External Credits
 
