@@ -1000,16 +1000,304 @@ button {
   }
 }
 
-/* ---------------- reduced motion ---------------- */
+/* ---------------- sidebar — cassette tape style ---------------- */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 52px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border: 2px solid var(--accent);
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
+  overflow: hidden;
+  box-shadow: 2px 0 20px rgba(10, 247, 0, 0.1);
+}
+
+.sidebar::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #333 0%, #111 60%, #000 100%);
+  border: 2px solid #444;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+.sidebar::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #666 0%, #333 100%);
+  border: 1px solid #555;
+  pointer-events: none;
+}
+
+.sidebar:hover,
+.sidebar.open {
+  width: 160px;
+  box-shadow: 4px 0 30px rgba(10, 247, 0, 0.25);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  color: var(--accent-bright);
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  border-radius: 6px;
+  margin: 0 4px;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  z-index: 2;
+}
+
+.sidebar-link:hover {
+  background: rgba(10, 247, 0, 0.15);
+  color: #fff;
+}
+
+.sidebar-link svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.sidebar-link span {
+  opacity: 0;
+  transition: opacity 0.25s ease 0.1s;
+}
+
+.sidebar:hover .sidebar-link span,
+.sidebar.open .sidebar-link span {
+  opacity: 1;
+}
+
+.sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--accent-bright);
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.sidebar-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* tape reels idle spin */
+@keyframes reel-spin {
+  from { transform: translateX(-50%) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+.sidebar:hover::before,
+.sidebar.open::before {
+  animation: reel-spin 2s linear infinite;
+}
+
+/* mobile: normal header nav */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    transform: none;
+    flex-direction: row;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid var(--accent);
+    padding: 8px 16px;
+    justify-content: space-between;
+  }
+  .sidebar::before,
+  .sidebar::after {
+    display: none;
+  }
+  .sidebar-toggle {
+    display: block;
+  }
+  .sidebar-link span {
+    opacity: 1;
+  }
+  .sidebar:hover,
+  .sidebar.open {
+    width: 100%;
+  }
+}
+
+/* ---------------- hero ---------------- */
+
+.hero {
+  padding: 48px 0 24px;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--accent-bright);
+  background: rgba(10, 247, 0, 0.08);
+  border: 1px solid rgba(10, 247, 0, 0.2);
+  border-radius: 999px;
+  padding: 5px 16px;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: 900;
+  color: var(--text);
+  margin: 0 0 12px;
+  line-height: 1.1;
+}
+
+.hero-accent {
+  color: var(--accent-bright);
+  text-shadow: 0 0 30px rgba(10, 247, 0, 0.4);
+}
+
+.hero-desc {
+  font-size: 15px;
+  color: var(--text-2);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero-desc strong {
+  color: var(--accent-bright);
+}
+
+/* ---------------- carousel ---------------- */
+
+.carousel-section {
+  overflow: hidden;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  margin-bottom: 24px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-bright);
+  background: rgba(10, 247, 0, 0.06);
+  border: 1px solid rgba(10, 247, 0, 0.15);
+  border-radius: 6px;
+  padding: 8px 16px;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.carousel-item:hover {
+  background: rgba(10, 247, 0, 0.15);
+  border-color: var(--accent-bright);
+}
+
+.carousel-item small {
+  color: var(--text-2);
+  font-size: 11px;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---------------- star rating ---------------- */
+
+.card-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 6px 0;
+}
+
+.card-stars .star {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.15s, transform 0.15s;
+  user-select: none;
+}
+
+.card-stars .star:hover {
+  transform: scale(1.2);
+}
+
+.card-stars .star.active {
+  color: #f5a623;
+  text-shadow: 0 0 6px rgba(245, 166, 35, 0.4);
+}
+
+.card-stars .star-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-2);
+  margin-left: 6px;
+  white-space: nowrap;
+}
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
   .bg-glow,
-  .animate-rise {
+  .animate-rise,
+  .carousel-track {
     animation: none;
   }
+
   .reveal {
     opacity: 1;
     transform: none;

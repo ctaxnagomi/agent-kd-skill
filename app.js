@@ -578,6 +578,12 @@
     var platBadge = p
       ? '<span class="badge badge-platform">' + escapeHtml(p.name) + "</span>"
       : '<span class="badge badge-platform">' + escapeHtml(t("universal")) + "</span>";
+    var isCustom = skill.role === "custom";
+    var stars = isCustom ? '<div class="card-stars" data-skill-id="' + skill.id + '">' +
+      '<span class="star" data-val="1">★</span><span class="star" data-val="2">★</span>' +
+      '<span class="star" data-val="3">★</span><span class="star" data-val="4">★</span>' +
+      '<span class="star" data-val="5">★</span>' +
+      '<span class="star-label"></span></div>' : "";
     return (
       '<article class="skill-card reveal" style="--i:' + idx + '">' +
       '<div class="card-top">' +
@@ -586,6 +592,7 @@
       "</div>" +
       '<h3 class="card-title">' + title + "</h3>" +
       '<p class="card-desc">' + escapeHtml(cardDesc(skill)) + "</p>" +
+      stars +
       '<code class="card-file">' + escapeHtml(basename(skill.file)) + "</code>" +
       '<div class="card-actions">' +
       '<button class="btn" type="button" data-action="preview" data-id="' + skill.id + '">' + escapeHtml(t("preview")) + "</button>" +
@@ -813,9 +820,74 @@
     });
   }
 
+  /* ---------------- carousel ---------------- */
+
+  function renderCarousel() {
+    var track = document.getElementById("carouselTrack");
+    if (!track) return;
+    var customSkills = SKILLS.filter(function (s) { return s.role === "custom"; });
+    var html = "";
+    for (var i = 0; i < 2; i++) {
+      for (var j = 0; j < customSkills.length; j++) {
+        var s = customSkills[j];
+        var name = s.title || s.id.replace("custom-", "").replace(/-/g, " ");
+        html += '<span class="carousel-item">' + escapeHtml(name) + ' <small>.md</small></span>';
+      }
+    }
+    track.innerHTML = html;
+  }
+
+  /* ---------------- star rating ---------------- */
+
+  function initStarRating() {
+    document.getElementById("grid").addEventListener("click", function (e) {
+      var star = e.target.closest(".star");
+      if (!star) return;
+      var container = star.closest(".card-stars");
+      if (!container) return;
+      var val = parseInt(star.getAttribute("data-val"), 10);
+      var skillId = container.getAttribute("data-skill-id");
+      var label = container.querySelector(".star-label");
+      var labels = ["", "Least Used", "Rarely Used", "Moderately Used", "Frequently Used", "Most Popular"];
+      var stars = container.querySelectorAll(".star");
+      for (var i = 0; i < stars.length; i++) {
+        stars[i].classList.toggle("active", i < val);
+      }
+      if (label) label.textContent = labels[val];
+      try { localStorage.setItem("kd-star-" + skillId, val); } catch (ex) {}
+    });
+    var saved = document.querySelectorAll(".card-stars[data-skill-id]");
+    saved.forEach(function (el) {
+      var id = el.getAttribute("data-skill-id");
+      try {
+        var v = parseInt(localStorage.getItem("kd-star-" + id), 10);
+        if (v > 0) {
+          var stars = el.querySelectorAll(".star");
+          for (var i = 0; i < stars.length; i++) stars[i].classList.toggle("active", i < v);
+          var label = el.querySelector(".star-label");
+          var labels = ["", "Least Used", "Rarely Used", "Moderately Used", "Frequently Used", "Most Popular"];
+          if (label) label.textContent = labels[v];
+        }
+      } catch (ex) {}
+    });
+  }
+
+  /* ---------------- sidebar ---------------- */
+
+  function initSidebar() {
+    var toggle = document.getElementById("sidebarToggle");
+    var sidebar = document.getElementById("sidebar");
+    if (toggle && sidebar) {
+      toggle.addEventListener("click", function () { sidebar.classList.toggle("open"); });
+    }
+  }
+
   /* ---------------- init ---------------- */
 
   render();
   bindEvents();
   wireReveal();
+  renderCarousel();
+  initStarRating();
+  initSidebar();
 })();
