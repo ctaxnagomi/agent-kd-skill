@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agentkd.skill/compiled-v1",
+  "name": "design",
+  "id": "custom-design",
+  "title": "Design",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": "universal",
+  "platformName": "Universal",
+  "description": "UI/UX design capability — skewed glass card system with translucent iOS aesthetic and per-category color gradients.",
+  "source": "skills/custom/design/assembly.json"
+}

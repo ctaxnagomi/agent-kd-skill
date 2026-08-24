@@ -586,7 +586,10 @@
       '<span class="star" data-val="5">★</span>' +
       '<span class="star-label"></span></div>' : "";
     return (
-      '<article class="skill-card reveal" style="--i:' + idx + '">' +
+      '<article class="skill-card reveal" data-role="' + r.accent + '" style="--i:' + idx + '">' +
+      '<span class="card-orb card-orb-top"></span>' +
+      '<span class="card-orb card-orb-bottom"></span>' +
+      '<div class="card-content">' +
       '<div class="card-top">' +
       '<span class="badge badge-' + r.accent + '">' + r.code + "</span>" +
       platBadge +
@@ -598,6 +601,7 @@
       '<div class="card-actions">' +
       '<button class="btn" type="button" data-action="preview" data-id="' + skill.id + '">' + escapeHtml(t("preview")) + "</button>" +
       '<button class="btn btn-primary" type="button" data-action="download" data-id="' + skill.id + '">' + escapeHtml(t("download")) + "</button>" +
+      "</div>" +
       "</div>" +
       "</article>"
     );

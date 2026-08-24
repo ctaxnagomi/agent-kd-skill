@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agentkd.skill/skill-v1",
+  "name": "design",
+  "id": "custom-design",
+  "title": "Design",
+  "role": "custom",
+  "category": "design-system",
+  "platform": "universal",
+  "description": "UI/UX design capability — skewed glass card system with translucent iOS aesthetic and per-category color gradients.",
+  "version": "1.0.0",
+  "author": "Melvin @ KrackedDevs",
+  "tags": ["design", "glass", "skewed", "cards", "ios", "translucent"]
+}
