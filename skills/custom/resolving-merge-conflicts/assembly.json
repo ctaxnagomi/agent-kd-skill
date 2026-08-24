@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "resolving-merge-conflicts",
+  "title": "Resolving Merge Conflicts",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Systematically resolve merge conflicts by understanding both sides and finding the correct resolution. Use when a merge conflict needs resolution or you need to understand what both branches intended.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "resolving-merge-conflicts.md",
+    "json": "resolving-merge-conflicts-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when a merge conflict needs resolution."
+}

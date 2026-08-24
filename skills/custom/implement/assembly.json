@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "implement",
+  "title": "Implement",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Turn a spec or plan into working code, one vertical slice at a time. Use when a spec or plan exists and needs implementation, or converting design decisions into code.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "implement.md",
+    "json": "implement-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when a spec or plan exists and needs implementation."
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "to-tickets",
+  "title": "To Tickets",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges. Use when you need to break work into tickets or plan implementation order.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "to-tickets.md",
+    "json": "to-tickets-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when breaking a plan or spec into implementable tickets."
+}

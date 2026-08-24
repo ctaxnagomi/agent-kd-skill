@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "git-guardrails-claude-code",
+  "title": "Git Guardrails (Claude Code)",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D) before they execute. Use when user wants to prevent destructive git operations or add git safety hooks.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "git-guardrails-claude-code.md",
+    "json": "git-guardrails-claude-code-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when user wants to prevent destructive git operations."
+}

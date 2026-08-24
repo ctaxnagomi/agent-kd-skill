@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "handoff",
+  "title": "Handoff",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Hand off context from one agent session to another without losing state. Use when a session is running out of context, work needs to continue in a fresh session, or transitioning between agent roles.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "handoff.md",
+    "json": "handoff-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when a session is running out of context or work needs to continue in a fresh session."
+}

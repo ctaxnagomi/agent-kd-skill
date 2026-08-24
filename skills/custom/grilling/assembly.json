@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "grilling",
+  "title": "Grilling",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "A relentless interview to sharpen a plan or design by asking pointed questions one at a time. Use when user wants to stress-test a plan, get grilled on their design, or challenge a design before implementation.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "grilling.md",
+    "json": "grilling-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when user wants to stress-test a plan, get grilled on their design, or challenge a design before implementation."
+}

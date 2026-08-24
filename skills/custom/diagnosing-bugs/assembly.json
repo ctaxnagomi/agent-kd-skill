@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "diagnosing-bugs",
+  "title": "Diagnosing Bugs",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Systematically diagnose bugs using the scientific method: hypothesis, experiment, conclusion. Use when a bug needs investigation and the root cause isn't obvious.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "diagnosing-bugs.md",
+    "json": "diagnosing-bugs-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when a bug needs investigation and the root cause isn't obvious."
+}

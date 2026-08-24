@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "wait-what",
+  "title": "Wait What",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Stop and ask \"wait, what?\" when something doesn't add up — challenge unclear assumptions before proceeding. Use when something in the plan doesn't make sense or an assumption needs questioning.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "wait-what.md",
+    "json": "wait-what-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when something in the plan doesn't add up or an assumption needs questioning."
+}

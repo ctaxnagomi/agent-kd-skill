@@ -1,8 +1,8 @@
 {
   "$schema": "https://agentkd.skill/catalog-v1",
   "version": 1,
-  "generated": "2026-08-20T10:26:52.192Z",
-  "count": 70,
+  "generated": "2026-08-24T18:35:25.613Z",
+  "count": 98,
   "snapdom": {
     "drop": [
       "script",
@@ -720,6 +720,286 @@
       "platformName": "Universal",
       "title": "Sub-agent Warm Start",
       "description": "Reuse a prepared sub-agent template, seed data, or cached result so repeated dispatches skip setup and start cold-to-hot fast. Warm starts cut overhead on recurring delegation. Trigger keywords: warm start, reuse template, cached sub-agent, reusable dispatch, prebuilt prompt."
+    },
+    {
+      "id": "ask-matt",
+      "name": "ask-matt",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Ask Matt",
+      "description": "Ask Matt Peacock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions."
+    },
+    {
+      "id": "code-review",
+      "name": "code-review",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Code Review",
+      "description": "Review code with focus on behavior, architecture, and test quality — not style. Use when reviewing a PR, checking code quality, or getting a second opinion on implementation."
+    },
+    {
+      "id": "codebase-design",
+      "name": "codebase-design",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Codebase Design",
+      "description": "Design modules, interfaces, and architecture decisions with vocabulary for seams, adapters, and depth. Use when designing a new module, deciding where seams should be, or making architectural decisions."
+    },
+    {
+      "id": "diagnosing-bugs",
+      "name": "diagnosing-bugs",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Diagnosing Bugs",
+      "description": "Systematically diagnose bugs using the scientific method: hypothesis, experiment, conclusion. Use when a bug needs investigation and the root cause isn't obvious."
+    },
+    {
+      "id": "domain-modeling",
+      "name": "domain-modeling",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Domain Modeling",
+      "description": "Create and maintain a shared domain vocabulary and model that all code and tests reference. Use when establishing domain vocabulary, creating CONTEXT.md, or aligning code with business concepts."
+    },
+    {
+      "id": "git-guardrails-claude-code",
+      "name": "git-guardrails-claude-code",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Git Guardrails (Claude Code)",
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D) before they execute. Use when user wants to prevent destructive git operations or add git safety hooks."
+    },
+    {
+      "id": "grill-with-docs",
+      "name": "grill-with-docs",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Grill With Docs",
+      "description": "A grilling session that uses documentation and codebase exploration to answer questions instead of asking the user. Use when the codebase can answer the question better than the user."
+    },
+    {
+      "id": "grilling",
+      "name": "grilling",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Grilling",
+      "description": "A relentless interview to sharpen a plan or design by asking pointed questions one at a time. Use when user wants to stress-test a plan, get grilled on their design, or challenge a design before implementation."
+    },
+    {
+      "id": "handoff",
+      "name": "handoff",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Handoff",
+      "description": "Hand off context from one agent session to another without losing state. Use when a session is running out of context, work needs to continue in a fresh session, or transitioning between agent roles."
+    },
+    {
+      "id": "implement",
+      "name": "implement",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Implement",
+      "description": "Turn a spec or plan into working code, one vertical slice at a time. Use when a spec or plan exists and needs implementation, or converting design decisions into code."
+    },
+    {
+      "id": "improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Improve Codebase Architecture",
+      "description": "Refactor and improve codebase architecture by identifying and resolving structural issues. Use when the codebase has structural problems or modules are too coupled."
+    },
+    {
+      "id": "migrate-to-shoehorn",
+      "name": "migrate-to-shoehorn",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Migrate to Shoehorn",
+      "description": "Migrate test files from as type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace as in tests, or needs partial test data."
+    },
+    {
+      "id": "prototype",
+      "name": "prototype",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Prototype",
+      "description": "Create cheap, rough artifacts to raise the fidelity of a discussion and get concrete feedback. Use when \"how should it look?\" is the key question or a rough take would advance the discussion."
+    },
+    {
+      "id": "research",
+      "name": "research",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Research",
+      "description": "Research a topic thoroughly using documentation, codebase exploration, and external sources. Use when deep knowledge outside the current working directory is required or a decision depends on external facts."
+    },
+    {
+      "id": "resolving-merge-conflicts",
+      "name": "resolving-merge-conflicts",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Resolving Merge Conflicts",
+      "description": "Systematically resolve merge conflicts by understanding both sides and finding the correct resolution. Use when a merge conflict needs resolution or you need to understand what both branches intended."
+    },
+    {
+      "id": "scaffold-exercises",
+      "name": "scaffold-exercises",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Scaffold Exercises",
+      "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when scaffolding exercises, creating exercise stubs, or setting up a new course section."
+    },
+    {
+      "id": "setup-matt-pocock-skills",
+      "name": "setup-matt-pocock-skills",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Setup Matt Pocock Skills",
+      "description": "Set up the Matt Pocock skills ecosystem: issue tracker integration, triage labels, and configuration. Use when setting up Matt Pocock skills for the first time or configuring issue tracker integration."
+    },
+    {
+      "id": "setup-pre-commit",
+      "name": "setup-pre-commit",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Setup Pre-Commit Hooks",
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. Use when adding pre-commit hooks, setting up Husky, or configuring lint-staged."
+    },
+    {
+      "id": "tdd",
+      "name": "tdd",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "TDD",
+      "description": "Test-driven development: the red-green loop, what a good test is, where tests go, anti-patterns, and the rules of the loop. Use when building features or fixing bugs test-first, or wanting integration tests."
+    },
+    {
+      "id": "teach",
+      "name": "teach",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Teach",
+      "description": "Teach a concept or skill by breaking it into progressive steps, checking understanding at each stage. Use when user wants to learn a new concept, understand how something works, or get a guided walkthrough."
+    },
+    {
+      "id": "to-questionnaire",
+      "name": "to-questionnaire",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "To Questionnaire",
+      "description": "Transform a conversation into a structured questionnaire that captures all decisions and requirements. Use when a conversation has produced many decisions that need formalizing into actionable specs."
+    },
+    {
+      "id": "to-spec",
+      "name": "to-spec",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "To Spec",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed. Use when you want to create a spec from a conversation."
+    },
+    {
+      "id": "to-tickets",
+      "name": "to-tickets",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "To Tickets",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges. Use when you need to break work into tickets or plan implementation order."
+    },
+    {
+      "id": "triage",
+      "name": "triage",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Triage",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs. Use when triaging issues or managing a project issue tracker."
+    },
+    {
+      "id": "wait-what",
+      "name": "wait-what",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Wait What",
+      "description": "Stop and ask \"wait, what?\" when something doesn't add up — challenge unclear assumptions before proceeding. Use when something in the plan doesn't make sense or an assumption needs questioning."
+    },
+    {
+      "id": "wayfinder",
+      "name": "wayfinder",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Wayfinder",
+      "description": "Plan a huge chunk of work as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear. Use when a task is too big for one agent session."
+    },
+    {
+      "id": "wizard",
+      "name": "wizard",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Wizard",
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials, or running a one-off migration."
+    },
+    {
+      "id": "writing-for-agents",
+      "name": "writing-for-agents",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Writing for Agents",
+      "description": "Write clear, structured prompts and instructions optimized for AI agent consumption. Use when writing SKILL.md files, creating agent instructions, or structuring documentation for AI readability."
     }
   ]
 }

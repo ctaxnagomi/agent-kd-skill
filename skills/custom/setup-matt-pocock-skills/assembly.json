@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "setup-matt-pocock-skills",
+  "title": "Setup Matt Pocock Skills",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Set up the Matt Pocock skills ecosystem: issue tracker integration, triage labels, and configuration. Use when setting up Matt Pocock skills for the first time or configuring issue tracker integration.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "setup-matt-pocock-skills.md",
+    "json": "setup-matt-pocock-skills-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when setting up Matt Pocock skills for the first time."
+}

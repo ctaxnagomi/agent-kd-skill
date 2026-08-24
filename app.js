@@ -12,7 +12,8 @@
     { id: "capability", code: "AGENT CAPABILITY", accent: "capability" },
     { id: "sub", code: "AGENT SUB", accent: "sub" },
     { id: "deep", code: "AGENT DEEP", accent: "deep" },
-    { id: "micro", code: "AGENT MICRO", accent: "micro" }
+    { id: "micro", code: "AGENT MICRO", accent: "micro" },
+    { id: "custom", code: "CUSTOM SKILL", accent: "custom" }
   ];
 
   var PLATFORMS = [
@@ -142,7 +143,36 @@
     { id: "micro-observability", role: "micro", platform: null, file: "agent-micro/micro-observability/micro-observability.md" },
     { id: "micro-output-schema", role: "micro", platform: null, file: "agent-micro/micro-output-schema/micro-output-schema.md" },
     { id: "micro-timeboxing", role: "micro", platform: null, file: "agent-micro/micro-timeboxing/micro-timeboxing.md" },
-    { id: "micro-reuse", role: "micro", platform: null, file: "agent-micro/micro-reuse/micro-reuse.md" }
+    { id: "micro-reuse", role: "micro", platform: null, file: "agent-micro/micro-reuse/micro-reuse.md" },
+    { id: "custom-grill-me", role: "custom", platform: null, file: "agent-sub/grill-me/grill-me.md", title: "Grill Me" },
+    { id: "custom-ask-matt", role: "custom", platform: null, file: "custom/ask-matt/ask-matt.md", title: "Ask Matt" },
+    { id: "custom-grilling", role: "custom", platform: null, file: "custom/grilling/grilling.md", title: "Grilling" },
+    { id: "custom-handoff", role: "custom", platform: null, file: "custom/handoff/handoff.md", title: "Handoff" },
+    { id: "custom-teach", role: "custom", platform: null, file: "custom/teach/teach.md", title: "Teach" },
+    { id: "custom-to-questionnaire", role: "custom", platform: null, file: "custom/to-questionnaire/to-questionnaire.md", title: "To Questionnaire" },
+    { id: "custom-wait-what", role: "custom", platform: null, file: "custom/wait-what/wait-what.md", title: "Wait What" },
+    { id: "custom-writing-for-agents", role: "custom", platform: null, file: "custom/writing-for-agents/writing-for-agents.md", title: "Writing for Agents" },
+    { id: "custom-code-review", role: "custom", platform: null, file: "custom/code-review/code-review.md", title: "Code Review" },
+    { id: "custom-codebase-design", role: "custom", platform: null, file: "custom/codebase-design/codebase-design.md", title: "Codebase Design" },
+    { id: "custom-diagnosing-bugs", role: "custom", platform: null, file: "custom/diagnosing-bugs/diagnosing-bugs.md", title: "Diagnosing Bugs" },
+    { id: "custom-domain-modeling", role: "custom", platform: null, file: "custom/domain-modeling/domain-modeling.md", title: "Domain Modeling" },
+    { id: "custom-grill-with-docs", role: "custom", platform: null, file: "custom/grill-with-docs/grill-with-docs.md", title: "Grill With Docs" },
+    { id: "custom-implement", role: "custom", platform: null, file: "custom/implement/implement.md", title: "Implement" },
+    { id: "custom-improve-codebase-architecture", role: "custom", platform: null, file: "custom/improve-codebase-architecture/improve-codebase-architecture.md", title: "Improve Codebase Architecture" },
+    { id: "custom-prototype", role: "custom", platform: null, file: "custom/prototype/prototype.md", title: "Prototype" },
+    { id: "custom-research", role: "custom", platform: null, file: "custom/research/research.md", title: "Research" },
+    { id: "custom-resolving-merge-conflicts", role: "custom", platform: null, file: "custom/resolving-merge-conflicts/resolving-merge-conflicts.md", title: "Resolving Merge Conflicts" },
+    { id: "custom-setup-matt-pocock-skills", role: "custom", platform: null, file: "custom/setup-matt-pocock-skills/setup-matt-pocock-skills.md", title: "Setup Matt Pocock Skills" },
+    { id: "custom-tdd", role: "custom", platform: null, file: "custom/tdd/tdd.md", title: "TDD" },
+    { id: "custom-to-spec", role: "custom", platform: null, file: "custom/to-spec/to-spec.md", title: "To Spec" },
+    { id: "custom-to-tickets", role: "custom", platform: null, file: "custom/to-tickets/to-tickets.md", title: "To Tickets" },
+    { id: "custom-triage", role: "custom", platform: null, file: "custom/triage/triage.md", title: "Triage" },
+    { id: "custom-wayfinder", role: "custom", platform: null, file: "custom/wayfinder/wayfinder.md", title: "Wayfinder" },
+    { id: "custom-wizard", role: "custom", platform: null, file: "custom/wizard/wizard.md", title: "Wizard" },
+    { id: "custom-git-guardrails-claude-code", role: "custom", platform: null, file: "custom/git-guardrails-claude-code/git-guardrails-claude-code.md", title: "Git Guardrails (Claude Code)" },
+    { id: "custom-migrate-to-shoehorn", role: "custom", platform: null, file: "custom/migrate-to-shoehorn/migrate-to-shoehorn.md", title: "Migrate to Shoehorn" },
+    { id: "custom-scaffold-exercises", role: "custom", platform: null, file: "custom/scaffold-exercises/scaffold-exercises.md", title: "Scaffold Exercises" },
+    { id: "custom-setup-pre-commit", role: "custom", platform: null, file: "custom/setup-pre-commit/setup-pre-commit.md", title: "Setup Pre-Commit Hooks" }
   ];
 
   /* ---------------- i18n ---------------- */
@@ -201,6 +231,7 @@
       roleDescSub: "Sub-agent efficiency: delegate in isolated slices with budgets, handoffs, and cheap synthesis.",
       roleDescDeep: "Deep-agent efficiency: plan, prioritize sources, digest in chunks, and synthesize with citations.",
       roleDescMicro: "Micro-agent efficiency: tiny single-purpose agents with strict schemas and minimal prompts.",
+      roleDescCustom: "Community-contributed skills: third-party integrations, workflows, and specialized tools.",
       platformDescClaudecode: "Anthropic's terminal coding agent. Skills auto-load by description; invoke with #.",
       platformDescOpencode: "Open-source terminal agent with a native skill tool; loads by description.",
       platformDescCodex: "OpenAI's terminal agent. Skills follow the open standard; $skill-name forces invocation.",
@@ -271,6 +302,7 @@
       roleDescSub: "子代理效率：隔离切片委派，带预算、交接与低成本合成。",
       roleDescDeep: "深度代理效率：规划、源优先级、分块消化，带引用的合成。",
       roleDescMicro: "微代理效率：严格 schema 与极简提示的小型单一用途代理。",
+      roleDescCustom: "社区贡献技能：第三方集成、工作流与专用工具。",
       platformDescClaudecode: "Anthropic 终端编码代理。按描述自动加载，通过 # 调用。",
       platformDescOpencode: "开源终端代理，内置 skill 工具，按描述加载。",
       platformDescCodex: "OpenAI 终端代理。遵循开放标准，$skill-name 强制调用。",
@@ -330,7 +362,8 @@
         capability: { en: "Cross-platform agent capability, works in any agent.", zh: "跨平台代理能力，适用于所有 Agent。" },
         sub: { en: "Efficiency pattern for orchestrating sub-agents.", zh: "面向子代理编排的效率模式。" },
         deep: { en: "Efficiency pattern for long-running deep research agents.", zh: "面向长时间深度研究代理的效率模式。" },
-        micro: { en: "Efficiency pattern for tiny single-purpose micro-agents.", zh: "面向小型单一用途微代理的效率模式。" }
+        micro: { en: "Efficiency pattern for tiny single-purpose micro-agents.", zh: "面向小型单一用途微代理的效率模式。" },
+        custom: { en: "Community-contributed skill: third-party integration or specialized workflow.", zh: "社区贡献技能：第三方集成或专用工作流。" }
       };
       var txt = universalText[skill.role] || universalText.capability;
       return lang === "zh" ? txt.zh : txt.en;

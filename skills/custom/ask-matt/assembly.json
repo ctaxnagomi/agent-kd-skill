@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "ask-matt",
+  "title": "Ask Matt",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Ask Matt Peacock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "ask-matt.md",
+    "json": "ask-matt-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions."
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "grill-with-docs",
+  "title": "Grill With Docs",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "A grilling session that uses documentation and codebase exploration to answer questions instead of asking the user. Use when the codebase can answer the question better than the user.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "grill-with-docs.md",
+    "json": "grill-with-docs-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when exploring codebase docs to answer questions instead of asking the user."
+}

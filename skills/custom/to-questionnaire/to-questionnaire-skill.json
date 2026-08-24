@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "to-questionnaire",
+  "title": "To Questionnaire",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Transform a conversation into a structured questionnaire that captures all decisions and requirements. Use when a conversation has produced many decisions that need formalizing into actionable specs.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "frontmatter": {
+    "name": "to-questionnaire",
+    "description": "Transform a conversation into a structured questionnaire that captures all decisions and requirements. Use when a conversation has produced many decisions that need formalizing into actionable specs.",
+    "credit": "Matt Peacock (mattpocock/skills)"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when a conversation has produced many decisions that need formalizing.",
+  "files": {
+    "md": "to-questionnaire.md",
+    "json": "to-questionnaire-skill.json",
+    "assembly": "assembly.json"
+  }
+}

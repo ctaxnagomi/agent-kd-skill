@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "teach",
+  "title": "Teach",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Teach a concept or skill by breaking it into progressive steps, checking understanding at each stage. Use when user wants to learn a new concept, understand how something works, or get a guided walkthrough.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "frontmatter": {
+    "name": "teach",
+    "description": "Teach a concept or skill by breaking it into progressive steps, checking understanding at each stage. Use when user wants to learn a new concept, understand how something works, or get a guided walkthrough.",
+    "credit": "Matt Peacock (mattpocock/skills)"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when user wants to learn a new concept or get a guided walkthrough of a topic.",
+  "files": {
+    "md": "teach.md",
+    "json": "teach-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "domain-modeling",
+  "title": "Domain Modeling",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Create and maintain a shared domain vocabulary and model that all code and tests reference. Use when establishing domain vocabulary, creating CONTEXT.md, or aligning code with business concepts.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "frontmatter": {
+    "name": "domain-modeling",
+    "description": "Create and maintain a shared domain vocabulary and model that all code and tests reference. Use when establishing domain vocabulary, creating CONTEXT.md, or aligning code with business concepts.",
+    "credit": "Matt Peacock (mattpocock/skills)"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when establishing domain vocabulary or aligning code with business concepts.",
+  "files": {
+    "md": "domain-modeling.md",
+    "json": "domain-modeling-skill.json",
+    "assembly": "assembly.json"
+  }
+}

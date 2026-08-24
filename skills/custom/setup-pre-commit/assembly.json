@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "setup-pre-commit",
+  "title": "Setup Pre-Commit Hooks",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. Use when adding pre-commit hooks, setting up Husky, or configuring lint-staged.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "setup-pre-commit.md",
+    "json": "setup-pre-commit-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when setting up pre-commit hooks or Husky."
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "tdd",
+  "title": "TDD",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Test-driven development: the red-green loop, what a good test is, where tests go, anti-patterns, and the rules of the loop. Use when building features or fixing bugs test-first, or wanting integration tests.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "tdd.md",
+    "json": "tdd-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when building features test-first or wanting to follow TDD practices."
+}

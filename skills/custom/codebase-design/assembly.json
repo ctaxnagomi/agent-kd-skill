@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "codebase-design",
+  "title": "Codebase Design",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Design modules, interfaces, and architecture decisions with vocabulary for seams, adapters, and depth. Use when designing a new module, deciding where seams should be, or making architectural decisions.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "codebase-design.md",
+    "json": "codebase-design-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when designing a new module or making architectural decisions."
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "scaffold-exercises",
+  "title": "Scaffold Exercises",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when scaffolding exercises, creating exercise stubs, or setting up a new course section.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "scaffold-exercises.md",
+    "json": "scaffold-exercises-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when scaffolding exercises or creating course sections."
+}

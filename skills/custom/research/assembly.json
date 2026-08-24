@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agentkd.skill/assembly-schema-v1",
+  "name": "research",
+  "title": "Research",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "description": "Research a topic thoroughly using documentation, codebase exploration, and external sources. Use when deep knowledge outside the current working directory is required or a decision depends on external facts.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "files": {
+    "md": "research.md",
+    "json": "research-skill.json",
+    "assembly": "assembly.json"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when deep knowledge outside the current working directory is required."
+}

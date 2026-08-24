@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "code-review",
+  "title": "Code Review",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Review code with focus on behavior, architecture, and test quality — not style. Use when reviewing a PR, checking code quality, or getting a second opinion on implementation.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "frontmatter": {
+    "name": "code-review",
+    "description": "Review code with focus on behavior, architecture, and test quality — not style. Use when reviewing a PR, checking code quality, or getting a second opinion on implementation.",
+    "credit": "Matt Peacock (mattpocock/skills)"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when reviewing a PR or checking code quality.",
+  "files": {
+    "md": "code-review.md",
+    "json": "code-review-skill.json",
+    "assembly": "assembly.json"
+  }
+}

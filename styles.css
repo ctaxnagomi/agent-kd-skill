@@ -573,6 +573,7 @@ button {
 .role-chip-sub        { color: #56FFC0; border-color: rgba(86, 255, 192, 0.5); background: rgba(86, 255, 192, 0.1); }
 .role-chip-deep       { color: #9BFF5A; border-color: rgba(155, 255, 90, 0.5); background: rgba(155, 255, 90, 0.1); }
 .role-chip-micro      { color: #4DD8FF; border-color: rgba(77, 216, 255, 0.5); background: rgba(77, 216, 255, 0.1); }
+.role-chip-custom     { color: #FFB347; border-color: rgba(255, 179, 71, 0.5); background: rgba(255, 179, 71, 0.1); }
 
 .role-desc {
   font-size: 13.5px;
