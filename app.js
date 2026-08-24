@@ -918,12 +918,28 @@
 
       if (indicatorText.indexOf("Release") !== -1) {
         indicator.classList.add("refreshing");
-        indicator.textContent = "↻ Refreshing…";
-        setTimeout(function () { window.location.reload(); }, 600);
+        indicator.textContent = "→ Going to KrackedDevs…";
+        setTimeout(function () { window.location.href = "https://www.krackeddevs.com"; }, 400);
       } else {
         indicator.classList.remove("visible");
       }
     });
+  }
+
+  /* ---------------- mobile overscroll guard ---------------- */
+
+  function initOverscrollGuard() {
+    if (!("ontouchstart" in window)) return;
+    var startY = 0;
+    document.addEventListener("touchstart", function (e) {
+      startY = e.touches[0].clientY;
+    }, { passive: true });
+    document.addEventListener("touchmove", function (e) {
+      var dy = e.touches[0].clientY - startY;
+      if (window.scrollY <= 0 && dy > 0) {
+        e.preventDefault();
+      }
+    }, { passive: false });
   }
 
   /* ---------------- init ---------------- */
@@ -934,4 +950,5 @@
   renderCarousel();
   initStarRating();
   initSidebar();
+  initOverscrollGuard();
 })();
