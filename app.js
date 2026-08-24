@@ -448,14 +448,20 @@
 
   var revealObserver = null;
   var revealWired = false;
+  var revealTicking = false;
 
   function revealInView() {
-    var vh = window.innerHeight || document.documentElement.clientHeight;
-    var nodes = document.querySelectorAll(".reveal:not(.in)");
-    for (var i = 0; i < nodes.length; i++) {
-      var r = nodes[i].getBoundingClientRect();
-      if (r.top < vh * 0.94 && r.bottom > 0) nodes[i].classList.add("in");
-    }
+    if (revealTicking) return;
+    revealTicking = true;
+    requestAnimationFrame(function () {
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      var nodes = document.querySelectorAll(".reveal:not(.in)");
+      for (var i = 0; i < nodes.length; i++) {
+        var r = nodes[i].getBoundingClientRect();
+        if (r.top < vh * 0.94 && r.bottom > 0) nodes[i].classList.add("in");
+      }
+      revealTicking = false;
+    });
   }
 
   function initReveal() {
@@ -468,7 +474,7 @@
             revealObserver.unobserve(entries[e].target);
           }
         }
-      }, { threshold: 0.08 });
+      }, { threshold: 0.08, rootMargin: "0px 0px 60px 0px" });
       var nodes = document.querySelectorAll(".reveal:not(.in)");
       for (var i = 0; i < nodes.length; i++) revealObserver.observe(nodes[i]);
     }
@@ -540,10 +546,15 @@
     platEl.innerHTML = html;
   }
 
+  /* ---------------- batched rendering ---------------- */
+
+  var BATCH_SIZE = 16;
+  var rafId = null;
+
   function renderGrid() {
     var el = document.getElementById("grid");
-    var out = "";
-    var any = false;
+    el.innerHTML = "";
+    var sections = [];
 
     for (var i = 0; i < ROLES.length; i++) {
       var role = ROLES[i];
@@ -551,25 +562,49 @@
         return s.role === role.id && skillMatches(s);
       });
       if (!cards.length) continue;
-      any = true;
-      out +=
-        '<section class="role-section reveal">' +
+
+      var section = document.createElement("section");
+      section.className = "role-section reveal";
+      section.innerHTML =
         '<div class="role-head">' +
         '<span class="role-chip role-chip-' + role.accent + '">' + role.code + "</span>" +
         '<p class="role-desc">' + escapeHtml(t("roleDesc" + role.id.charAt(0).toUpperCase() + role.id.slice(1))) + "</p>" +
         "</div>" +
-        '<div class="role-grid">';
+        '<div class="role-grid"></div>';
+      var grid = section.querySelector(".role-grid");
+
       for (var c = 0; c < cards.length; c++) {
-        out += cardHtml(cards[c], c);
+        var wrapper = document.createElement("div");
+        wrapper.innerHTML = cardHtml(cards[c], c);
+        grid.appendChild(wrapper.firstChild);
       }
-      out += "</div></section>";
+
+      sections.push(section);
     }
 
-    if (!any) {
-      out = '<p class="empty">' + escapeHtml(t("noResults")) + "</p>";
+    if (!sections.length) {
+      el.innerHTML = '<p class="empty">' + escapeHtml(t("noResults")) + "</p>";
+      initReveal();
+      return;
     }
-    el.innerHTML = out;
-    initReveal();
+
+    /* batch-insert sections via RAF to avoid blocking */
+    var idx = 0;
+    function insertBatch() {
+      var end = Math.min(idx + BATCH_SIZE, sections.length);
+      var frag = document.createDocumentFragment();
+      for (var j = idx; j < end; j++) frag.appendChild(sections[j]);
+      el.appendChild(frag);
+      idx = end;
+      if (idx < sections.length) {
+        rafId = requestAnimationFrame(insertBatch);
+      } else {
+        rafId = null;
+        initReveal();
+      }
+    }
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(insertBatch);
   }
 
   function cardHtml(skill, idx) {
@@ -779,9 +814,14 @@
       render();
     });
 
+    var searchTimer = null;
     document.getElementById("search").addEventListener("input", function (e) {
       state.search = e.target.value.trim();
-      renderGrid();
+      if (searchTimer) cancelAnimationFrame(searchTimer);
+      searchTimer = requestAnimationFrame(function () {
+        renderGrid();
+        searchTimer = null;
+      });
     });
 
     document.getElementById("rolePills").addEventListener("click", function (e) {
@@ -947,12 +987,31 @@
     }, { passive: false });
   }
 
+  /* ---------------- carousel pause-on-hide ---------------- */
+
+  var carouselObserver = null;
+
+  function initCarouselObserver() {
+    var carousel = document.querySelector(".carousel");
+    if (!carousel || !("IntersectionObserver" in window)) return;
+    var track = carousel.querySelector(".carousel-track");
+    if (!track) return;
+
+    carouselObserver = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        track.style.animationPlayState = entries[i].isIntersecting ? "running" : "paused";
+      }
+    }, { threshold: 0 });
+    carouselObserver.observe(carousel);
+  }
+
   /* ---------------- init ---------------- */
 
   render();
   bindEvents();
   wireReveal();
   renderCarousel();
+  initCarouselObserver();
   initStarRating();
   initSidebar();
   initOverscrollGuard();

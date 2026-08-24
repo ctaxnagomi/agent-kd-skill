@@ -702,6 +702,9 @@ button {
   gap: 10px;
   margin: 40px 0;
   transition: 0.5s var(--ease);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
+  will-change: transform;
 }
 
 .skill-card::before {
@@ -952,6 +955,8 @@ button {
   border-radius: var(--r-card);
   padding: var(--sp-3);
   transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 280px;
 }
 
 .platform-card:hover {
@@ -1486,6 +1491,7 @@ button {
   gap: 24px;
   width: max-content;
   animation: scroll-left 30s linear infinite;
+  will-change: transform;
 }
 
 .carousel-item {
@@ -1580,6 +1586,14 @@ button {
   }
   .btn span {
     animation: none;
+  }
+  .carousel-track {
+    animation: none;
+    will-change: auto;
+  }
+  .skill-card {
+    will-change: auto;
+    content-visibility: visible;
   }
   .sidebar {
     transition: none;
