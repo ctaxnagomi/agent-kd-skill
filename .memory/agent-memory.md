@@ -164,6 +164,7 @@ ctaxnagomi@users.noreply.github.com
 
 | Hash | Message |
 |------|---------|
+| `73c56dd` | Lazy loading: batched RAF rendering (16/frame), carousel pause-offscreen, content-visibility:auto, search debounce, RAF-throttled scroll reveal |
 | `c51ac4b` | README: credits for design snippets (Kyon Jordan neon buttons, Melvin glass cards) |
 | `6097508` | Neon border-trace buttons with glow hover, design.md updated with button component |
 | `29b89ba` | Skewed glass card design with per-category gradients, floating orbs, translucent iOS content panel |
@@ -188,11 +189,17 @@ ctaxnagomi@users.noreply.github.com
 ### Key Decisions Made
 
 1. **Scroll fix**: Changed `overflow-x: hidden` → `overflow-x: clip` on body, removed from html. This fixed mousewheel scrolling.
-2. **Sidebar evolution**: Cassette tape → pixelated neon → translucent iOS glass (3 iterations in one session).
+2. **Sidebar evolution**: Cassette tape → pixelated neon → translucent iOS glass → neon border-trace home link (4 iterations in one session).
 3. **Card design**: Flat cards → skewed glass panels with per-category gradients and floating orbs.
 4. **Button design**: Plain border buttons → neon border-trace animation with 4-span clockwise chase.
-5. **Mobile overscroll**: JS guard restricted to mobile only to avoid blocking desktop scroll.
-6. **Design template**: Created `skills/custom/design/` as a 3-file bundle documenting the full design system.
+5. **Sidebar neon border**: Applied same 4-span border-trace to sidebar Home link, hidden on mobile (clean pill).
+6. **Mobile overscroll**: JS guard restricted to mobile only to avoid blocking desktop scroll.
+7. **Batched rendering**: Cards render 16 per RAF frame instead of all at once — prevents main thread blocking.
+8. **Carousel pause**: IntersectionObserver pauses CSS animation when carousel is off-screen.
+9. **content-visibility: auto**: Browser skips rendering off-screen cards/platforms entirely.
+10. **Search debounce**: RAF debounce prevents rapid re-renders while typing.
+11. **Design template**: Created `skills/custom/design/` as a 3-file bundle documenting the full design system.
+12. **Agent memory**: Created `.memory/agent-memory.md` for persistent project context across sessions.
 
 ### External Credits
 
@@ -212,3 +219,5 @@ ctaxnagomi@users.noreply.github.com
 | JS overscroll guard blocks desktop scroll | Gate on `window.innerWidth <= 768` |
 | `compile-skills.mjs` fails with `ERR_INVALID_ARG_TYPE` | Pre-existing issue, unrelated to design changes |
 | CRLF warnings in git | Cosmetic only, Windows line endings |
+| Sidebar border-trace spans conflict with text `<span>` | Use `.sidebar-link-text` class for text span, `span:not(.sidebar-link-text)` for border traces |
+| Mobile sidebar hides border-trace spans | `display: none` on `span:not(.sidebar-link-text)` inside mobile media query |
