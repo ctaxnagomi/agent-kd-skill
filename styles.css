@@ -46,7 +46,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -57,7 +56,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-x: hidden;
+  overflow-x: clip;
   overscroll-behavior-x: none;
   -webkit-font-smoothing: antialiased;
   animation: page-in 0.4s ease-out;
@@ -1009,42 +1008,53 @@ button {
   }
 }
 
-/* ---------------- sidebar — cassette tape style ---------------- */
+/* ---------------- sidebar — minimalistic translucent iOS ---------------- */
 
 .sidebar {
+  --sb-bg: rgba(10, 18, 11, 0.65);
+  --sb-border: rgba(10, 247, 0, 0.12);
+  --sb-glow: rgba(10, 247, 0, 0.08);
+  --sb-radius: 16px;
+  --sb-blur: 20px;
+
   position: fixed;
-  left: 0;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
-  width: 52px;
-  background: rgba(1, 5, 2, 0.92);
-  border: 2px solid var(--accent-bright);
-  border-left: none;
-  border-radius: 0;
-  padding: 10px 0;
+  width: 48px;
+  background: var(--sb-bg);
+  border: 1px solid var(--sb-border);
+  border-radius: var(--sb-radius);
+  padding: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  transition: width 0.2s ease, opacity 0.2s ease;
+  gap: 4px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  box-shadow: 0 0 12px rgba(10, 247, 0, 0.3);
-  will-change: width, opacity;
+  -webkit-backdrop-filter: blur(var(--sb-blur)) saturate(1.4);
+  backdrop-filter: blur(var(--sb-blur)) saturate(1.4);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 0.5px rgba(10, 247, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .sidebar:hover,
 .sidebar.open {
   width: 160px;
-  opacity: 1;
-  box-shadow: 0 0 24px rgba(10, 247, 0, 0.4);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 0.5px rgba(10, 247, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .sidebar-link {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px;
+  padding: 10px 12px;
   color: var(--accent-bright);
   text-decoration: none;
   font-family: 'JetBrains Mono', monospace;
@@ -1052,12 +1062,12 @@ button {
   font-weight: 600;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  border-radius: 0;
-  margin: 0 4px;
-  transition: background 0.15s ease, color 0.15s ease;
+  border-radius: 10px;
+  margin: 0;
+  transition: background 0.2s ease, color 0.2s ease;
   position: relative;
   z-index: 2;
-  opacity: 0.45;
+  opacity: 0.5;
 }
 
 .sidebar:hover .sidebar-link,
@@ -1065,26 +1075,30 @@ button {
   opacity: 1;
 }
 
+.sidebar-link:hover {
+  background: var(--sb-glow);
+  color: #fff;
+}
+
+.sidebar-link:active {
+  transform: scale(0.97);
+}
+
 .sidebar-link svg {
   flex-shrink: 0;
   width: 18px;
   height: 18px;
-  color: #000;
-  filter: drop-shadow(0 0 4px var(--accent-bright));
+  color: var(--accent-bright);
+  opacity: 0.9;
 }
 
 .sidebar-link:hover svg {
-  filter: drop-shadow(0 0 8px var(--accent-bright)) drop-shadow(0 0 2px var(--accent-bright));
-}
-
-.sidebar-link:hover {
-  background: rgba(10, 247, 0, 0.1);
-  color: #fff;
+  opacity: 1;
 }
 
 .sidebar-link span {
   opacity: 0;
-  transition: opacity 0.15s ease 0.05s;
+  transition: opacity 0.25s ease 0.08s;
 }
 
 .sidebar:hover .sidebar-link span,
@@ -1117,13 +1131,15 @@ button {
     flex-direction: column;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--sb-border);
     padding: 10px 16px;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    background: var(--surface);
-    box-shadow: none;
+    background: var(--sb-bg);
+    -webkit-backdrop-filter: blur(var(--sb-blur)) saturate(1.4);
+    backdrop-filter: blur(var(--sb-blur)) saturate(1.4);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
   }
   .sidebar::before,
   .sidebar::after {
@@ -1137,9 +1153,10 @@ button {
     gap: 6px;
     padding: 6px 20px;
     border-radius: 999px;
-    border: 1px solid var(--border-strong);
-    background: var(--surface-2);
+    border: 1px solid var(--sb-border);
+    background: rgba(10, 247, 0, 0.06);
     font-size: 13px;
+    opacity: 1;
     transition: transform 0.2s ease, background 0.2s;
     touch-action: none;
     user-select: none;
@@ -1147,6 +1164,7 @@ button {
   }
   .sidebar-link:active {
     transform: scale(0.96);
+    background: rgba(10, 247, 0, 0.12);
   }
   .sidebar-link span {
     opacity: 1;
@@ -1327,5 +1345,8 @@ button {
   .platform-card:hover,
   .digest-card:hover {
     transform: none;
+  }
+  .sidebar {
+    transition: none;
   }
 }
