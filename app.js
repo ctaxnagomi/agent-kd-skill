@@ -172,7 +172,8 @@
     { id: "custom-git-guardrails-claude-code", role: "custom", platform: null, file: "custom/git-guardrails-claude-code/git-guardrails-claude-code.md", title: "Git Guardrails (Claude Code)" },
     { id: "custom-migrate-to-shoehorn", role: "custom", platform: null, file: "custom/migrate-to-shoehorn/migrate-to-shoehorn.md", title: "Migrate to Shoehorn" },
     { id: "custom-scaffold-exercises", role: "custom", platform: null, file: "custom/scaffold-exercises/scaffold-exercises.md", title: "Scaffold Exercises" },
-    { id: "custom-setup-pre-commit", role: "custom", platform: null, file: "custom/setup-pre-commit/setup-pre-commit.md", title: "Setup Pre-Commit Hooks" }
+    { id: "custom-setup-pre-commit", role: "custom", platform: null, file: "custom/setup-pre-commit/setup-pre-commit.md", title: "Setup Pre-Commit Hooks" },
+    { id: "custom-agent-memory", role: "custom", platform: null, file: "custom/agent-memory/agent-memory.md", title: "Agent Memory" }
   ];
 
   /* ---------------- i18n ---------------- */

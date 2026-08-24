@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agentkd.skill/skill-schema-v1",
+  "name": "agent-memory",
+  "title": "Agent Memory",
+  "role": "custom",
+  "roleCode": "CUSTOM SKILL",
+  "platform": null,
+  "platformName": "Universal",
+  "description": "Manage agent memory across sessions: store, retrieve, and persist context, decisions, and learned patterns. Use when the agent needs to remember things between sessions or build a knowledge base.",
+  "credit": "Matt Peacock (mattpocock/skills)",
+  "frontmatter": {
+    "name": "agent-memory",
+    "description": "Manage agent memory across sessions: store, retrieve, and persist context, decisions, and learned patterns.",
+    "credit": "Matt Peacock (mattpocock/skills)"
+  },
+  "install": [
+    {
+      "level": "universal",
+      "path": "<agent>/skills/<name>/SKILL.md"
+    }
+  ],
+  "invoke": "Invoke when the agent needs to remember things between sessions or build a persistent knowledge base.",
+  "files": {
+    "md": "agent-memory.md",
+    "json": "agent-memory-skill.json",
+    "assembly": "assembly.json"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "$schema": "https://agentkd.skill/catalog-v1",
   "version": 1,
-  "generated": "2026-08-24T18:35:25.613Z",
-  "count": 98,
+  "generated": "2026-08-24T19:19:41.516Z",
+  "count": 99,
   "snapdom": {
     "drop": [
       "script",
@@ -720,6 +720,16 @@
       "platformName": "Universal",
       "title": "Sub-agent Warm Start",
       "description": "Reuse a prepared sub-agent template, seed data, or cached result so repeated dispatches skip setup and start cold-to-hot fast. Warm starts cut overhead on recurring delegation. Trigger keywords: warm start, reuse template, cached sub-agent, reusable dispatch, prebuilt prompt."
+    },
+    {
+      "id": "agent-memory",
+      "name": "agent-memory",
+      "role": "custom",
+      "roleCode": "CUSTOM SKILL",
+      "platform": null,
+      "platformName": "Universal",
+      "title": "Agent Memory",
+      "description": "Manage agent memory across sessions: store, retrieve, and persist context, decisions, and learned patterns."
     },
     {
       "id": "ask-matt",
