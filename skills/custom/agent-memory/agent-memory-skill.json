@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when the agent needs to remember things between sessions or build a persistent knowledge base.",
   "files": {
-    "md": "agent-memory.md",
+    "md": "SKILL.md",
     "json": "agent-memory-skill.json",
     "assembly": "assembly.json"
   }

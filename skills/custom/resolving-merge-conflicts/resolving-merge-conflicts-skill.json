@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when a merge conflict needs resolution.",
   "files": {
-    "md": "resolving-merge-conflicts.md",
+    "md": "SKILL.md",
     "json": "resolving-merge-conflicts-skill.json",
     "assembly": "assembly.json"
   }

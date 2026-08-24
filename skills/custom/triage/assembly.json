@@ -8,7 +8,7 @@
   "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs. Use when triaging issues or managing a project issue tracker.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "triage.md",
+    "md": "SKILL.md",
     "json": "triage-skill.json",
     "assembly": "assembly.json"
   },

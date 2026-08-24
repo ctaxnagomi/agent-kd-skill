@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when replacing as assertions in test files with shoehorn.",
   "files": {
-    "md": "migrate-to-shoehorn.md",
+    "md": "SKILL.md",
     "json": "migrate-to-shoehorn-skill.json",
     "assembly": "assembly.json"
   }

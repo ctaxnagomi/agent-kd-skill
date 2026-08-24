@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when a session is running out of context or work needs to continue in a fresh session.",
   "files": {
-    "md": "handoff.md",
+    "md": "SKILL.md",
     "json": "handoff-skill.json",
     "assembly": "assembly.json"
   }

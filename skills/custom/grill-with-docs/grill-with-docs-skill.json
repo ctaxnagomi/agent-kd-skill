@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when exploring codebase docs to answer questions instead of asking the user.",
   "files": {
-    "md": "grill-with-docs.md",
+    "md": "SKILL.md",
     "json": "grill-with-docs-skill.json",
     "assembly": "assembly.json"
   }

@@ -8,7 +8,7 @@
   "description": "Teach a concept or skill by breaking it into progressive steps, checking understanding at each stage. Use when user wants to learn a new concept, understand how something works, or get a guided walkthrough.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "teach.md",
+    "md": "SKILL.md",
     "json": "teach-skill.json",
     "assembly": "assembly.json"
   },

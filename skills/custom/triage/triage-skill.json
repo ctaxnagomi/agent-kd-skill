@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when triaging issues or managing a project issue tracker.",
   "files": {
-    "md": "triage.md",
+    "md": "SKILL.md",
     "json": "triage-skill.json",
     "assembly": "assembly.json"
   }

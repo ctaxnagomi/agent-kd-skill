@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
   "files": {
-    "md": "ask-matt.md",
+    "md": "SKILL.md",
     "json": "ask-matt-skill.json",
     "assembly": "assembly.json"
   }

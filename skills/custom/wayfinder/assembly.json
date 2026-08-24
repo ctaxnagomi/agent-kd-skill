@@ -8,7 +8,7 @@
   "description": "Plan a huge chunk of work as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear. Use when a task is too big for one agent session.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "wayfinder.md",
+    "md": "SKILL.md",
     "json": "wayfinder-skill.json",
     "assembly": "assembly.json"
   },

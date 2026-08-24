@@ -8,7 +8,7 @@
   "description": "Stop and ask \"wait, what?\" when something doesn't add up — challenge unclear assumptions before proceeding. Use when something in the plan doesn't make sense or an assumption needs questioning.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "wait-what.md",
+    "md": "SKILL.md",
     "json": "wait-what-skill.json",
     "assembly": "assembly.json"
   },

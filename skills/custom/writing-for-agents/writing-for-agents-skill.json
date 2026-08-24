@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when writing SKILL.md files, agent instructions, or documentation for AI readability.",
   "files": {
-    "md": "writing-for-agents.md",
+    "md": "SKILL.md",
     "json": "writing-for-agents-skill.json",
     "assembly": "assembly.json"
   }

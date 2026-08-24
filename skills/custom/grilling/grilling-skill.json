@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when user wants to stress-test a plan, get grilled on their design, or challenge a design before implementation.",
   "files": {
-    "md": "grilling.md",
+    "md": "SKILL.md",
     "json": "grilling-skill.json",
     "assembly": "assembly.json"
   }

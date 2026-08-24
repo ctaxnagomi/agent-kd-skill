@@ -8,7 +8,7 @@
   "description": "Manage agent memory across sessions: store, retrieve, and persist context, decisions, and learned patterns.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "agent-memory.md",
+    "md": "SKILL.md",
     "json": "agent-memory-skill.json",
     "assembly": "assembly.json"
   },

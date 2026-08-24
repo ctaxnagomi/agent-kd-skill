@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when setting up pre-commit hooks or Husky.",
   "files": {
-    "md": "setup-pre-commit.md",
+    "md": "SKILL.md",
     "json": "setup-pre-commit-skill.json",
     "assembly": "assembly.json"
   }

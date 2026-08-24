@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when deep knowledge outside the current working directory is required.",
   "files": {
-    "md": "research.md",
+    "md": "SKILL.md",
     "json": "research-skill.json",
     "assembly": "assembly.json"
   }

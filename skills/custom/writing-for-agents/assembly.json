@@ -8,7 +8,7 @@
   "description": "Write clear, structured prompts and instructions optimized for AI agent consumption. Use when writing SKILL.md files, creating agent instructions, or structuring documentation for AI readability.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "writing-for-agents.md",
+    "md": "SKILL.md",
     "json": "writing-for-agents-skill.json",
     "assembly": "assembly.json"
   },

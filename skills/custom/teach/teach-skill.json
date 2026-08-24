@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when user wants to learn a new concept or get a guided walkthrough of a topic.",
   "files": {
-    "md": "teach.md",
+    "md": "SKILL.md",
     "json": "teach-skill.json",
     "assembly": "assembly.json"
   }

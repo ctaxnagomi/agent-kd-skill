@@ -8,7 +8,7 @@
   "description": "Systematically resolve merge conflicts by understanding both sides and finding the correct resolution. Use when a merge conflict needs resolution or you need to understand what both branches intended.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "resolving-merge-conflicts.md",
+    "md": "SKILL.md",
     "json": "resolving-merge-conflicts-skill.json",
     "assembly": "assembly.json"
   },

@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when a conversation has produced many decisions that need formalizing.",
   "files": {
-    "md": "to-questionnaire.md",
+    "md": "SKILL.md",
     "json": "to-questionnaire-skill.json",
     "assembly": "assembly.json"
   }

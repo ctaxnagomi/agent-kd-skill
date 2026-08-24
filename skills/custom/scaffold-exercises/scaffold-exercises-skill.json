@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when scaffolding exercises or creating course sections.",
   "files": {
-    "md": "scaffold-exercises.md",
+    "md": "SKILL.md",
     "json": "scaffold-exercises-skill.json",
     "assembly": "assembly.json"
   }

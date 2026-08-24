@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when planning work too large for a single agent session.",
   "files": {
-    "md": "wayfinder.md",
+    "md": "SKILL.md",
     "json": "wayfinder-skill.json",
     "assembly": "assembly.json"
   }

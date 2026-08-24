@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when provisioning infrastructure or running a one-off migration.",
   "files": {
-    "md": "wizard.md",
+    "md": "SKILL.md",
     "json": "wizard-skill.json",
     "assembly": "assembly.json"
   }

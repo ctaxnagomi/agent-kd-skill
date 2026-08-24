@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when designing a new module or making architectural decisions.",
   "files": {
-    "md": "codebase-design.md",
+    "md": "SKILL.md",
     "json": "codebase-design-skill.json",
     "assembly": "assembly.json"
   }

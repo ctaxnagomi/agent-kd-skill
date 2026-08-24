@@ -8,7 +8,7 @@
   "description": "Turn a spec or plan into working code, one vertical slice at a time. Use when a spec or plan exists and needs implementation, or converting design decisions into code.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "implement.md",
+    "md": "SKILL.md",
     "json": "implement-skill.json",
     "assembly": "assembly.json"
   },

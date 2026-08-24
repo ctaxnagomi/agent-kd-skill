@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when setting up Matt Pocock skills for the first time.",
   "files": {
-    "md": "setup-matt-pocock-skills.md",
+    "md": "SKILL.md",
     "json": "setup-matt-pocock-skills-skill.json",
     "assembly": "assembly.json"
   }

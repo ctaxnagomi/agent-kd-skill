@@ -8,7 +8,7 @@
   "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D) before they execute. Use when user wants to prevent destructive git operations or add git safety hooks.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "git-guardrails-claude-code.md",
+    "md": "SKILL.md",
     "json": "git-guardrails-claude-code-skill.json",
     "assembly": "assembly.json"
   },

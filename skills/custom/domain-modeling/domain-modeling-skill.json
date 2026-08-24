@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when establishing domain vocabulary or aligning code with business concepts.",
   "files": {
-    "md": "domain-modeling.md",
+    "md": "SKILL.md",
     "json": "domain-modeling-skill.json",
     "assembly": "assembly.json"
   }

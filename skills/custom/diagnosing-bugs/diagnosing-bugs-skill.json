@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when a bug needs investigation and the root cause isn't obvious.",
   "files": {
-    "md": "diagnosing-bugs.md",
+    "md": "SKILL.md",
     "json": "diagnosing-bugs-skill.json",
     "assembly": "assembly.json"
   }

@@ -8,7 +8,7 @@
   "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges. Use when you need to break work into tickets or plan implementation order.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "to-tickets.md",
+    "md": "SKILL.md",
     "json": "to-tickets-skill.json",
     "assembly": "assembly.json"
   },

@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when a spec or plan exists and needs implementation.",
   "files": {
-    "md": "implement.md",
+    "md": "SKILL.md",
     "json": "implement-skill.json",
     "assembly": "assembly.json"
   }

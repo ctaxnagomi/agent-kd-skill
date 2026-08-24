@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when user wants to prevent destructive git operations.",
   "files": {
-    "md": "git-guardrails-claude-code.md",
+    "md": "SKILL.md",
     "json": "git-guardrails-claude-code-skill.json",
     "assembly": "assembly.json"
   }

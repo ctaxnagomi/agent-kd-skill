@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when reviewing a PR or checking code quality.",
   "files": {
-    "md": "code-review.md",
+    "md": "SKILL.md",
     "json": "code-review-skill.json",
     "assembly": "assembly.json"
   }

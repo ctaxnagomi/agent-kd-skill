@@ -8,7 +8,7 @@
   "description": "A grilling session that uses documentation and codebase exploration to answer questions instead of asking the user. Use when the codebase can answer the question better than the user.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "grill-with-docs.md",
+    "md": "SKILL.md",
     "json": "grill-with-docs-skill.json",
     "assembly": "assembly.json"
   },

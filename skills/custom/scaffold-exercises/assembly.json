@@ -8,7 +8,7 @@
   "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when scaffolding exercises, creating exercise stubs, or setting up a new course section.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "scaffold-exercises.md",
+    "md": "SKILL.md",
     "json": "scaffold-exercises-skill.json",
     "assembly": "assembly.json"
   },

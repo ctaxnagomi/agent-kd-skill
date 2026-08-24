@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when the codebase has structural problems or needs architectural improvement.",
   "files": {
-    "md": "improve-codebase-architecture.md",
+    "md": "SKILL.md",
     "json": "improve-codebase-architecture-skill.json",
     "assembly": "assembly.json"
   }

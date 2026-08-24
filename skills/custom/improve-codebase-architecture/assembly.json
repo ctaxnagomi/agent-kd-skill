@@ -8,7 +8,7 @@
   "description": "Refactor and improve codebase architecture by identifying and resolving structural issues. Use when the codebase has structural problems or modules are too coupled.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "improve-codebase-architecture.md",
+    "md": "SKILL.md",
     "json": "improve-codebase-architecture-skill.json",
     "assembly": "assembly.json"
   },

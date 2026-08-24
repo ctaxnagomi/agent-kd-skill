@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when building features test-first or wanting to follow TDD practices.",
   "files": {
-    "md": "tdd.md",
+    "md": "SKILL.md",
     "json": "tdd-skill.json",
     "assembly": "assembly.json"
   }

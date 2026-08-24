@@ -8,7 +8,7 @@
   "description": "Systematically diagnose bugs using the scientific method: hypothesis, experiment, conclusion. Use when a bug needs investigation and the root cause isn't obvious.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "diagnosing-bugs.md",
+    "md": "SKILL.md",
     "json": "diagnosing-bugs-skill.json",
     "assembly": "assembly.json"
   },

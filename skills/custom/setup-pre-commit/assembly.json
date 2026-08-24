@@ -8,7 +8,7 @@
   "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. Use when adding pre-commit hooks, setting up Husky, or configuring lint-staged.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "setup-pre-commit.md",
+    "md": "SKILL.md",
     "json": "setup-pre-commit-skill.json",
     "assembly": "assembly.json"
   },

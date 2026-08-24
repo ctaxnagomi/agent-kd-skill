@@ -21,7 +21,7 @@
   ],
   "invoke": "Invoke when you want to create a spec from an existing conversation.",
   "files": {
-    "md": "to-spec.md",
+    "md": "SKILL.md",
     "json": "to-spec-skill.json",
     "assembly": "assembly.json"
   }

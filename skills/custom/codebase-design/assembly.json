@@ -8,7 +8,7 @@
   "description": "Design modules, interfaces, and architecture decisions with vocabulary for seams, adapters, and depth. Use when designing a new module, deciding where seams should be, or making architectural decisions.",
   "credit": "Matt Peacock (mattpocock/skills)",
   "files": {
-    "md": "codebase-design.md",
+    "md": "SKILL.md",
     "json": "codebase-design-skill.json",
     "assembly": "assembly.json"
   },
