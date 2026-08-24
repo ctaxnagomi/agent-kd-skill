@@ -46,6 +46,8 @@
 
 html {
   scroll-behavior: smooth;
+  touch-action: pan-y;
+  overflow-x: hidden;
 }
 
 body {
@@ -56,6 +58,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1128,6 +1131,9 @@ button {
 
 /* mobile: normal header nav */
 @media (max-width: 768px) {
+  .site-header {
+    display: none;
+  }
   .sidebar {
     position: fixed;
     top: 0;
@@ -1143,6 +1149,7 @@ button {
     border-bottom: 2px solid var(--accent);
     padding: 8px 16px;
     justify-content: space-between;
+    z-index: 100;
   }
   .sidebar::before,
   .sidebar::after {
@@ -1157,6 +1164,9 @@ button {
   .sidebar:hover,
   .sidebar.open {
     width: 100%;
+  }
+  .hero {
+    padding-top: 60px;
   }
 }
 
@@ -1183,11 +1193,12 @@ button {
 
 .hero-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(24px, 5vw, 48px);
+  font-size: clamp(20px, 5vw, 48px);
   font-weight: 900;
   color: var(--text);
   margin: 0 0 12px;
   line-height: 1.1;
+  overflow-wrap: break-word;
 }
 
 .hero-accent {
