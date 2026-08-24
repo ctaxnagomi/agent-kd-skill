@@ -1,7 +1,7 @@
 # Agent Memory — AGENT KD SKILL
 
 > Persistent project context for AI agents resuming work on this repository.
-> Updated: 2026-08-25
+> Updated: 2026-08-25 (latest session)
 
 ---
 
@@ -164,6 +164,7 @@ ctaxnagomi@users.noreply.github.com
 
 | Hash | Message |
 |------|---------|
+| `dfd64f3` | How-to-use guide on every SKILL.md + card, FAQ page (17 Q&As), footer nav with FAQs link |
 | `da779f9` | Rename all custom skill .md to SKILL.md for opencode discovery, update assembly.json refs |
 | `73c56dd` | Lazy loading: batched RAF rendering (16/frame), carousel pause-offscreen, content-visibility:auto, search debounce, RAF-throttled scroll reveal |
 | `c51ac4b` | README: credits for design snippets (Kyon Jordan neon buttons, Melvin glass cards) |
@@ -205,6 +206,7 @@ ctaxnagomi@users.noreply.github.com
 14. **How to use? guide**: Embedded beginner installation instructions in every SKILL.md and added monospace "How to use? →" placeholder on every product card.
 15. **FAQs page**: Created `faq.html` with 17 Q&As covering installation, usage, roles, contribution, and technical details.
 16. **Footer nav**: Added FAQs, GitHub, and KrackedDevs links to site footer.
+17. **Gmail draft**: Created email progress report at `C:\Users\User\AppData\Local\Temp\opencode\gmail-draft.txt` — BrowserOS neo MCP wasn't connected in this session (server running on port 9011 but tools not exposed to agent).
 
 ### External Credits
 
@@ -226,3 +228,4 @@ ctaxnagomi@users.noreply.github.com
 | CRLF warnings in git | Cosmetic only, Windows line endings |
 | Sidebar border-trace spans conflict with text `<span>` | Use `.sidebar-link-text` class for text span, `span:not(.sidebar-link-text)` for border traces |
 | Mobile sidebar hides border-trace spans | `display: none` on `span:not(.sidebar-link-text)` inside mobile media query |
+| BrowserOS neo MCP tools not exposed | Server runs on port 9011 but tools don't appear in agent tool list — need session restart or `/mcp` toggle |
