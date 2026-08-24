@@ -599,8 +599,8 @@
       stars +
       '<code class="card-file">' + escapeHtml(basename(skill.file)) + "</code>" +
       '<div class="card-actions">' +
-      '<button class="btn" type="button" data-action="preview" data-id="' + skill.id + '">' + escapeHtml(t("preview")) + "</button>" +
-      '<button class="btn btn-primary" type="button" data-action="download" data-id="' + skill.id + '">' + escapeHtml(t("download")) + "</button>" +
+      '<button class="btn" type="button" data-action="preview" data-id="' + skill.id + '"><span></span><span></span><span></span><span></span>' + escapeHtml(t("preview")) + "</button>" +
+      '<button class="btn btn-primary" type="button" data-action="download" data-id="' + skill.id + '"><span></span><span></span><span></span><span></span>' + escapeHtml(t("download")) + "</button>" +
       "</div>" +
       "</div>" +
       "</article>"

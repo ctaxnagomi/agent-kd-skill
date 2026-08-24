@@ -4,16 +4,24 @@ id: custom-design
 role: custom
 category: design-system
 platform: universal
-description: "UI/UX design capability — skewed glass card system with translucent iOS aesthetic and per-category color gradients."
+description: "UI/UX design system — skewed glass cards, neon border-trace buttons, translucent iOS aesthetic with per-category color gradients."
 ---
 
-# Design — Skewed Glass Card System
+# Design — Skewed Glass + Neon Border System
 
 ## Overview
 
-A card-based design system that uses skewed translucent glass panels, floating orbs, and category-specific color gradients. Each card has two pseudo-element layers (solid + blur glow) that unskew on hover, creating a reveal effect. Content sits in a frosted glass panel centered between the layers.
+A unified design system combining:
+1. **Skewed glass cards** — translucent panels with floating orbs and per-category color gradients
+2. **Neon border-trace buttons** — animated border lines that chase clockwise, with glow on hover
 
-## Architecture
+Both systems use the same accent token `#0AF700` for consistency.
+
+---
+
+## Component 1: Skewed Glass Cards
+
+### Architecture
 
 ```
 .skill-card           ← relative wrapper, no padding
@@ -24,7 +32,7 @@ A card-based design system that uses skewed translucent glass panels, floating o
   .card-content       ← frosted glass content panel (z:2)
 ```
 
-## Color Tokens (per category)
+### Color Tokens (per category)
 
 | Category   | Gradient                                    |
 |------------|---------------------------------------------|
@@ -37,31 +45,21 @@ A card-based design system that uses skewed translucent glass panels, floating o
 | micro      | `linear-gradient(315deg, #4DD8FF, #07AE00)` |
 | custom     | `linear-gradient(315deg, #FFB347, #FF6B00)` |
 
-## Interaction States
+### Interaction States
 
 - **Default**: skewed 12deg, orbs hidden, content padding tight
-- **Hover**: skew 0deg, panels expand to full width, orbs fade in + grow, content padding increases
-- **Active/Click**: `scale(0.97)` on content panel
+- **Hover**: skew 0deg, panels expand, orbs fade in + grow, content padding increases
+- **Active**: `scale(0.97)` on content panel
 - **Reduced motion**: all transitions and animations disabled
 
-## Floating Orbs
-
-- Two per card: top-left and bottom-right
-- Background: `rgba(255,255,255,0.08)` with `backdrop-filter: blur(10px)`
-- Animate on `card-float` keyframe: 3s ease-in-out infinite, offset by 1.5s
-- Grow from 60px to 80px on hover
-
-## Content Panel
+### Content Panel
 
 - `backdrop-filter: blur(16px) saturate(1.3)`
 - `background: rgba(10, 18, 11, 0.55)`
 - `border: 1px solid rgba(10, 247, 0, 0.08)`
 - `border-radius: 8px`
-- Box shadow: `0 8px 32px rgba(0,0,0,0.3)` + inset top highlight
 
-## Usage
-
-Cards use `data-role` attribute matching the category key to apply the correct gradient via CSS attribute selectors. No per-card inline styles needed.
+### Usage
 
 ```html
 <article class="skill-card" data-role="plan">
@@ -72,3 +70,60 @@ Cards use `data-role` attribute matching the category key to apply the correct g
   </div>
 </article>
 ```
+
+---
+
+## Component 2: Neon Border-Trace Buttons
+
+### Architecture
+
+```
+.btn                  ← relative, overflow hidden, no border
+  span:nth-child(1)   ← top border line (left → right)
+  span:nth-child(2)   ← right border line (top → bottom)
+  span:nth-child(3)   ← bottom border line (right → left)
+  span:nth-child(4)   ← left border line (bottom → top)
+```
+
+### Token
+
+| Token              | Value                              |
+|--------------------|------------------------------------|
+| accent-bright      | `#0AF700`                          |
+| btn-border-speed   | `1.5s linear infinite`             |
+| btn-glow-hover     | `0 0 5px, 0 0 20px, 0 0 40px`     |
+
+### Border Animation
+
+Four `<span>` elements positioned absolutely, each rendering one edge as a 1.5px gradient line. They animate sequentially with 0.375s delay offsets, tracing clockwise around the button perimeter.
+
+| Edge    | Direction        | Keyframe         | Delay    |
+|---------|------------------|------------------|----------|
+| top     | left → right     | `btn-border-top`    | 0s       |
+| right   | top → bottom     | `btn-border-right`  | 0.375s   |
+| bottom  | right → left     | `btn-border-bottom` | 0.75s    |
+| left    | bottom → top     | `btn-border-left`   | 1.125s   |
+
+### Interaction States
+
+- **Default**: transparent bg, neon-green text, border traces animate
+- **Hover**: bg fills `#0AF700`, text inverts to `#010502`, triple-layer box-shadow glow, `-webkit-box-reflect` below
+- **Active**: `scale(0.97)`
+- **Reduced motion**: `span { animation: none; }`
+
+### Usage
+
+```html
+<button class="btn">
+  <span></span><span></span><span></span><span></span>
+  Click me
+</button>
+
+<a href="#" class="btn btn-primary">
+  <span></span><span></span><span></span><span></span>
+  Download
+</a>
+```
+
+Every `.btn` requires exactly 4 empty `<span>` children for the border-trace animation. Content goes after the spans as normal text.
+
