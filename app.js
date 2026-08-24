@@ -872,7 +872,7 @@
     });
   }
 
-  /* ---------------- sidebar ---------------- */
+  /* ---------------- sidebar + pull-to-refresh ---------------- */
 
   function initSidebar() {
     var toggle = document.getElementById("sidebarToggle");
@@ -880,6 +880,49 @@
     if (toggle && sidebar) {
       toggle.addEventListener("click", function () { sidebar.classList.toggle("open"); });
     }
+
+    var indicator = document.getElementById("pullIndicator");
+    var homeLink = document.getElementById("homeLink");
+    if (!indicator || !homeLink) return;
+
+    var startY = 0;
+    var pulling = false;
+    var threshold = 80;
+
+    homeLink.addEventListener("touchstart", function (e) {
+      if (window.scrollY === 0) {
+        startY = e.touches[0].clientY;
+        pulling = true;
+      }
+    }, { passive: true });
+
+    homeLink.addEventListener("touchmove", function (e) {
+      if (!pulling) return;
+      var dy = e.touches[0].clientY - startY;
+      if (dy > 10 && window.scrollY === 0) {
+        indicator.classList.add("visible");
+        indicator.textContent = dy > threshold ? "↑ Release to refresh" : "↓ Pull to refresh";
+        var progress = Math.min(dy / threshold, 1);
+        homeLink.style.transform = "translateY(" + (dy * 0.4) + "px)";
+        homeLink.style.transition = "none";
+      }
+    }, { passive: true });
+
+    homeLink.addEventListener("touchend", function () {
+      if (!pulling) return;
+      pulling = false;
+      var indicatorText = indicator.textContent;
+      homeLink.style.transform = "";
+      homeLink.style.transition = "transform 0.3s ease";
+
+      if (indicatorText.indexOf("Release") !== -1) {
+        indicator.classList.add("refreshing");
+        indicator.textContent = "↻ Refreshing…";
+        setTimeout(function () { window.location.reload(); }, 600);
+      } else {
+        indicator.classList.remove("visible");
+      }
+    });
   }
 
   /* ---------------- init ---------------- */
