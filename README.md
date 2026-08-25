@@ -1,3 +1,7 @@
+![Uploading image.png…]()
+
+
+
 # AGENT KD SKILL
 
 A gallery of **SKILL.md** variants for AI coding agents — organized by agent role, filterable by platform, with live preview and download. Every skill ships as a **3-file bundle** in its own folder, anchored by an `assembly.json` manifest.
