@@ -13,7 +13,8 @@
     { id: "sub", code: "AGENT SUB", accent: "sub" },
     { id: "deep", code: "AGENT DEEP", accent: "deep" },
     { id: "micro", code: "AGENT MICRO", accent: "micro" },
-    { id: "custom", code: "CUSTOM SKILL", accent: "custom" }
+    { id: "custom", code: "CUSTOM SKILL", accent: "custom" },
+    { id: "toll", code: "TOLL", accent: "toll" }
   ];
 
   var PLATFORMS = [
@@ -173,7 +174,8 @@
     { id: "custom-migrate-to-shoehorn", role: "custom", platform: null, file: "custom/migrate-to-shoehorn/SKILL.md", title: "Migrate to Shoehorn" },
     { id: "custom-scaffold-exercises", role: "custom", platform: null, file: "custom/scaffold-exercises/SKILL.md", title: "Scaffold Exercises" },
     { id: "custom-setup-pre-commit", role: "custom", platform: null, file: "custom/setup-pre-commit/SKILL.md", title: "Setup Pre-Commit Hooks" },
-    { id: "custom-agent-memory", role: "custom", platform: null, file: "custom/agent-memory/SKILL.md", title: "Agent Memory" }
+    { id: "custom-agent-memory", role: "custom", platform: null, file: "custom/agent-memory/SKILL.md", title: "Agent Memory" },
+    { id: "custom-deepseek-harness", role: "toll", platform: null, file: "custom/deepseek-harness/SKILL.md", title: "Deepseek Harness" }
   ];
 
   /* ---------------- i18n ---------------- */
@@ -234,6 +236,7 @@
       roleDescDeep: "Deep-agent efficiency: plan, prioritize sources, digest in chunks, and synthesize with citations.",
       roleDescMicro: "Micro-agent efficiency: tiny single-purpose agents with strict schemas and minimal prompts.",
       roleDescCustom: "Community-contributed skills: third-party integrations, workflows, and specialized tools. Credit: Matt Pocock.",
+      roleDescToll: "Toll skills: fetch, harness, and deploy AI models with full repo instructions and file management.",
       platformDescClaudecode: "Anthropic's terminal coding agent. Skills auto-load by description; invoke with #.",
       platformDescOpencode: "Open-source terminal agent with a native skill tool; loads by description.",
       platformDescCodex: "OpenAI's terminal agent. Skills follow the open standard; $skill-name forces invocation.",

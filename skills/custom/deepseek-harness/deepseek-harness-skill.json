@@ -1,0 +1,20 @@
+{
+  "name": "Deepseek Harness",
+  "id": "custom-deepseek-harness",
+  "role": "toll",
+  "category": "toll",
+  "platform": "universal",
+  "description": "Fetch, harness, and deploy Deepseek models with full repo instructions, file management, and agent integration.",
+  "version": "1.0.0",
+  "author": "ctaxnagomi",
+  "license": "MIT",
+  "tags": ["deepseek", "model", "deploy", "fetch", "harness", "ai", "llm"],
+  "install": {
+    "opencode": "~/.config/opencode/skills/deepseek-harness/SKILL.md",
+    "claudecode": "~/.claude/skills/deepseek-harness/SKILL.md",
+    "codex": "~/.codex/skills/deepseek-harness/SKILL.md",
+    "cursor": "~/.cursor/skills/deepseek-harness/SKILL.md",
+    "geminicli": "~/.gemini/skills/deepseek-harness/SKILL.md"
+  },
+  "invoke": "@deepseek-harness"
+}

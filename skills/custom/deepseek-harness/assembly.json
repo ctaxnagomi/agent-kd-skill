@@ -1,0 +1,10 @@
+{
+  "name": "deepseek-harness",
+  "version": "1.0.0",
+  "role": "toll",
+  "category": "toll",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "deepseek-harness-skill.json",
+  "description": "Fetch, harness, and deploy Deepseek models with full repo instructions, file management, and agent integration."
+}
