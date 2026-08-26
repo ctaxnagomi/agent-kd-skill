@@ -2,7 +2,7 @@
 {
   "name": "codebase-design",
   "description": "Design modules, interfaces, and architecture decisions with vocabulary for seams, adapters, and depth. Use when designing a new module, deciding where seams should be, or making architectural decisions.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -29,4 +29,4 @@ Design modules, interfaces, and architecture decisions with vocabulary for seams
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

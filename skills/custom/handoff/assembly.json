@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Hand off context from one agent session to another without losing state. Use when a session is running out of context, work needs to continue in a fresh session, or transitioning between agent roles.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "handoff-skill.json",

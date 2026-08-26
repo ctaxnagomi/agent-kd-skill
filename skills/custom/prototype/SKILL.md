@@ -2,7 +2,7 @@
 {
   "name": "prototype",
   "description": "Create cheap, rough artifacts to raise the fidelity of a discussion and get concrete feedback. Use when \"how should it look?\" is the key question or a rough take would advance the discussion.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -27,7 +27,7 @@ Create cheap, rough artifacts to raise the fidelity of a discussion and get conc
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

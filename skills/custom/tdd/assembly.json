@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Test-driven development: the red-green loop, what a good test is, where tests go, anti-patterns, and the rules of the loop. Use when building features or fixing bugs test-first, or wanting integration tests.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "tdd-skill.json",

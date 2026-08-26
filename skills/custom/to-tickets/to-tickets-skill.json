@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges. Use when you need to break work into tickets or plan implementation order.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "to-tickets",
     "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges. Use when you need to break work into tickets or plan implementation order.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

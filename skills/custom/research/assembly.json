@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Research a topic thoroughly using documentation, codebase exploration, and external sources. Use when deep knowledge outside the current working directory is required or a decision depends on external facts.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "research-skill.json",

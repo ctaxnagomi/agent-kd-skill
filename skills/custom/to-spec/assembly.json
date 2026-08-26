@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed. Use when you want to create a spec from a conversation.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "to-spec-skill.json",

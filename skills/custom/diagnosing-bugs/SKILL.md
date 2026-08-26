@@ -2,7 +2,7 @@
 {
   "name": "diagnosing-bugs",
   "description": "Systematically diagnose bugs using the scientific method: hypothesis, experiment, conclusion. Use when a bug needs investigation and the root cause isn't obvious.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -29,7 +29,7 @@ Systematically diagnose bugs using the scientific method: hypothesis, experiment
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

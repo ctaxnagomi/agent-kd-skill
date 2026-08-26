@@ -2,7 +2,7 @@
 {
   "name": "to-tickets",
   "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges. Use when you need to break work into tickets or plan implementation order.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -28,7 +28,7 @@ Each ticket has: Title, Blocked by, What it delivers, Acceptance criteria.
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

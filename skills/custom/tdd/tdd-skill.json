@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Test-driven development: the red-green loop, what a good test is, where tests go, anti-patterns, and the rules of the loop. Use when building features or fixing bugs test-first, or wanting integration tests.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "tdd",
     "description": "Test-driven development: the red-green loop, what a good test is, where tests go, anti-patterns, and the rules of the loop. Use when building features or fixing bugs test-first, or wanting integration tests.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

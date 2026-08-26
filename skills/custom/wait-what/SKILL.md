@@ -2,7 +2,7 @@
 {
   "name": "wait-what",
   "description": "Stop and ask \"wait, what?\" when something doesn't add up — challenge unclear assumptions before proceeding. Use when something in the plan doesn't make sense or an assumption needs questioning.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -33,7 +33,7 @@ Use this skill when:
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

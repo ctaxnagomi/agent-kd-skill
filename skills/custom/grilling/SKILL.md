@@ -2,7 +2,7 @@
 {
   "name": "grilling",
   "description": "A relentless interview to sharpen a plan or design by asking pointed questions one at a time. Use when user wants to stress-test a plan, get grilled on their design, or challenge a design before implementation.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -39,7 +39,7 @@ Grilling is a stateless interview primitive. It writes no files and leaves no wo
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

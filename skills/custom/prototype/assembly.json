@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Create cheap, rough artifacts to raise the fidelity of a discussion and get concrete feedback. Use when \"how should it look?\" is the key question or a rough take would advance the discussion.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "prototype-skill.json",

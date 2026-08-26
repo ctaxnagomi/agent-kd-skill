@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Set up the Matt Pocock skills ecosystem: issue tracker integration, triage labels, and configuration. Use when setting up Matt Pocock skills for the first time or configuring issue tracker integration.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "setup-matt-pocock-skills-skill.json",

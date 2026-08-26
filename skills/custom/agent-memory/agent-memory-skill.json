@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Manage agent memory across sessions: store, retrieve, and persist context, decisions, and learned patterns. Use when the agent needs to remember things between sessions or build a knowledge base.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "agent-memory",
     "description": "Manage agent memory across sessions: store, retrieve, and persist context, decisions, and learned patterns.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

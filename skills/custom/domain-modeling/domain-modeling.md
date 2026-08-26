@@ -2,7 +2,7 @@
 {
   "name": "domain-modeling",
   "description": "Create and maintain a shared domain vocabulary and model that all code and tests reference. Use when establishing domain vocabulary, creating CONTEXT.md, or aligning code with business concepts.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -27,4 +27,4 @@ Create and maintain a shared domain vocabulary and model that all code and tests
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "A grilling session that uses documentation and codebase exploration to answer questions instead of asking the user. Use when the codebase can answer the question better than the user.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "grill-with-docs",
     "description": "A grilling session that uses documentation and codebase exploration to answer questions instead of asking the user. Use when the codebase can answer the question better than the user.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

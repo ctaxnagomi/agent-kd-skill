@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Review code with focus on behavior, architecture, and test quality — not style. Use when reviewing a PR, checking code quality, or getting a second opinion on implementation.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "code-review",
     "description": "Review code with focus on behavior, architecture, and test quality — not style. Use when reviewing a PR, checking code quality, or getting a second opinion on implementation.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

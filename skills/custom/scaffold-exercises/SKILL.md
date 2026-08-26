@@ -2,7 +2,7 @@
 {
   "name": "scaffold-exercises",
   "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when scaffolding exercises, creating exercise stubs, or setting up a new course section.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -31,7 +31,7 @@ Each subfolder needs a readme.md that is non-empty with no broken links.
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 {
   "name": "ask-matt",
-  "description": "Ask Matt Peacock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "description": "Ask Matt Pocock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
 # Ask Matt
 
-A skill for asking Matt Peacock-style questions to explore and challenge ideas.
+A skill for asking Matt Pocock-style questions to explore and challenge ideas.
 
 ## Use case
 
@@ -32,4 +32,4 @@ Use this skill when the user wants to:
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

@@ -6,12 +6,12 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "platformName": "Universal",
-  "description": "Ask Matt Peacock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "description": "Ask Matt Pocock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "ask-matt",
-    "description": "Ask Matt Peacock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "description": "Ask Matt Pocock-style probing questions to explore and challenge ideas. Use when user wants to explore concepts, challenge assumptions, or think through a problem with expert-level questions.",
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

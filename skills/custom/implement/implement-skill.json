@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Turn a spec or plan into working code, one vertical slice at a time. Use when a spec or plan exists and needs implementation, or converting design decisions into code.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "implement",
     "description": "Turn a spec or plan into working code, one vertical slice at a time. Use when a spec or plan exists and needs implementation, or converting design decisions into code.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

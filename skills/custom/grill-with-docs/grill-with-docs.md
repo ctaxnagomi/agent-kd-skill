@@ -2,7 +2,7 @@
 {
   "name": "grill-with-docs",
   "description": "A grilling session that uses documentation and codebase exploration to answer questions instead of asking the user. Use when the codebase can answer the question better than the user.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -25,4 +25,4 @@ A grilling session that uses documentation and codebase exploration to answer qu
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

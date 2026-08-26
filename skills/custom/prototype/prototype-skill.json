@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Create cheap, rough artifacts to raise the fidelity of a discussion and get concrete feedback. Use when \"how should it look?\" is the key question or a rough take would advance the discussion.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "prototype",
     "description": "Create cheap, rough artifacts to raise the fidelity of a discussion and get concrete feedback. Use when \"how should it look?\" is the key question or a rough take would advance the discussion.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

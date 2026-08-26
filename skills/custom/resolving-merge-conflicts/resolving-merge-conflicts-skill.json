@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Systematically resolve merge conflicts by understanding both sides and finding the correct resolution. Use when a merge conflict needs resolution or you need to understand what both branches intended.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "resolving-merge-conflicts",
     "description": "Systematically resolve merge conflicts by understanding both sides and finding the correct resolution. Use when a merge conflict needs resolution or you need to understand what both branches intended.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

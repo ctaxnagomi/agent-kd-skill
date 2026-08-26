@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Refactor and improve codebase architecture by identifying and resolving structural issues. Use when the codebase has structural problems or modules are too coupled.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "improve-codebase-architecture-skill.json",

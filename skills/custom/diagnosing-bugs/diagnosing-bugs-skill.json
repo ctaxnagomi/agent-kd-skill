@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Systematically diagnose bugs using the scientific method: hypothesis, experiment, conclusion. Use when a bug needs investigation and the root cause isn't obvious.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "diagnosing-bugs",
     "description": "Systematically diagnose bugs using the scientific method: hypothesis, experiment, conclusion. Use when a bug needs investigation and the root cause isn't obvious.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

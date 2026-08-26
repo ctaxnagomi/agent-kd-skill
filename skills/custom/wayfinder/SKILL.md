@@ -2,7 +2,7 @@
 {
   "name": "wayfinder",
   "description": "Plan a huge chunk of work as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear. Use when a task is too big for one agent session.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -34,7 +34,7 @@ Plan a huge chunk of work as a shared map of decision tickets on your issue trac
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

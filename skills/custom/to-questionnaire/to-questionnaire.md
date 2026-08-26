@@ -2,7 +2,7 @@
 {
   "name": "to-questionnaire",
   "description": "Transform a conversation into a structured questionnaire that captures all decisions and requirements. Use when a conversation has produced many decisions that need formalizing into actionable specs.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -34,4 +34,4 @@ Use this skill when:
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

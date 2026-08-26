@@ -2,7 +2,7 @@
 {
   "name": "teach",
   "description": "Teach a concept or skill by breaking it into progressive steps, checking understanding at each stage. Use when user wants to learn a new concept, understand how something works, or get a guided walkthrough.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -35,7 +35,7 @@ Use this skill when the user wants to:
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
 
 ---
 

@@ -2,13 +2,13 @@
 {
   "name": "grill-me",
   "description": "Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions 'grill me'.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
 # Grill Me
 
-A relentless interview to sharpen a plan or design — by **Matt Peacock** ([mattpocock/skills](https://github.com/mattpocock/skills)).
+A relentless interview to sharpen a plan or design — by **Matt Pocock** ([mattpocock/skills](https://github.com/mattpocock/skills)).
 
 ## Use case
 
@@ -51,4 +51,4 @@ Grilling is a **stateless interview primitive**. It writes no files and leaves n
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills - grill-me](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills - grill-me](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me). Licensed under MIT.

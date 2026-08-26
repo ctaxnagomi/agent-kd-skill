@@ -10,8 +10,8 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 - **Skewed glass card system** — Translucent panels with per-category color gradients, floating glass orbs, and frosted content panels. Cards unskew on hover for a reveal effect.
 - **Neon border-trace buttons** — Four animated border lines that chase clockwise around the button perimeter with triple-layer glow on hover.
 - **Minimalistic translucent iOS sidebar** — `backdrop-filter: blur(20px) saturate(1.4)` glass panel with smooth expand/collapse on hover.
-- **Matt Peacock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
-- **Hero section** — "MATT PEACOCK SKILL MD is Here!" banner with toxic green accent glow.
+- **Matt Pocock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
+- **Hero section** — "Matt Pocock SKILL MD is Here!" banner with toxic green accent glow.
 - **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
 - **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
@@ -36,7 +36,7 @@ Every skill folder is a self-contained unit of three files:
 
 - **8 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, and **Custom Skill** (community-contributed).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
-- **31 Matt Peacock skills** — Productivity, engineering, and workflow skills with star ratings.
+- **31 Matt Pocock skills** — Productivity, engineering, and workflow skills with star ratings.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
 - **Search + filters** — filter cards by role and platform, or search by name/description.
 - **Download all (.zip)** — bundles every skill as a complete 3-file package plus an install guide.
@@ -98,7 +98,7 @@ AGENT KD SKILL/
     ├── agent-sub/          # AGENT SUB · 15 universal skills + grill-me
     ├── agent-deep/         # AGENT DEEP · 15 universal skills
     ├── agent-micro/        # AGENT MICRO · 15 universal skills
-    └── custom/             # CUSTOM SKILL · 31 Matt Peacock skills (3-file bundles)
+    └── custom/             # CUSTOM SKILL · 31 Matt Pocock skills (3-file bundles)
 ```
 
 ### Skills inventory (100)

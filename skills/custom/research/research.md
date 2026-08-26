@@ -2,7 +2,7 @@
 {
   "name": "research",
   "description": "Research a topic thoroughly using documentation, codebase exploration, and external sources. Use when deep knowledge outside the current working directory is required or a decision depends on external facts.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -27,4 +27,4 @@ Research a topic thoroughly using documentation, codebase exploration, and exter
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

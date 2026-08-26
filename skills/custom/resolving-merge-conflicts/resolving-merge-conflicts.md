@@ -2,7 +2,7 @@
 {
   "name": "resolving-merge-conflicts",
   "description": "Systematically resolve merge conflicts by understanding both sides and finding the correct resolution. Use when a merge conflict needs resolution or you need to understand what both branches intended.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -27,4 +27,4 @@ Systematically resolve merge conflicts by understanding both sides and finding t
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

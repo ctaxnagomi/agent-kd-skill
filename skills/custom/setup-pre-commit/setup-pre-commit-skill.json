@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. Use when adding pre-commit hooks, setting up Husky, or configuring lint-staged.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "setup-pre-commit",
     "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests. Use when adding pre-commit hooks, setting up Husky, or configuring lint-staged.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

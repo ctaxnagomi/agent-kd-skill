@@ -33,7 +33,7 @@ Every skill ships as a self-contained folder with three files:
 ```
 scripts/build-content.mjs   → data/skills.js (generated, 300 entries)
 scripts/compile-skills.mjs  → data/compiled/*.json (token-optimized artifacts)
-create-skills.js            → Generated 28 Matt Peacock skill bundles
+create-skills.js            → Generated 28 Matt Pocock skill bundles
 ```
 
 ### Key Files
@@ -45,7 +45,7 @@ create-skills.js            → Generated 28 Matt Peacock skill bundles
 | `index.html` | Gallery page: hero, carousel, sidebar nav, pull indicator, modal, i18n toggle |
 | `data/skills.js` | Generated catalog of all skill entries |
 | `data/compiled/` | 99 compiled skill artifacts + catalog.json |
-| `skills/custom/` | 31 Matt Peacock skill folders (3 files each) + design skill |
+| `skills/custom/` | 31 Matt Pocock skill folders (3 files each) + design skill |
 | `skills/agent-sub/grill-me/` | Grill-me skill (3 files) |
 
 ---
@@ -180,10 +180,10 @@ ctaxnagomi@users.noreply.github.com
 | `c16b903` | Redesign mobile nav: centered Home pill with pull-to-refresh gesture |
 | `a7a4028` | Fix viewport lock, mobile header overlap, responsive layout |
 | `9170d8a` | Add hero section, carousel, cassette-tape sidebar, star rating system |
-| `385a8e9` | Remove ASCII art, add Credit: Matt Peacock to CUSTOM SKILL role |
-| `8b3d9a7` | Add ASCII CLI Art title MATT PEACOCK SKILL MD to index.html |
-| `b416dd1` | Add 30 Matt Peacock skills to gallery (custom role category) |
-| `5069874` | feat: add grill-me skill by Matt Peacock |
+| `385a8e9` | Remove ASCII art, add Credit: Matt Pocock to CUSTOM SKILL role |
+| `8b3d9a7` | Add ASCII CLI Art title Matt Pocock SKILL MD to index.html |
+| `b416dd1` | Add 30 Matt Pocock skills to gallery (custom role category) |
+| `5069874` | feat: add grill-me skill by Matt Pocock |
 | `7b06ca5` | feat: expand gallery to 69 skills with sub/deep/micro roles |
 | `65a752e` | docs: polish README with assembly-as-compiler-key |
 | `782aa0d` | feat: AGENT KD SKILL gallery with 22 skills in 3-file format |
@@ -212,7 +212,7 @@ ctaxnagomi@users.noreply.github.com
 
 - **Neon border-trace buttons**: Adapted from [Kyon Jordan](https://codepen.io/Kyon-Jordan) ([CodePen](https://codepen.io/Kyon-Jordan/full/xxNOmNJ))
 - **Skewed glass cards**: Melvin's own design
-- **Matt Peacock skills**: [mattpocock/skills](https://github.com/mattpocock/skills) (MIT license)
+- **Matt Pocock skills**: [mattpocock/skills](https://github.com/mattpocock/skills) (MIT license)
 
 ---
 

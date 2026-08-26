@@ -2,7 +2,7 @@
 {
   "name": "implement",
   "description": "Turn a spec or plan into working code, one vertical slice at a time. Use when a spec or plan exists and needs implementation, or converting design decisions into code.",
-  "credit": "Matt Peacock (mattpocock/skills)"
+  "credit": "Matt Pocock (mattpocock/skills)"
 }
 ---
 
@@ -28,4 +28,4 @@ Turn a spec or plan into working code, one vertical slice at a time.
 
 ## Credit
 
-This skill is based on the work of **Matt Peacock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.
+This skill is based on the work of **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)). Original source: [mattpocock/skills](https://github.com/mattpocock/skills). Licensed under MIT.

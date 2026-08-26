@@ -6,7 +6,7 @@
   "roleCode": "CUSTOM SKILL",
   "platform": null,
   "description": "Write clear, structured prompts and instructions optimized for AI agent consumption. Use when writing SKILL.md files, creating agent instructions, or structuring documentation for AI readability.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "files": {
     "md": "SKILL.md",
     "json": "writing-for-agents-skill.json",

@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Set up the Matt Pocock skills ecosystem: issue tracker integration, triage labels, and configuration. Use when setting up Matt Pocock skills for the first time or configuring issue tracker integration.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "setup-matt-pocock-skills",
     "description": "Set up the Matt Pocock skills ecosystem: issue tracker integration, triage labels, and configuration. Use when setting up Matt Pocock skills for the first time or configuring issue tracker integration.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {

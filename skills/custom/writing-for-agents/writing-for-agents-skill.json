@@ -7,11 +7,11 @@
   "platform": null,
   "platformName": "Universal",
   "description": "Write clear, structured prompts and instructions optimized for AI agent consumption. Use when writing SKILL.md files, creating agent instructions, or structuring documentation for AI readability.",
-  "credit": "Matt Peacock (mattpocock/skills)",
+  "credit": "Matt Pocock (mattpocock/skills)",
   "frontmatter": {
     "name": "writing-for-agents",
     "description": "Write clear, structured prompts and instructions optimized for AI agent consumption. Use when writing SKILL.md files, creating agent instructions, or structuring documentation for AI readability.",
-    "credit": "Matt Peacock (mattpocock/skills)"
+    "credit": "Matt Pocock (mattpocock/skills)"
   },
   "install": [
     {
