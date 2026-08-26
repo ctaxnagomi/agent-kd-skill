@@ -1,0 +1,10 @@
+{
+  "name": "systematic-debugging",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "4-phase root cause debugging: understand bugs before fixing them."
+}

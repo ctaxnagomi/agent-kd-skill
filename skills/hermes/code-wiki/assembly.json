@@ -1,0 +1,10 @@
+{
+  "name": "code-wiki",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Generate wiki docs + Mermaid diagrams for any codebase."
+}

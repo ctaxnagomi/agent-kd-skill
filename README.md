@@ -36,7 +36,7 @@ Every skill folder is a self-contained unit of three files:
 
 ## Features
 
-- **9 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), and **tool** (model deployment skills).
+- **10 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), **Tool** (model deployment), and **Hermes** (Hermes Agent skills).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
 - **31 Matt Pocock skills** — Productivity, engineering, and workflow skills with star ratings.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
@@ -102,6 +102,7 @@ AGENT KD SKILL/
     ├── agent-micro/        # AGENT MICRO · 15 universal skills
     ├── custom/             # CUSTOM SKILL · 31 Matt Pocock skills (3-file bundles)
     └── custom/             # tool · 1 Deepseek Harness skill (3-file bundle)
+    └── hermes/             # HERMES · 7 Hermes Agent skills (3-file bundles)
 ```
 
 ### Skills inventory (100)
@@ -117,6 +118,7 @@ AGENT KD SKILL/
 | AGENT MICRO | 15 | Single Purpose · Prompt Minimalism · Strict Schema · Tool Minimalism · No-Prose · Batching · Context Precision · Retry · Caching · Composition · Orchestration · Observability · Output Schema · Timeboxing · Reuse | Universal |
 | CUSTOM SKILL | 31 | Agent Memory · Ask Matt · Code Review · Codebase Design · Diagnosing Bugs · Domain Modeling · Git Guardrails · Grill Me · Grill With Docs · Handoff · Implement · Improve Architecture · Migrate to Shoehorn · Prototype · Research · Resolving Merge Conflicts · Scaffold Exercises · Setup Matt Pocock Skills · Setup Pre-Commit · Teach · TDD · To Questionnaire · To Spec · To Tickets · Triage · Wait What · Wayfinder · Wizard · Writing for Agents | Universal |
 | tool | 1 | Deepseek Harness | Universal |
+| hermes | 7 | Systematic Debugging · Test-Driven Development · GitHub Code Review · Plan · Simplify Code · Code Wiki · Create Hermes Skill | Universal |
 
 ## Adding a skill
 

@@ -1,0 +1,18 @@
+{
+  "name": "systematic-debugging",
+  "id": "hermes-systematic-debugging",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "4-phase root cause debugging: understand bugs before fixing them.",
+  "version": "1.0.0",
+  "author": "Hermes Agent",
+  "license": "MIT",
+  "tags": ["debugging", "root-cause", "troubleshooting", "quality"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/systematic-debugging/SKILL.md",
+    "opencode": "~/.config/opencode/skills/systematic-debugging/SKILL.md",
+    "claudecode": "~/.claude/skills/systematic-debugging/SKILL.md"
+  },
+  "invoke": "@systematic-debugging"
+}

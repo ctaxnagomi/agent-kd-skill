@@ -1,0 +1,10 @@
+{
+  "name": "create-hermes-skill",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Create your own Hermes SKILL.md with dictionary-based input correction and validation."
+}

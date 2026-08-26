@@ -1,0 +1,18 @@
+{
+  "name": "test-driven-development",
+  "id": "hermes-test-driven-development",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "TDD workflow: enforce RED-GREEN-REFACTOR, tests before code.",
+  "version": "1.0.0",
+  "author": "Hermes Agent",
+  "license": "MIT",
+  "tags": ["tdd", "testing", "quality", "refactoring"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/test-driven-development/SKILL.md",
+    "opencode": "~/.config/opencode/skills/test-driven-development/SKILL.md",
+    "claudecode": "~/.claude/skills/test-driven-development/SKILL.md"
+  },
+  "invoke": "@test-driven-development"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "github-code-review",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Review PRs: diffs, inline comments via gh or REST."
+}

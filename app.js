@@ -14,7 +14,8 @@
     { id: "deep", code: "AGENT DEEP", accent: "deep" },
     { id: "micro", code: "AGENT MICRO", accent: "micro" },
     { id: "custom", code: "CUSTOM SKILL", accent: "custom" },
-    { id: "tool", code: "tool", accent: "tool" }
+    { id: "tool", code: "TOOL", accent: "tool" },
+    { id: "hermes", code: "HERMES", accent: "hermes" }
   ];
 
   var PLATFORMS = [
@@ -175,7 +176,14 @@
     { id: "custom-scaffold-exercises", role: "custom", platform: null, file: "custom/scaffold-exercises/SKILL.md", title: "Scaffold Exercises" },
     { id: "custom-setup-pre-commit", role: "custom", platform: null, file: "custom/setup-pre-commit/SKILL.md", title: "Setup Pre-Commit Hooks" },
     { id: "custom-agent-memory", role: "custom", platform: null, file: "custom/agent-memory/SKILL.md", title: "Agent Memory" },
-    { id: "custom-deepseek-harness", role: "tool", platform: null, file: "custom/deepseek-harness/SKILL.md", title: "Deepseek Harness" }
+    { id: "custom-deepseek-harness", role: "tool", platform: null, file: "custom/deepseek-harness/SKILL.md", title: "Deepseek Harness" },
+    { id: "hermes-systematic-debugging", role: "hermes", platform: null, file: "hermes/systematic-debugging/SKILL.md", title: "Systematic Debugging" },
+    { id: "hermes-test-driven-development", role: "hermes", platform: null, file: "hermes/test-driven-development/SKILL.md", title: "Test-Driven Development" },
+    { id: "hermes-github-code-review", role: "hermes", platform: null, file: "hermes/github-code-review/SKILL.md", title: "GitHub Code Review" },
+    { id: "hermes-plan", role: "hermes", platform: null, file: "hermes/plan/SKILL.md", title: "Plan" },
+    { id: "hermes-simplify-code", role: "hermes", platform: null, file: "hermes/simplify-code/SKILL.md", title: "Simplify Code" },
+    { id: "hermes-code-wiki", role: "hermes", platform: null, file: "hermes/code-wiki/SKILL.md", title: "Code Wiki" },
+    { id: "hermes-create-hermes-skill", role: "hermes", platform: null, file: "hermes/create-hermes-skill/SKILL.md", title: "Create Hermes Skill" }
   ];
 
   /* ---------------- i18n ---------------- */
@@ -237,6 +245,7 @@
       roleDescMicro: "Micro-agent efficiency: tiny single-purpose agents with strict schemas and minimal prompts.",
       roleDescCustom: "Community-contributed skills: third-party integrations, workflows, and specialized tools. Credit: Matt Pocock.",
       roleDescTool: "Tool skills: fetch, harness, and deploy AI models with full repo instructions and file management.",
+      roleDescHermes: "Hermes Agent skills: systematic debugging, TDD, code review, planning, code simplification, and documentation.",
       platformDescClaudecode: "Anthropic's terminal coding agent. Skills auto-load by description; invoke with #.",
       platformDescOpencode: "Open-source terminal agent with a native skill tool; loads by description.",
       platformDescCodex: "OpenAI's terminal agent. Skills follow the open standard; $skill-name forces invocation.",

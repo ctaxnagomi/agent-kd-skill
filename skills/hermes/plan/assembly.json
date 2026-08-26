@@ -1,0 +1,10 @@
+{
+  "name": "plan",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Write a markdown plan to .hermes/plans/; no execution."
+}

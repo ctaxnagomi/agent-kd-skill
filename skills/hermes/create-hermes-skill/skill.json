@@ -1,0 +1,18 @@
+{
+  "name": "create-hermes-skill",
+  "id": "hermes-create-hermes-skill",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "Create your own Hermes SKILL.md with dictionary-based input correction and validation.",
+  "version": "1.0.0",
+  "author": "Hermes Agent",
+  "license": "MIT",
+  "tags": ["skill-authoring", "creation", "validation", "dictionary", "hermes"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/create-hermes-skill/SKILL.md",
+    "opencode": "~/.config/opencode/skills/create-hermes-skill/SKILL.md",
+    "claudecode": "~/.claude/skills/create-hermes-skill/SKILL.md"
+  },
+  "invoke": "@create-hermes-skill"
+}

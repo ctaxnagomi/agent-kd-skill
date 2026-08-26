@@ -783,6 +783,10 @@ button {
 .skill-card[data-role="tool"]::after {
   background: linear-gradient(315deg, #00BFFF, #0055FF);
 }
+.skill-card[data-role="hermes"]::before,
+.skill-card[data-role="hermes"]::after {
+  background: linear-gradient(315deg, #FF6B6B, #C62828);
+}
 
 /* floating glass orbs */
 .skill-card .card-orb {

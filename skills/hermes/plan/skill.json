@@ -1,0 +1,18 @@
+{
+  "name": "plan",
+  "id": "hermes-plan",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "Write a markdown plan to .hermes/plans/; no execution.",
+  "version": "1.0.0",
+  "author": "Hermes Agent",
+  "license": "MIT",
+  "tags": ["planning", "architecture", "design", "strategy"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/plan/SKILL.md",
+    "opencode": "~/.config/opencode/skills/plan/SKILL.md",
+    "claudecode": "~/.claude/skills/plan/SKILL.md"
+  },
+  "invoke": "@plan"
+}
