@@ -11,7 +11,7 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 - **Neon border-trace buttons** — Four animated border lines that chase clockwise around the button perimeter with triple-layer glow on hover.
 - **Minimalistic translucent iOS sidebar** — `backdrop-filter: blur(20px) saturate(1.4)` glass panel with smooth expand/collapse on hover.
 - **Matt Pocock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
-- **Deepseek Harness** — New `TOLL` category skill for fetching, configuring, and deploying Deepseek models with full repo instructions and agent integration.
+- **Deepseek Harness** — New `tool` category skill for fetching, configuring, and deploying Deepseek models with full repo instructions and agent integration.
 - **Hero section** — "Deepseek Harness is Here!" banner with toxic green accent glow.
 - **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
@@ -36,7 +36,7 @@ Every skill folder is a self-contained unit of three files:
 
 ## Features
 
-- **9 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), and **Toll** (model deployment skills).
+- **9 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), and **tool** (model deployment skills).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
 - **31 Matt Pocock skills** — Productivity, engineering, and workflow skills with star ratings.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
@@ -101,7 +101,7 @@ AGENT KD SKILL/
     ├── agent-deep/         # AGENT DEEP · 15 universal skills
     ├── agent-micro/        # AGENT MICRO · 15 universal skills
     ├── custom/             # CUSTOM SKILL · 31 Matt Pocock skills (3-file bundles)
-    └── custom/             # TOLL · 1 Deepseek Harness skill (3-file bundle)
+    └── custom/             # tool · 1 Deepseek Harness skill (3-file bundle)
 ```
 
 ### Skills inventory (100)
@@ -116,7 +116,7 @@ AGENT KD SKILL/
 | AGENT DEEP | 15 | Research Plan · Source Priority · Chunked Digestion · Multi-source · Iterative Refinement · Contradiction · Verification · Summarization · Long Context · Knowledge Graph · Citation · Checkpointing · Reasoning Trace · Context Budget · Synthesis | Universal |
 | AGENT MICRO | 15 | Single Purpose · Prompt Minimalism · Strict Schema · Tool Minimalism · No-Prose · Batching · Context Precision · Retry · Caching · Composition · Orchestration · Observability · Output Schema · Timeboxing · Reuse | Universal |
 | CUSTOM SKILL | 31 | Agent Memory · Ask Matt · Code Review · Codebase Design · Diagnosing Bugs · Domain Modeling · Git Guardrails · Grill Me · Grill With Docs · Handoff · Implement · Improve Architecture · Migrate to Shoehorn · Prototype · Research · Resolving Merge Conflicts · Scaffold Exercises · Setup Matt Pocock Skills · Setup Pre-Commit · Teach · TDD · To Questionnaire · To Spec · To Tickets · Triage · Wait What · Wayfinder · Wizard · Writing for Agents | Universal |
-| TOLL | 1 | Deepseek Harness | Universal |
+| tool | 1 | Deepseek Harness | Universal |
 
 ## Adding a skill
 

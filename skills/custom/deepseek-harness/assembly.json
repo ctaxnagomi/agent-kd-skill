@@ -1,8 +1,8 @@
 {
   "name": "deepseek-harness",
   "version": "1.0.0",
-  "role": "toll",
-  "category": "toll",
+  "role": "tool",
+  "category": "tool",
   "platform": "universal",
   "skillMd": "SKILL.md",
   "skillJson": "deepseek-harness-skill.json",

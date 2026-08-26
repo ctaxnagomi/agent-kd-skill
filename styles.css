@@ -779,8 +779,8 @@ button {
 .skill-card[data-role="custom"]::after {
   background: linear-gradient(315deg, #FFB347, #FF6B00);
 }
-.skill-card[data-role="toll"]::before,
-.skill-card[data-role="toll"]::after {
+.skill-card[data-role="tool"]::before,
+.skill-card[data-role="tool"]::after {
   background: linear-gradient(315deg, #00BFFF, #0055FF);
 }
 

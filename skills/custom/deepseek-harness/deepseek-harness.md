@@ -1,8 +1,8 @@
 ---
 title: Deepseek Harness
 id: custom-deepseek-harness
-role: toll
-category: toll
+role: tool
+category: tool
 platform: universal
 description: "Fetch, harness, and deploy Deepseek models with full repo instructions, file management, and agent integration."
 ---
