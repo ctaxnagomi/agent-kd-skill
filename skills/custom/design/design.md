@@ -127,3 +127,34 @@ Four `<span>` elements positioned absolutely, each rendering one edge as a 1.5px
 
 Every `.btn` requires exactly 4 empty `<span>` children for the border-trace animation. Content goes after the spans as normal text.
 
+---
+
+## Standard Workflow: Mobile Input Zoom Fix
+
+### Problem
+On iOS/Android, tapping an `<input>`, `<select>`, or `<textarea>` with `font-size < 16px` triggers automatic viewport zoom, breaking fixed layouts.
+
+### Fix (apply to every project)
+
+**1. Viewport meta tag** — add `maximum-scale=1`:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+```
+
+**2. CSS rule** — enforce 16px minimum on all form elements:
+```css
+input, select, textarea, button {
+  font-size: 16px;
+}
+```
+
+Place this early in your stylesheet (after reset, before component styles).
+
+### Why both?
+- `maximum-scale=1` blocks the zoom gesture at the browser level
+- `font-size: 16px` prevents the zoom trigger at the CSS level (iOS Safari ignores `maximum-scale` on some versions)
+- Together they cover all browsers and devices
+
+### Gotcha
+Do NOT use `touch-action: manipulation` alone — it disables double-tap zoom but does not prevent input zoom on all devices.
+
