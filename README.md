@@ -176,6 +176,7 @@ Design inspiration and code snippets adapted from:
 
 Original snippets were restyled to use the KrackedDevs toxic green theme (`#0AF700`) and integrated into the gallery's design system.
 
-## Developer
+## Developers
 
-**ctaxnagomi** — Rikayu Wilzam
+**ctaxnagomi** - Rikayu Wilzam
+**turborack92** - Jayden chang
