@@ -34,7 +34,7 @@ Every skill folder is a self-contained unit of three files:
 
 `assembly.json` is the key a **compiler reads**. It declares *what* the skill is (name, title, role, platform), *which* files compose it (`files.md`, `files.json`, `files.assembly`), and *how* it is installed and invoked (`install`, `invoke`). Any tooling — a build pipeline, an agent loader, or a compiler — can resolve a complete, installable skill from `assembly.json` alone, without parsing prose. The markdown stays author-friendly; `assembly.json` stays machine-first.
 
-## Features
+## Features.
 
 - **10 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), **Tool** (model deployment), and **Hermes** (Hermes Agent skills).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
