@@ -1,0 +1,22 @@
+{
+  "name": "pdf-processing",
+  "id": "marketplace-pdf-processing",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Read, create, and manipulate PDF documents.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/pdf-processing/SKILL.md",
+    "claudecode": "~/.claude/skills/pdf-processing/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/pdf-processing/SKILL.md"
+  },
+  "invoke": "@pdf-processing"
+}

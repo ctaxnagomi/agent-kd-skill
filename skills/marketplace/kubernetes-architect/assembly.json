@@ -1,0 +1,11 @@
+{
+  "name": "kubernetes-architect",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Kubernetes architecture and deployment.",
+  "rating": 7
+}

@@ -1,0 +1,22 @@
+{
+  "name": "game-unity-developer",
+  "id": "marketplace-game-unity-developer",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Unity game development with C#, MonoBehaviours, and editor tools.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-unity-developer/SKILL.md",
+    "claudecode": "~/.claude/skills/game-unity-developer/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-unity-developer/SKILL.md"
+  },
+  "invoke": "@game-unity-developer"
+}

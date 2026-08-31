@@ -1,0 +1,22 @@
+{
+  "name": "agent-manager",
+  "id": "marketplace-agent-manager",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "AI agent management and orchestration.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/agent-manager/SKILL.md",
+    "claudecode": "~/.claude/skills/agent-manager/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/agent-manager/SKILL.md"
+  },
+  "invoke": "@agent-manager"
+}

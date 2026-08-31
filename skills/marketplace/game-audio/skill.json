@@ -1,0 +1,22 @@
+{
+  "name": "game-audio",
+  "id": "marketplace-game-audio",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Game audio systems, sound design, and audio pipelines.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-audio/SKILL.md",
+    "claudecode": "~/.claude/skills/game-audio/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-audio/SKILL.md"
+  },
+  "invoke": "@game-audio"
+}

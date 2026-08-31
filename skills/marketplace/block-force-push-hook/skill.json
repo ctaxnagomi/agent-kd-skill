@@ -1,0 +1,22 @@
+{
+  "name": "block-force-push-hook",
+  "id": "marketplace-block-force-push-hook",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Git hook to prevent force pushes.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/block-force-push-hook/SKILL.md",
+    "claudecode": "~/.claude/skills/block-force-push-hook/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/block-force-push-hook/SKILL.md"
+  },
+  "invoke": "@block-force-push-hook"
+}

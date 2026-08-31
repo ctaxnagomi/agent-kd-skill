@@ -1,0 +1,11 @@
+{
+  "name": "game-2d-game",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "2D game development with sprites, physics, and tilemaps.",
+  "rating": 6
+}

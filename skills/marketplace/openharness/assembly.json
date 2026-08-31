@@ -1,0 +1,11 @@
+{
+  "name": "openharness",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "OpenHarness for AI agent orchestration.",
+  "rating": 6
+}

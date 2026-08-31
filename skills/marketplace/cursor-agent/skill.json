@@ -1,0 +1,22 @@
+{
+  "name": "cursor-agent",
+  "id": "marketplace-cursor-agent",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Cursor AI agent for code generation.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-agent/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-agent/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-agent/SKILL.md"
+  },
+  "invoke": "@cursor-agent"
+}

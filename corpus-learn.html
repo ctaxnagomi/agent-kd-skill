@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="AGENT KD SKILL — CORPUS LEARN MD, a curated corpus of agent frameworks, subagents, and learning materials.">
+  <title>AGENT KD SKILL — Corpus Learn MD</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23023500'/%3E%3Crect width='100' height='100' rx='20' fill='none' stroke='%230AF700' stroke-width='6'/%3E%3Ctext x='50' y='64' font-size='40' text-anchor='middle' fill='%23ABFFA7' font-family='monospace' font-weight='bold'%3EKD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <nav class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar-link" id="homeLink">
+      <span></span><span></span><span></span><span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span class="sidebar-link-text">Gallery</span>
+    </a>
+    <a href="plugins.html" class="sidebar-link" id="pluginsLink">
+      <span></span><span></span><span></span><span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <span class="sidebar-link-text">Plugins</span>
+    </a>
+    <a href="mcp.html" class="sidebar-link" id="mcpLink">
+      <span></span><span></span><span></span><span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      <span class="sidebar-link-text">MCP</span>
+    </a>
+    <a href="frameworks.html" class="sidebar-link" id="frameworksLink">
+      <span></span><span></span><span></span><span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      <span class="sidebar-link-text">Frameworks</span>
+    </a>
+    <a href="prompts.html" class="sidebar-link" id="promptsLink">
+      <span></span><span></span><span></span><span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span class="sidebar-link-text">Prompts</span>
+    </a>
+    <a href="corpus-learn.html" class="sidebar-link active" id="corpusLink">
+      <span></span><span></span><span></span><span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span class="sidebar-link-text">Corpus Learn</span>
+    </a>
+  </nav>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="eyebrow">AGENT KD SKILL</span>
+        <h1 class="brand-logo-wrap animate-rise"><img class="brand-logo" src="logo.svg" alt="AGENT KD SKILL" loading="lazy" decoding="async"></h1>
+        <p class="tagline animate-rise">CORPUS LEARN MD — a curated corpus of agent frameworks, subagents, and learning materials.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner wrap">
+      <span class="hero-eyebrow">CORPUS LEARN MD</span>
+      <h2 class="hero-title">Agent Corpus &amp; <span class="hero-accent">Learning</span></h2>
+      <p class="hero-desc">Agent frameworks, subagents, and MCP integrations to study and deploy — a living corpus of AI agent knowledge.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="digest wrap">
+      <div class="digest-head">
+        <span class="eyebrow">AGENT FRAMEWORKS</span>
+        <h2 class="digest-title"><em>Curated Agent Frameworks</em></h2>
+      </div>
+      <div class="grid" id="agentGrid"></div>
+    </section>
+
+    <section class="digest wrap">
+      <div class="digest-head">
+        <span class="eyebrow">SUBAGENTS</span>
+        <h2 class="digest-title"><em>Curated Subagents</em></h2>
+      </div>
+      <div class="grid" id="subGrid"></div>
+    </section>
+
+    <section class="digest wrap">
+      <div class="digest-head">
+        <span class="eyebrow">APPS &amp; INTEGRATIONS</span>
+        <h2 class="digest-title"><em>Curated Apps & Integrations</em></h2>
+      </div>
+      <div class="grid" id="appGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-nav">
+        <a href="index.html" class="footer-link">Gallery</a>
+        <a href="plugins.html" class="footer-link">Plugins</a>
+        <a href="mcp.html" class="footer-link">MCP</a>
+        <a href="frameworks.html" class="footer-link">Frameworks</a>
+        <a href="prompts.html" class="footer-link">Prompts</a>
+        <a href="corpus-learn.html" class="footer-link">Corpus Learn</a>
+        <a href="https://github.com/ctaxnagomi/agent-kd-skill" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.krackeddevs.com" class="footer-link" target="_blank" rel="noopener">KrackedDevs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    function starsFor(rating) {
+      var stars = '';
+      var full = Math.floor(rating / 2);
+      for (var s = 0; s < 5; s++) {
+        if (s < full) stars += '<span class="star filled">&#9733;</span>';
+        else stars += '<span class="star">&#9734;</span>';
+      }
+      return stars;
+    }
+    function card(p, i, badge) {
+      return '<article class="skill-card reveal" data-role="marketplace" style="--i:' + i + '">' +
+        '<span class="card-orb card-orb-top"></span>' +
+        '<span class="card-orb card-orb-bottom"></span>' +
+        '<div class="card-content">' +
+          '<span class="card-badge">' + badge + '</span>' +
+          '<h3 class="card-title">' + p.name + '</h3>' +
+          '<p class="card-desc">' + p.desc + '</p>' +
+          '<div class="card-stars" data-rating="' + p.rating + '">' + starsFor(p.rating) + '</div>' +
+          '<code class="card-file">npx mdskills install ' + p.source + '</code>' +
+          '<div class="card-actions">' +
+            '<button class="btn" type="button" data-action="preview" data-id="' + p.id + '">' +
+              '<span></span><span></span><span></span><span></span>Preview</button>' +
+            '<button class="btn" type="button" data-action="download" data-id="' + p.id + '">' +
+              '<span></span><span></span><span></span><span></span>Download</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    }
+    function fill(id, items, badge) {
+      var grid = document.getElementById(id);
+      var html = '';
+      items.forEach(function(p, i) { html += card(p, i, badge); });
+      grid.innerHTML = html;
+    }
+
+    var agents = [
+      { id: "aider", name: "Aider", desc: "AI pair programming with Aider CLI.", rating: 6.0, source: "Aider-AI/aider" },
+      { id: "oh-my-openagent", name: "Oh My OpenAgent", desc: "OpenAgent framework for AI development.", rating: 6.0, source: "code-yeongyu/oh-my-openagent" },
+      { id: "cursor-agent", name: "Cursor Agent", desc: "Cursor AI agent for code generation.", rating: 6.0, source: "getcursor/cursor-agent" },
+      { id: "lobehub", name: "LobeHub", desc: "LobeHub AI agent framework.", rating: 6.8, source: "lobehub/lobehub" },
+      { id: "openclaw", name: "OpenClaw", desc: "OpenClaw AI agent marketplace.", rating: 6.0, source: "openclaw/openclaw" },
+      { id: "opencode", name: "OpenCode", desc: "Open-source AI coding agent.", rating: 6.0, source: "sst/opencode" },
+      { id: "openharness", name: "OpenHarness", desc: "OpenHarness for AI agent orchestration.", rating: 6.0, source: "HKUDS/openharness" },
+      { id: "agent-manager", name: "Agent Manager", desc: "AI agent management and orchestration.", rating: 6.0, source: "YoanWai/agent-manager" },
+      { id: "gemini-cli", name: "Gemini CLI", desc: "Google Gemini CLI agent.", rating: 6.0, source: "google-gemini/gemini-cli" },
+      { id: "hermes-agent", name: "Hermes Agent", desc: "Hermes Agent by Nous Research.", rating: 6.0, source: "NousResearch/hermes-agent" },
+      { id: "monet", name: "Monet", desc: "Monet AI agent framework.", rating: 6.0, source: "zenolab124/monet" },
+      { id: "claude-code", name: "Claude Code", desc: "Anthropic Claude Code CLI agent.", rating: 6.0, source: "anthropics/claude-code" },
+      { id: "cline", name: "Cline", desc: "Cline AI coding agent.", rating: 6.0, source: "cline/cline" },
+      { id: "nimbalyst", name: "Nimbalyst", desc: "Nimbalyst AI agent framework.", rating: 6.0, source: "nimbalyst/nimbalyst" }
+    ];
+    fill('agentGrid', agents, 'AGENT');
+
+    var subs = [
+      { id: "kubernetes-architect", name: "Kubernetes Architect", desc: "Kubernetes architecture and deployment.", rating: 7.0, source: "wshobson/kubernetes-architect" },
+      { id: "cloud-architect", name: "Cloud Architect", desc: "Cloud architecture and infrastructure design.", rating: 7.0, source: "wshobson/cloud-architect" },
+      { id: "security-auditor", name: "Security Auditor", desc: "Security auditing and vulnerability assessment.", rating: 7.0, source: "wshobson/security-auditor" },
+      { id: "frontend-developer-sub", name: "Frontend Developer", desc: "Frontend development subagent.", rating: 7.0, source: "wshobson/frontend-developer" },
+      { id: "tdd-orchestrator", name: "TDD Orchestrator", desc: "TDD workflow orchestration.", rating: 7.0, source: "wshobson/tdd-orchestrator" },
+      { id: "test-automator", name: "Test Automator", desc: "Automated testing workflows.", rating: 7.0, source: "wshobson/test-automator" },
+      { id: "performance-engineer", name: "Performance Engineer", desc: "Performance optimization and profiling.", rating: 7.0, source: "wshobson/performance-engineer" },
+      { id: "backend-architect-sub", name: "Backend Architect", desc: "Backend architecture subagent.", rating: 7.0, source: "wshobson/backend-architect" },
+      { id: "multi-agent-optimize", name: "Multi-Agent Optimize", desc: "Multi-agent optimization workflows.", rating: 7.0, source: "wshobson/multi-agent-optimize" },
+      { id: "improve-agent", name: "Improve Agent", desc: "AI agent improvement and optimization.", rating: 7.0, source: "wshobson/improve-agent" },
+      { id: "impeccable", name: "Impeccable", desc: "High-quality code formatting and style enforcement.", rating: 8.7, source: "pbakaus/impeccable" }
+    ];
+    fill('subGrid', subs, 'SUBAGENT');
+
+    var apps = [
+      { id: "getspecstory", name: "GetSpecStory", desc: "SpecStory for AI-powered documentation.", rating: 7.0, source: "specstoryai/getspecstory" },
+      { id: "gortex", name: "Gortex", desc: "Gortex AI agent framework.", rating: 7.0, source: "zzet/gortex" },
+      { id: "gitnexus", name: "GitNexus", desc: "GitNexus for AI-powered Git workflows.", rating: 7.0, source: "abhigyanpatwari/gitnexus" },
+      { id: "comfyui-mcp", name: "ComfyUI MCP", desc: "ComfyUI integration via MCP for AI art.", rating: 7.0, source: "artokun/comfyui-mcp" },
+      { id: "deja-vu", name: "Deja Vu", desc: "Deja Vu AI agent memory system.", rating: 7.0, source: "vshulcz/deja-vu" },
+      { id: "unstract", name: "Unstract", desc: "Unstract for AI document processing.", rating: 7.0, source: "Zipstack/unstract" },
+      { id: "metorial", name: "Metorial", desc: "Agentic AI for real-time data streaming and monitoring.", rating: 7.0, source: "metorial/metorial" },
+      { id: "longterm-memory", name: "Long-term Memory", desc: "Persistent memory systems for AI agents across sessions.", rating: 7.0, source: "ankitmalik84/agentic-longterm-memory" },
+      { id: "ui-ux-pro-max", name: "UI/UX Pro Max", desc: "Professional UI/UX design workflows, component systems, and design tokens.", rating: 9.0, source: "nextlevelbuilder/ui-ux-pro-max" }
+    ];
+    fill('appGrid', apps, 'APP');
+  })();
+  </script>
+</body>
+</html>

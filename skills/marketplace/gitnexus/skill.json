@@ -1,0 +1,22 @@
+{
+  "name": "gitnexus",
+  "id": "marketplace-gitnexus",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "GitNexus for AI-powered Git workflows.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/gitnexus/SKILL.md",
+    "claudecode": "~/.claude/skills/gitnexus/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/gitnexus/SKILL.md"
+  },
+  "invoke": "@gitnexus"
+}

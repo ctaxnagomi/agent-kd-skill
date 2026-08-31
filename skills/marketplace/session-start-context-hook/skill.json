@@ -1,0 +1,22 @@
+{
+  "name": "session-start-context-hook",
+  "id": "marketplace-session-start-context-hook",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Session context management hook.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/session-start-context-hook/SKILL.md",
+    "claudecode": "~/.claude/skills/session-start-context-hook/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/session-start-context-hook/SKILL.md"
+  },
+  "invoke": "@session-start-context-hook"
+}

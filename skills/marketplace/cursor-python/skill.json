@@ -1,0 +1,22 @@
+{
+  "name": "cursor-python",
+  "id": "marketplace-cursor-python",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Python development rules for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-python/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-python/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-python/SKILL.md"
+  },
+  "invoke": "@cursor-python"
+}

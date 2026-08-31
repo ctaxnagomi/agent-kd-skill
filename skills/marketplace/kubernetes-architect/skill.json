@@ -1,0 +1,22 @@
+{
+  "name": "kubernetes-architect",
+  "id": "marketplace-kubernetes-architect",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Kubernetes architecture and deployment.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/kubernetes-architect/SKILL.md",
+    "claudecode": "~/.claude/skills/kubernetes-architect/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/kubernetes-architect/SKILL.md"
+  },
+  "invoke": "@kubernetes-architect"
+}

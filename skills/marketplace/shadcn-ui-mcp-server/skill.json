@@ -1,0 +1,22 @@
+{
+  "name": "shadcn-ui-mcp-server",
+  "id": "marketplace-shadcn-ui-mcp-server",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "ShadCN UI component generation via MCP.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/shadcn-ui-mcp-server/SKILL.md",
+    "claudecode": "~/.claude/skills/shadcn-ui-mcp-server/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/shadcn-ui-mcp-server/SKILL.md"
+  },
+  "invoke": "@shadcn-ui-mcp-server"
+}

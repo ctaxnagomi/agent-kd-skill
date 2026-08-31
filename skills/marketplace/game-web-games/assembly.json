@@ -1,0 +1,11 @@
+{
+  "name": "game-web-games",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Browser-based game development with HTML5 Canvas and WebGL.",
+  "rating": 6
+}

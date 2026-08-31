@@ -1,0 +1,11 @@
+{
+  "name": "claude-code",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Anthropic Claude Code CLI agent.",
+  "rating": 6
+}

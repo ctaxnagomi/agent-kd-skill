@@ -1,0 +1,22 @@
+{
+  "name": "golem",
+  "id": "marketplace-golem",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Golem Cloud for AI agent deployment.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/golem/SKILL.md",
+    "claudecode": "~/.claude/skills/golem/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/golem/SKILL.md"
+  },
+  "invoke": "@golem"
+}

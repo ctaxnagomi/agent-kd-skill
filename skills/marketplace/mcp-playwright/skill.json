@@ -1,0 +1,22 @@
+{
+  "name": "mcp-playwright",
+  "id": "marketplace-mcp-playwright",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Browser automation with Playwright for AI agents.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/mcp-playwright/SKILL.md",
+    "claudecode": "~/.claude/skills/mcp-playwright/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/mcp-playwright/SKILL.md"
+  },
+  "invoke": "@mcp-playwright"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "gortex",
+  "id": "marketplace-gortex",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Gortex AI agent framework.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/gortex/SKILL.md",
+    "claudecode": "~/.claude/skills/gortex/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/gortex/SKILL.md"
+  },
+  "invoke": "@gortex"
+}

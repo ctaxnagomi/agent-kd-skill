@@ -1,0 +1,22 @@
+{
+  "name": "cursor-drupal-11",
+  "id": "marketplace-cursor-drupal-11",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Drupal 11 development rules for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-drupal-11/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-drupal-11/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-drupal-11/SKILL.md"
+  },
+  "invoke": "@cursor-drupal-11"
+}

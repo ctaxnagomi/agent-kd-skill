@@ -1,0 +1,22 @@
+{
+  "name": "multi-agent-optimize",
+  "id": "marketplace-multi-agent-optimize",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Multi-agent optimization workflows.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/multi-agent-optimize/SKILL.md",
+    "claudecode": "~/.claude/skills/multi-agent-optimize/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/multi-agent-optimize/SKILL.md"
+  },
+  "invoke": "@multi-agent-optimize"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cursor-node-express",
+  "id": "marketplace-cursor-node-express",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Node.js Express development for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 4,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-node-express/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-node-express/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-node-express/SKILL.md"
+  },
+  "invoke": "@cursor-node-express"
+}

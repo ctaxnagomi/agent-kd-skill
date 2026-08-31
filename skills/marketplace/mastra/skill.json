@@ -1,0 +1,22 @@
+{
+  "name": "mastra",
+  "id": "marketplace-mastra",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Mastra AI agent framework.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/mastra/SKILL.md",
+    "claudecode": "~/.claude/skills/mastra/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/mastra/SKILL.md"
+  },
+  "invoke": "@mastra"
+}

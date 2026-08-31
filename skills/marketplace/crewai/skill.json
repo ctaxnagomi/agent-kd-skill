@@ -1,0 +1,22 @@
+{
+  "name": "crewai",
+  "id": "marketplace-crewai",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "CrewAI for multi-agent collaboration.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/crewai/SKILL.md",
+    "claudecode": "~/.claude/skills/crewai/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/crewai/SKILL.md"
+  },
+  "invoke": "@crewai"
+}

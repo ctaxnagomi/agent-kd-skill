@@ -1,0 +1,22 @@
+{
+  "name": "cursor-typescript-nodejs-react-vite",
+  "id": "marketplace-cursor-typescript-nodejs-react-vite",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "TypeScript Node.js React Vite stack for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-typescript-nodejs-react-vite/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-typescript-nodejs-react-vite/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-typescript-nodejs-react-vite/SKILL.md"
+  },
+  "invoke": "@cursor-typescript-nodejs-react-vite"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "concept-workflow",
+  "id": "marketplace-concept-workflow",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Structured workflow for conceptual design and planning.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/concept-workflow/SKILL.md",
+    "claudecode": "~/.claude/skills/concept-workflow/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/concept-workflow/SKILL.md"
+  },
+  "invoke": "@concept-workflow"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "frontend-developer",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Modern frontend development with React, Vue, and component libraries.",
+  "rating": 8
+}

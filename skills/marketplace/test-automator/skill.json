@@ -1,0 +1,22 @@
+{
+  "name": "test-automator",
+  "id": "marketplace-test-automator",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Automated testing workflows.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/test-automator/SKILL.md",
+    "claudecode": "~/.claude/skills/test-automator/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/test-automator/SKILL.md"
+  },
+  "invoke": "@test-automator"
+}

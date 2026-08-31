@@ -1,0 +1,11 @@
+{
+  "name": "autogen",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Microsoft AutoGen for multi-agent systems.",
+  "rating": 7
+}

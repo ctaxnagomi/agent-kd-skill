@@ -1,0 +1,22 @@
+{
+  "name": "tdd-orchestrator",
+  "id": "marketplace-tdd-orchestrator",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "TDD workflow orchestration.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/tdd-orchestrator/SKILL.md",
+    "claudecode": "~/.claude/skills/tdd-orchestrator/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/tdd-orchestrator/SKILL.md"
+  },
+  "invoke": "@tdd-orchestrator"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "gitnexus",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "GitNexus for AI-powered Git workflows.",
+  "rating": 7
+}

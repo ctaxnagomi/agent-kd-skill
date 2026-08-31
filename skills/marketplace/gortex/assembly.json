@@ -1,0 +1,11 @@
+{
+  "name": "gortex",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Gortex AI agent framework.",
+  "rating": 7
+}

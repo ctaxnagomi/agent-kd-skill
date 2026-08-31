@@ -1,0 +1,11 @@
+{
+  "name": "langgraph",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "LangGraph for stateful AI agent workflows.",
+  "rating": 7
+}

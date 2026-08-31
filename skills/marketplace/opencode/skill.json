@@ -1,0 +1,22 @@
+{
+  "name": "opencode",
+  "id": "marketplace-opencode",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Open-source AI coding agent.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/opencode/SKILL.md",
+    "claudecode": "~/.claude/skills/opencode/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/opencode/SKILL.md"
+  },
+  "invoke": "@opencode"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "summarize-meeting-notes-task",
+  "id": "marketplace-summarize-meeting-notes-task",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Meeting notes summarization prompt.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/summarize-meeting-notes-task/SKILL.md",
+    "claudecode": "~/.claude/skills/summarize-meeting-notes-task/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/summarize-meeting-notes-task/SKILL.md"
+  },
+  "invoke": "@summarize-meeting-notes-task"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "openai-agents-python",
+  "id": "marketplace-openai-agents-python",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "OpenAI Agents SDK for Python.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/openai-agents-python/SKILL.md",
+    "claudecode": "~/.claude/skills/openai-agents-python/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/openai-agents-python/SKILL.md"
+  },
+  "invoke": "@openai-agents-python"
+}

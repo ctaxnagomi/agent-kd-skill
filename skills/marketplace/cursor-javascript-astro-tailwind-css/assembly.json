@@ -1,0 +1,11 @@
+{
+  "name": "cursor-javascript-astro-tailwind-css",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Astro and Tailwind CSS for Cursor AI.",
+  "rating": 6
+}

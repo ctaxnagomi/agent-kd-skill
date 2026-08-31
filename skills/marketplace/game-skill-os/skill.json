@@ -1,0 +1,22 @@
+{
+  "name": "game-skill-os",
+  "id": "marketplace-game-skill-os",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Game skill operating system for managing game abilities and mechanics.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-skill-os/SKILL.md",
+    "claudecode": "~/.claude/skills/game-skill-os/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-skill-os/SKILL.md"
+  },
+  "invoke": "@game-skill-os"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "presentations-pptx",
+  "id": "marketplace-presentations-pptx",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Create PowerPoint presentations programmatically.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/presentations-pptx/SKILL.md",
+    "claudecode": "~/.claude/skills/presentations-pptx/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/presentations-pptx/SKILL.md"
+  },
+  "invoke": "@presentations-pptx"
+}

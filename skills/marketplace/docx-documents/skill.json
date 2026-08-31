@@ -1,0 +1,22 @@
+{
+  "name": "docx-documents",
+  "id": "marketplace-docx-documents",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Create and edit Word documents programmatically.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/docx-documents/SKILL.md",
+    "claudecode": "~/.claude/skills/docx-documents/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/docx-documents/SKILL.md"
+  },
+  "invoke": "@docx-documents"
+}

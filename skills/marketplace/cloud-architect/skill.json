@@ -1,0 +1,22 @@
+{
+  "name": "cloud-architect",
+  "id": "marketplace-cloud-architect",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Cloud architecture and infrastructure design.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cloud-architect/SKILL.md",
+    "claudecode": "~/.claude/skills/cloud-architect/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cloud-architect/SKILL.md"
+  },
+  "invoke": "@cloud-architect"
+}

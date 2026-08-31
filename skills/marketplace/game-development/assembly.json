@@ -1,0 +1,11 @@
+{
+  "name": "game-development",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "General game development with Unity, Godot, and custom engines.",
+  "rating": 7
+}

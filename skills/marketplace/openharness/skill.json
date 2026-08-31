@@ -1,0 +1,22 @@
+{
+  "name": "openharness",
+  "id": "marketplace-openharness",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "OpenHarness for AI agent orchestration.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/openharness/SKILL.md",
+    "claudecode": "~/.claude/skills/openharness/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/openharness/SKILL.md"
+  },
+  "invoke": "@openharness"
+}

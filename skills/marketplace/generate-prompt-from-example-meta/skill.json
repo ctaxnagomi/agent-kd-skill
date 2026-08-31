@@ -1,0 +1,22 @@
+{
+  "name": "generate-prompt-from-example-meta",
+  "id": "marketplace-generate-prompt-from-example-meta",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Generate prompts from examples.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/generate-prompt-from-example-meta/SKILL.md",
+    "claudecode": "~/.claude/skills/generate-prompt-from-example-meta/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/generate-prompt-from-example-meta/SKILL.md"
+  },
+  "invoke": "@generate-prompt-from-example-meta"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cursor-nextjs15-react19-vercelai-tailwind",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "NextJS15 React19 Vercel AI Tailwind for Cursor AI.",
+  "rating": 7
+}

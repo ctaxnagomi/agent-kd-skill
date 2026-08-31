@@ -1,0 +1,11 @@
+{
+  "name": "cursor-laravel-tall-stack-best-practices",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Laravel TALL stack best practices for Cursor AI.",
+  "rating": 7
+}

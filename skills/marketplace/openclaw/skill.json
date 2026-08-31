@@ -1,0 +1,22 @@
+{
+  "name": "openclaw",
+  "id": "marketplace-openclaw",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "OpenClaw AI agent marketplace.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/openclaw/SKILL.md",
+    "claudecode": "~/.claude/skills/openclaw/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/openclaw/SKILL.md"
+  },
+  "invoke": "@openclaw"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "oh-my-openagent",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "OpenAgent framework for AI development.",
+  "rating": 6
+}

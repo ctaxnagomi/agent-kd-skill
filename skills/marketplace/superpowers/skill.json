@@ -1,0 +1,22 @@
+{
+  "name": "superpowers",
+  "id": "marketplace-superpowers",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Enhanced AI agent capabilities and advanced workflows.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/superpowers/SKILL.md",
+    "claudecode": "~/.claude/skills/superpowers/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/superpowers/SKILL.md"
+  },
+  "invoke": "@superpowers"
+}

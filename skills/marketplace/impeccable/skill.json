@@ -1,0 +1,22 @@
+{
+  "name": "impeccable",
+  "id": "marketplace-impeccable",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "High-quality code formatting and style enforcement.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8.7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/impeccable/SKILL.md",
+    "claudecode": "~/.claude/skills/impeccable/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/impeccable/SKILL.md"
+  },
+  "invoke": "@impeccable"
+}

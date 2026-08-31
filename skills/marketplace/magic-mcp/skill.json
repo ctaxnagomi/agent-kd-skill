@@ -1,0 +1,22 @@
+{
+  "name": "magic-mcp",
+  "id": "marketplace-magic-mcp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Magic MCP server for AI-powered development.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/magic-mcp/SKILL.md",
+    "claudecode": "~/.claude/skills/magic-mcp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/magic-mcp/SKILL.md"
+  },
+  "invoke": "@magic-mcp"
+}

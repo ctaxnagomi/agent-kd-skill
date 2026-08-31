@@ -1,0 +1,22 @@
+{
+  "name": "davinci-resolve-mcp",
+  "id": "marketplace-davinci-resolve-mcp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Video editing automation with DaVinci Resolve.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9.3,
+  "install": {
+    "opencode": "~/.config/opencode/skills/davinci-resolve-mcp/SKILL.md",
+    "claudecode": "~/.claude/skills/davinci-resolve-mcp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/davinci-resolve-mcp/SKILL.md"
+  },
+  "invoke": "@davinci-resolve-mcp"
+}

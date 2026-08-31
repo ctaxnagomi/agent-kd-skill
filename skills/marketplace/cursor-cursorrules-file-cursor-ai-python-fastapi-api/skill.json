@@ -1,0 +1,22 @@
+{
+  "name": "cursor-cursorrules-file-cursor-ai-python-fastapi-api",
+  "id": "marketplace-cursor-cursorrules-file-cursor-ai-python-fastapi-api",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "FastAPI API development for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-cursorrules-file-cursor-ai-python-fastapi-api/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-cursorrules-file-cursor-ai-python-fastapi-api/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-cursorrules-file-cursor-ai-python-fastapi-api/SKILL.md"
+  },
+  "invoke": "@cursor-cursorrules-file-cursor-ai-python-fastapi-api"
+}

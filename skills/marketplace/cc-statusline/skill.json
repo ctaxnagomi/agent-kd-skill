@@ -1,0 +1,22 @@
+{
+  "name": "cc-statusline",
+  "id": "marketplace-cc-statusline",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Chinese status line for Claude Code.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cc-statusline/SKILL.md",
+    "claudecode": "~/.claude/skills/cc-statusline/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cc-statusline/SKILL.md"
+  },
+  "invoke": "@cc-statusline"
+}

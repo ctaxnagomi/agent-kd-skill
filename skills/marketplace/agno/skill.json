@@ -1,0 +1,22 @@
+{
+  "name": "agno",
+  "id": "marketplace-agno",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Agno AI agent framework.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/agno/SKILL.md",
+    "claudecode": "~/.claude/skills/agno/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/agno/SKILL.md"
+  },
+  "invoke": "@agno"
+}

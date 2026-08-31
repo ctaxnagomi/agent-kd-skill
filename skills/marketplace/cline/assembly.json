@@ -1,0 +1,11 @@
+{
+  "name": "cline",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Cline AI coding agent.",
+  "rating": 6
+}

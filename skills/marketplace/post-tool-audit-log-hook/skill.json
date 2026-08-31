@@ -1,0 +1,22 @@
+{
+  "name": "post-tool-audit-log-hook",
+  "id": "marketplace-post-tool-audit-log-hook",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Audit logging for AI tool usage.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/post-tool-audit-log-hook/SKILL.md",
+    "claudecode": "~/.claude/skills/post-tool-audit-log-hook/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/post-tool-audit-log-hook/SKILL.md"
+  },
+  "invoke": "@post-tool-audit-log-hook"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "deja-vu",
+  "id": "marketplace-deja-vu",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Deja Vu AI agent memory system.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/deja-vu/SKILL.md",
+    "claudecode": "~/.claude/skills/deja-vu/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/deja-vu/SKILL.md"
+  },
+  "invoke": "@deja-vu"
+}

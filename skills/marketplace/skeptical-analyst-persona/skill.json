@@ -1,0 +1,22 @@
+{
+  "name": "skeptical-analyst-persona",
+  "id": "marketplace-skeptical-analyst-persona",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Skeptical analyst persona prompt.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/skeptical-analyst-persona/SKILL.md",
+    "claudecode": "~/.claude/skills/skeptical-analyst-persona/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/skeptical-analyst-persona/SKILL.md"
+  },
+  "invoke": "@skeptical-analyst-persona"
+}

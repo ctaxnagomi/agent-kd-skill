@@ -1,0 +1,22 @@
+{
+  "name": "getspecstory",
+  "id": "marketplace-getspecstory",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "SpecStory for AI-powered documentation.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/getspecstory/SKILL.md",
+    "claudecode": "~/.claude/skills/getspecstory/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/getspecstory/SKILL.md"
+  },
+  "invoke": "@getspecstory"
+}

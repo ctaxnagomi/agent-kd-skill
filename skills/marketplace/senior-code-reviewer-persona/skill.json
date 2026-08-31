@@ -1,0 +1,22 @@
+{
+  "name": "senior-code-reviewer-persona",
+  "id": "marketplace-senior-code-reviewer-persona",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Senior code reviewer persona prompt.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/senior-code-reviewer-persona/SKILL.md",
+    "claudecode": "~/.claude/skills/senior-code-reviewer-persona/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/senior-code-reviewer-persona/SKILL.md"
+  },
+  "invoke": "@senior-code-reviewer-persona"
+}

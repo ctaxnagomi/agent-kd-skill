@@ -1,0 +1,11 @@
+{
+  "name": "mcp-playwright",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Browser automation with Playwright for AI agents.",
+  "rating": 8
+}

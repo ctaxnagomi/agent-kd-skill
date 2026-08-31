@@ -1,0 +1,11 @@
+{
+  "name": "generate-prompt-from-example-meta",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Generate prompts from examples.",
+  "rating": 8
+}

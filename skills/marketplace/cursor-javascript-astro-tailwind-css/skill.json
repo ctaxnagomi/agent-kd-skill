@@ -1,0 +1,22 @@
+{
+  "name": "cursor-javascript-astro-tailwind-css",
+  "id": "marketplace-cursor-javascript-astro-tailwind-css",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Astro and Tailwind CSS for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-javascript-astro-tailwind-css/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-javascript-astro-tailwind-css/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-javascript-astro-tailwind-css/SKILL.md"
+  },
+  "invoke": "@cursor-javascript-astro-tailwind-css"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "godot-mcp",
+  "id": "marketplace-godot-mcp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Godot game engine integration via MCP.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/godot-mcp/SKILL.md",
+    "claudecode": "~/.claude/skills/godot-mcp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/godot-mcp/SKILL.md"
+  },
+  "invoke": "@godot-mcp"
+}

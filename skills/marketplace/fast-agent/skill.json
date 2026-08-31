@@ -1,0 +1,22 @@
+{
+  "name": "fast-agent",
+  "id": "marketplace-fast-agent",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Fast Agent framework for AI development.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/fast-agent/SKILL.md",
+    "claudecode": "~/.claude/skills/fast-agent/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/fast-agent/SKILL.md"
+  },
+  "invoke": "@fast-agent"
+}

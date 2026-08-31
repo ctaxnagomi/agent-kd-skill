@@ -1,0 +1,22 @@
+{
+  "name": "backend-architect-sub",
+  "id": "marketplace-backend-architect-sub",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Backend architecture subagent.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/backend-architect-sub/SKILL.md",
+    "claudecode": "~/.claude/skills/backend-architect-sub/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/backend-architect-sub/SKILL.md"
+  },
+  "invoke": "@backend-architect-sub"
+}

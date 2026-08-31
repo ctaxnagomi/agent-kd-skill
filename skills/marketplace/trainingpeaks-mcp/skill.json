@@ -1,0 +1,22 @@
+{
+  "name": "trainingpeaks-mcp",
+  "id": "marketplace-trainingpeaks-mcp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Fitness training data integration via MCP.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/trainingpeaks-mcp/SKILL.md",
+    "claudecode": "~/.claude/skills/trainingpeaks-mcp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/trainingpeaks-mcp/SKILL.md"
+  },
+  "invoke": "@trainingpeaks-mcp"
+}

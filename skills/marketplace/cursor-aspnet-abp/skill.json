@@ -1,0 +1,22 @@
+{
+  "name": "cursor-aspnet-abp",
+  "id": "marketplace-cursor-aspnet-abp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "ASP.NET ABP framework for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-aspnet-abp/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-aspnet-abp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-aspnet-abp/SKILL.md"
+  },
+  "invoke": "@cursor-aspnet-abp"
+}

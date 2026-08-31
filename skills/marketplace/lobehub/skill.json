@@ -1,0 +1,22 @@
+{
+  "name": "lobehub",
+  "id": "marketplace-lobehub",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "LobeHub AI agent framework.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6.8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/lobehub/SKILL.md",
+    "claudecode": "~/.claude/skills/lobehub/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/lobehub/SKILL.md"
+  },
+  "invoke": "@lobehub"
+}

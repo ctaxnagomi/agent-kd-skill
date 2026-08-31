@@ -1,0 +1,22 @@
+{
+  "name": "improve-agent",
+  "id": "marketplace-improve-agent",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "AI agent improvement and optimization.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/improve-agent/SKILL.md",
+    "claudecode": "~/.claude/skills/improve-agent/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/improve-agent/SKILL.md"
+  },
+  "invoke": "@improve-agent"
+}

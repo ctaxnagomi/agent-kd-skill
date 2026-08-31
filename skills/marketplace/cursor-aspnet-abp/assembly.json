@@ -1,0 +1,11 @@
+{
+  "name": "cursor-aspnet-abp",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "ASP.NET ABP framework for Cursor AI.",
+  "rating": 7
+}

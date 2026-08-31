@@ -1,0 +1,22 @@
+{
+  "name": "game-2d-game",
+  "id": "marketplace-game-2d-game",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "2D game development with sprites, physics, and tilemaps.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-2d-game/SKILL.md",
+    "claudecode": "~/.claude/skills/game-2d-game/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-2d-game/SKILL.md"
+  },
+  "invoke": "@game-2d-game"
+}

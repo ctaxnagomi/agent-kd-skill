@@ -1,0 +1,22 @@
+{
+  "name": "agentic-metorial",
+  "id": "marketplace-agentic-metorial",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Agentic AI for real-time data streaming and monitoring.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/agentic-metorial/SKILL.md",
+    "claudecode": "~/.claude/skills/agentic-metorial/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/agentic-metorial/SKILL.md"
+  },
+  "invoke": "@agentic-metorial"
+}

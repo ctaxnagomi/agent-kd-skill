@@ -1,0 +1,11 @@
+{
+  "name": "godot-mcp",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Godot game engine integration via MCP.",
+  "rating": 7
+}

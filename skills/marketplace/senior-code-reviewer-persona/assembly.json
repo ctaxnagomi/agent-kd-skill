@@ -1,0 +1,11 @@
+{
+  "name": "senior-code-reviewer-persona",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Senior code reviewer persona prompt.",
+  "rating": 8
+}

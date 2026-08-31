@@ -1,0 +1,22 @@
+{
+  "name": "game-development",
+  "id": "marketplace-game-development",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "General game development with Unity, Godot, and custom engines.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-development/SKILL.md",
+    "claudecode": "~/.claude/skills/game-development/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-development/SKILL.md"
+  },
+  "invoke": "@game-development"
+}

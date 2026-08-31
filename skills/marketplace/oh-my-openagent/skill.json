@@ -1,0 +1,22 @@
+{
+  "name": "oh-my-openagent",
+  "id": "marketplace-oh-my-openagent",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "OpenAgent framework for AI development.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/oh-my-openagent/SKILL.md",
+    "claudecode": "~/.claude/skills/oh-my-openagent/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/oh-my-openagent/SKILL.md"
+  },
+  "invoke": "@oh-my-openagent"
+}

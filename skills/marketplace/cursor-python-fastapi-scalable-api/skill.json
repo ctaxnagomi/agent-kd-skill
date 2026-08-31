@@ -1,0 +1,22 @@
+{
+  "name": "cursor-python-fastapi-scalable-api",
+  "id": "marketplace-cursor-python-fastapi-scalable-api",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Python FastAPI scalable API development for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-python-fastapi-scalable-api/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-python-fastapi-scalable-api/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-python-fastapi-scalable-api/SKILL.md"
+  },
+  "invoke": "@cursor-python-fastapi-scalable-api"
+}

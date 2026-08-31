@@ -1,0 +1,22 @@
+{
+  "name": "unstract",
+  "id": "marketplace-unstract",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Unstract for AI document processing.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/unstract/SKILL.md",
+    "claudecode": "~/.claude/skills/unstract/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/unstract/SKILL.md"
+  },
+  "invoke": "@unstract"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "socraticode",
+  "id": "marketplace-socraticode",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Socratic method coding assistant for learning and exploration.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9.2,
+  "install": {
+    "opencode": "~/.config/opencode/skills/socraticode/SKILL.md",
+    "claudecode": "~/.claude/skills/socraticode/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/socraticode/SKILL.md"
+  },
+  "invoke": "@socraticode"
+}

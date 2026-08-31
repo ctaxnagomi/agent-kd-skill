@@ -1,0 +1,22 @@
+{
+  "name": "professional-writeup",
+  "id": "marketplace-professional-writeup",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Professional writing style for AI output.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/professional-writeup/SKILL.md",
+    "claudecode": "~/.claude/skills/professional-writeup/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/professional-writeup/SKILL.md"
+  },
+  "invoke": "@professional-writeup"
+}

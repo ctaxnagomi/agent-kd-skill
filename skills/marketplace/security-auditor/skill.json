@@ -1,0 +1,22 @@
+{
+  "name": "security-auditor",
+  "id": "marketplace-security-auditor",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Security auditing and vulnerability assessment.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/security-auditor/SKILL.md",
+    "claudecode": "~/.claude/skills/security-auditor/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/security-auditor/SKILL.md"
+  },
+  "invoke": "@security-auditor"
+}

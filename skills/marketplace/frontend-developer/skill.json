@@ -1,0 +1,22 @@
+{
+  "name": "frontend-developer",
+  "id": "marketplace-frontend-developer",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Modern frontend development with React, Vue, and component libraries.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/frontend-developer/SKILL.md",
+    "claudecode": "~/.claude/skills/frontend-developer/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/frontend-developer/SKILL.md"
+  },
+  "invoke": "@frontend-developer"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "frontend-developer-sub",
+  "id": "marketplace-frontend-developer-sub",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Frontend development subagent.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/frontend-developer-sub/SKILL.md",
+    "claudecode": "~/.claude/skills/frontend-developer-sub/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/frontend-developer-sub/SKILL.md"
+  },
+  "invoke": "@frontend-developer-sub"
+}

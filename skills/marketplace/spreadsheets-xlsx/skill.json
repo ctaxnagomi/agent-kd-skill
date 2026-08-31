@@ -1,0 +1,22 @@
+{
+  "name": "spreadsheets-xlsx",
+  "id": "marketplace-spreadsheets-xlsx",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Create and edit Excel spreadsheets programmatically.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/spreadsheets-xlsx/SKILL.md",
+    "claudecode": "~/.claude/skills/spreadsheets-xlsx/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/spreadsheets-xlsx/SKILL.md"
+  },
+  "invoke": "@spreadsheets-xlsx"
+}

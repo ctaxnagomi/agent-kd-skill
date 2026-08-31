@@ -1,0 +1,11 @@
+{
+  "name": "game-multiplayer-game-development",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Multiplayer game networking, sync, and real-time systems.",
+  "rating": 6
+}

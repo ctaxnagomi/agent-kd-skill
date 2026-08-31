@@ -1,0 +1,22 @@
+{
+  "name": "generate-validation-notebook",
+  "id": "marketplace-generate-validation-notebook",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Generate data validation notebooks for testing and QA.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8.2,
+  "install": {
+    "opencode": "~/.config/opencode/skills/generate-validation-notebook/SKILL.md",
+    "claudecode": "~/.claude/skills/generate-validation-notebook/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/generate-validation-notebook/SKILL.md"
+  },
+  "invoke": "@generate-validation-notebook"
+}

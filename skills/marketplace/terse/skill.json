@@ -1,0 +1,22 @@
+{
+  "name": "terse",
+  "id": "marketplace-terse",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Terse output style for AI agents.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/terse/SKILL.md",
+    "claudecode": "~/.claude/skills/terse/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/terse/SKILL.md"
+  },
+  "invoke": "@terse"
+}

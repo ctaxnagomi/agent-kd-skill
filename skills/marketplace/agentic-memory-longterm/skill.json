@@ -1,0 +1,22 @@
+{
+  "name": "agentic-memory-longterm",
+  "id": "marketplace-agentic-memory-longterm",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Persistent memory systems for AI agents across sessions.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/agentic-memory-longterm/SKILL.md",
+    "claudecode": "~/.claude/skills/agentic-memory-longterm/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/agentic-memory-longterm/SKILL.md"
+  },
+  "invoke": "@agentic-memory-longterm"
+}

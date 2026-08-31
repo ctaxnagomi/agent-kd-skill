@@ -1,0 +1,11 @@
+{
+  "name": "comfyui-mcp",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "ComfyUI integration via MCP for AI art.",
+  "rating": 7
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cursor-typescript-nodejs-react-vite",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "TypeScript Node.js React Vite stack for Cursor AI.",
+  "rating": 7
+}

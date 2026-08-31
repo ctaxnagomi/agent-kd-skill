@@ -1,0 +1,22 @@
+{
+  "name": "cursor-clean-code",
+  "id": "marketplace-cursor-clean-code",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Clean code principles for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 5,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-clean-code/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-clean-code/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-clean-code/SKILL.md"
+  },
+  "invoke": "@cursor-clean-code"
+}

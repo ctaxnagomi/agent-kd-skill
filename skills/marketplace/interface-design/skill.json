@@ -1,0 +1,22 @@
+{
+  "name": "interface-design",
+  "id": "marketplace-interface-design",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "UI/UX interface design patterns and best practices.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/interface-design/SKILL.md",
+    "claudecode": "~/.claude/skills/interface-design/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/interface-design/SKILL.md"
+  },
+  "invoke": "@interface-design"
+}

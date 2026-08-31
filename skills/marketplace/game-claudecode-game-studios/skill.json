@@ -1,0 +1,22 @@
+{
+  "name": "game-claudecode-game-studios",
+  "id": "marketplace-game-claudecode-game-studios",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Game development workflows for Claude Code and AI agents.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-claudecode-game-studios/SKILL.md",
+    "claudecode": "~/.claude/skills/game-claudecode-game-studios/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-claudecode-game-studios/SKILL.md"
+  },
+  "invoke": "@game-claudecode-game-studios"
+}

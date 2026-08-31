@@ -1,0 +1,11 @@
+{
+  "name": "cursor-playwright-e2e-testing",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Playwright E2E testing for Cursor AI.",
+  "rating": 8
+}

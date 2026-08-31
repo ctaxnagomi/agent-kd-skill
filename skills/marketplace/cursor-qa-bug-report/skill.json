@@ -1,0 +1,22 @@
+{
+  "name": "cursor-qa-bug-report",
+  "id": "marketplace-cursor-qa-bug-report",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "QA bug reporting workflow for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-qa-bug-report/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-qa-bug-report/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-qa-bug-report/SKILL.md"
+  },
+  "invoke": "@cursor-qa-bug-report"
+}

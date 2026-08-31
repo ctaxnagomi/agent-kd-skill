@@ -1,0 +1,11 @@
+{
+  "name": "claude-code-statusline-bash",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Status line for Claude Code CLI.",
+  "rating": 7
+}

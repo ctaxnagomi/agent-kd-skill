@@ -1,0 +1,22 @@
+{
+  "name": "pydantic-ai",
+  "id": "marketplace-pydantic-ai",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Pydantic AI for type-safe agent development.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/pydantic-ai/SKILL.md",
+    "claudecode": "~/.claude/skills/pydantic-ai/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/pydantic-ai/SKILL.md"
+  },
+  "invoke": "@pydantic-ai"
+}

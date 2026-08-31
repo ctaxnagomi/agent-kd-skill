@@ -1,0 +1,22 @@
+{
+  "name": "sentiment-analysis-few-shot",
+  "id": "marketplace-sentiment-analysis-few-shot",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Few-shot sentiment analysis prompt.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/sentiment-analysis-few-shot/SKILL.md",
+    "claudecode": "~/.claude/skills/sentiment-analysis-few-shot/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/sentiment-analysis-few-shot/SKILL.md"
+  },
+  "invoke": "@sentiment-analysis-few-shot"
+}

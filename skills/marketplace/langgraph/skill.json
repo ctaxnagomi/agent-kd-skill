@@ -1,0 +1,22 @@
+{
+  "name": "langgraph",
+  "id": "marketplace-langgraph",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "LangGraph for stateful AI agent workflows.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/langgraph/SKILL.md",
+    "claudecode": "~/.claude/skills/langgraph/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/langgraph/SKILL.md"
+  },
+  "invoke": "@langgraph"
+}

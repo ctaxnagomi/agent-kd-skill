@@ -1,0 +1,22 @@
+{
+  "name": "claude-code-statusline-bash",
+  "id": "marketplace-claude-code-statusline-bash",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Status line for Claude Code CLI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/claude-code-statusline-bash/SKILL.md",
+    "claudecode": "~/.claude/skills/claude-code-statusline-bash/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/claude-code-statusline-bash/SKILL.md"
+  },
+  "invoke": "@claude-code-statusline-bash"
+}

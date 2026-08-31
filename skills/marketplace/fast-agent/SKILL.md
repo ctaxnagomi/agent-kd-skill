@@ -1,0 +1,51 @@
+---
+name: fast-agent
+description: "Fast Agent framework for AI development."
+version: 1.0.0
+author: Community
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [marketplace, community]
+---
+
+# Fast Agent
+
+Fast Agent framework for AI development.
+
+## Installation
+
+```bash
+npx mdskills install evalstate/fast-agent
+```
+
+## Rating
+
+7/10
+
+## Source
+
+GitHub: [evalstate/fast-agent](https://github.com/evalstate/fast-agent)
+
+---
+
+## How to use?
+
+### 1. Download
+Go to the [AGENT KD SKILL gallery](https://ctaxnagomi.github.io/agent-kd-skill/) and find this skill card. Click **Download** to save the SKILL.md file.
+
+### 2. Install
+Copy the downloaded SKILL.md into your agent's skills directory:
+
+| Agent | Path |
+|-------|------|
+| **opencode** | ~/.config/opencode/skills/fast-agent/SKILL.md |
+| **Claude Code** | ~/.claude/skills/fast-agent/SKILL.md |
+| **Hermes** | ~/.hermes/skills/marketplace/fast-agent/SKILL.md |
+
+### 3. Use
+Restart your agent session. The skill will auto-load based on its description.
+
+### 4. Verify
+Ask your agent something related to the skill's purpose. If it responds using the skill's instructions, you're all set.

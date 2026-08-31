@@ -1,0 +1,22 @@
+{
+  "name": "cursor-java-springboot-jpa",
+  "id": "marketplace-cursor-java-springboot-jpa",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Java Spring Boot with JPA for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-java-springboot-jpa/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-java-springboot-jpa/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-java-springboot-jpa/SKILL.md"
+  },
+  "invoke": "@cursor-java-springboot-jpa"
+}

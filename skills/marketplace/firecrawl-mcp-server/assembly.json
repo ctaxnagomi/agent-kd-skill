@@ -1,0 +1,11 @@
+{
+  "name": "firecrawl-mcp-server",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Web scraping and crawling via MCP.",
+  "rating": 8
+}

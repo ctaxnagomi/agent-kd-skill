@@ -1,0 +1,11 @@
+{
+  "name": "codemcp",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Code-focused MCP server for development workflows.",
+  "rating": 9
+}

@@ -1,0 +1,22 @@
+{
+  "name": "classify-user-intent-task",
+  "id": "marketplace-classify-user-intent-task",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "User intent classification prompt.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/classify-user-intent-task/SKILL.md",
+    "claudecode": "~/.claude/skills/classify-user-intent-task/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/classify-user-intent-task/SKILL.md"
+  },
+  "invoke": "@classify-user-intent-task"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "spreadsheets-xlsx",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Create and edit Excel spreadsheets programmatically.",
+  "rating": 9
+}

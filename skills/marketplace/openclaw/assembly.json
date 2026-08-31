@@ -1,0 +1,11 @@
+{
+  "name": "openclaw",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "OpenClaw AI agent marketplace.",
+  "rating": 6
+}

@@ -1,0 +1,22 @@
+{
+  "name": "aider",
+  "id": "marketplace-aider",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "AI pair programming with Aider CLI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/aider/SKILL.md",
+    "claudecode": "~/.claude/skills/aider/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/aider/SKILL.md"
+  },
+  "invoke": "@aider"
+}

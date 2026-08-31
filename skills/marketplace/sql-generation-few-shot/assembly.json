@@ -1,0 +1,11 @@
+{
+  "name": "sql-generation-few-shot",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Few-shot SQL generation prompt.",
+  "rating": 8
+}

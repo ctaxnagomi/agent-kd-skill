@@ -1,0 +1,22 @@
+{
+  "name": "token-optimizer-mcp",
+  "id": "marketplace-token-optimizer-mcp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Optimize token usage and reduce API costs.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/token-optimizer-mcp/SKILL.md",
+    "claudecode": "~/.claude/skills/token-optimizer-mcp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/token-optimizer-mcp/SKILL.md"
+  },
+  "invoke": "@token-optimizer-mcp"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cursor-python-fastapi-scalable-api",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Python FastAPI scalable API development for Cursor AI.",
+  "rating": 7
+}

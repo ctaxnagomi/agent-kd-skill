@@ -1,0 +1,22 @@
+{
+  "name": "hermes-agent",
+  "id": "marketplace-hermes-agent",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Hermes Agent by Nous Research.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/hermes-agent/SKILL.md",
+    "claudecode": "~/.claude/skills/hermes-agent/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/hermes-agent/SKILL.md"
+  },
+  "invoke": "@hermes-agent"
+}

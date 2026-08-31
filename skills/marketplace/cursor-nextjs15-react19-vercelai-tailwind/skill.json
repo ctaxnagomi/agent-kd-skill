@@ -1,0 +1,22 @@
+{
+  "name": "cursor-nextjs15-react19-vercelai-tailwind",
+  "id": "marketplace-cursor-nextjs15-react19-vercelai-tailwind",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "NextJS15 React19 Vercel AI Tailwind for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-nextjs15-react19-vercelai-tailwind/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-nextjs15-react19-vercelai-tailwind/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-nextjs15-react19-vercelai-tailwind/SKILL.md"
+  },
+  "invoke": "@cursor-nextjs15-react19-vercelai-tailwind"
+}

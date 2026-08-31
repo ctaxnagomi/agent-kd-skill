@@ -1,0 +1,11 @@
+{
+  "name": "hermes-agent",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Hermes Agent by Nous Research.",
+  "rating": 6
+}

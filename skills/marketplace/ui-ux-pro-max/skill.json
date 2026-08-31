@@ -1,0 +1,22 @@
+{
+  "name": "ui-ux-pro-max",
+  "id": "marketplace-ui-ux-pro-max",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Professional UI/UX design workflows, component systems, and design tokens.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/ui-ux-pro-max/SKILL.md",
+    "claudecode": "~/.claude/skills/ui-ux-pro-max/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/ui-ux-pro-max/SKILL.md"
+  },
+  "invoke": "@ui-ux-pro-max"
+}

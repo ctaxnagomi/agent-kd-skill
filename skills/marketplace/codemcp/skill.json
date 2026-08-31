@@ -1,0 +1,22 @@
+{
+  "name": "codemcp",
+  "id": "marketplace-codemcp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Code-focused MCP server for development workflows.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 9,
+  "install": {
+    "opencode": "~/.config/opencode/skills/codemcp/SKILL.md",
+    "claudecode": "~/.claude/skills/codemcp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/codemcp/SKILL.md"
+  },
+  "invoke": "@codemcp"
+}

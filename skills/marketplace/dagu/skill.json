@@ -1,0 +1,22 @@
+{
+  "name": "dagu",
+  "id": "marketplace-dagu",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Dagu workflow engine for AI agents.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/dagu/SKILL.md",
+    "claudecode": "~/.claude/skills/dagu/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/dagu/SKILL.md"
+  },
+  "invoke": "@dagu"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "fast-agent",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Fast Agent framework for AI development.",
+  "rating": 7
+}

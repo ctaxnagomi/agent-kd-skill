@@ -1,0 +1,22 @@
+{
+  "name": "nimbalyst",
+  "id": "marketplace-nimbalyst",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Nimbalyst AI agent framework.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/nimbalyst/SKILL.md",
+    "claudecode": "~/.claude/skills/nimbalyst/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/nimbalyst/SKILL.md"
+  },
+  "invoke": "@nimbalyst"
+}

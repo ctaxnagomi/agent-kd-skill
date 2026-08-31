@@ -1,0 +1,22 @@
+{
+  "name": "sql-generation-few-shot",
+  "id": "marketplace-sql-generation-few-shot",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Few-shot SQL generation prompt.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/sql-generation-few-shot/SKILL.md",
+    "claudecode": "~/.claude/skills/sql-generation-few-shot/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/sql-generation-few-shot/SKILL.md"
+  },
+  "invoke": "@sql-generation-few-shot"
+}

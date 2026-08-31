@@ -1,0 +1,11 @@
+{
+  "name": "cursor-drupal-11",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Drupal 11 development rules for Cursor AI.",
+  "rating": 8
+}

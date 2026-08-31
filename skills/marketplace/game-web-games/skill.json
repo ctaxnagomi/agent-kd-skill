@@ -1,0 +1,22 @@
+{
+  "name": "game-web-games",
+  "id": "marketplace-game-web-games",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Browser-based game development with HTML5 Canvas and WebGL.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/game-web-games/SKILL.md",
+    "claudecode": "~/.claude/skills/game-web-games/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/game-web-games/SKILL.md"
+  },
+  "invoke": "@game-web-games"
+}

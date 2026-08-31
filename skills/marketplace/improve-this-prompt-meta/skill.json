@@ -1,0 +1,22 @@
+{
+  "name": "improve-this-prompt-meta",
+  "id": "marketplace-improve-this-prompt-meta",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Meta-prompt for improving prompts.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/improve-this-prompt-meta/SKILL.md",
+    "claudecode": "~/.claude/skills/improve-this-prompt-meta/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/improve-this-prompt-meta/SKILL.md"
+  },
+  "invoke": "@improve-this-prompt-meta"
+}

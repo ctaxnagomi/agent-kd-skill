@@ -1,0 +1,22 @@
+{
+  "name": "cursor-nextjs",
+  "id": "marketplace-cursor-nextjs",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Next.js development rules for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-nextjs/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-nextjs/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-nextjs/SKILL.md"
+  },
+  "invoke": "@cursor-nextjs"
+}

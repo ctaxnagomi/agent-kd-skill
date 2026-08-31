@@ -1,0 +1,11 @@
+{
+  "name": "generate-validation-notebook",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Generate data validation notebooks for testing and QA.",
+  "rating": 8.2
+}

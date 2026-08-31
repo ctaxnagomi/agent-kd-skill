@@ -1,0 +1,22 @@
+{
+  "name": "backend-architect",
+  "id": "marketplace-backend-architect",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Scalable backend systems, APIs, and database design patterns.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/backend-architect/SKILL.md",
+    "claudecode": "~/.claude/skills/backend-architect/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/backend-architect/SKILL.md"
+  },
+  "invoke": "@backend-architect"
+}

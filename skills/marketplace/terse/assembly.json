@@ -1,0 +1,11 @@
+{
+  "name": "terse",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Terse output style for AI agents.",
+  "rating": 7
+}

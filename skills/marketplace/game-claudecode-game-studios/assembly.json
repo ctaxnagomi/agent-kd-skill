@@ -1,0 +1,11 @@
+{
+  "name": "game-claudecode-game-studios",
+  "version": "1.0.0",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Game development workflows for Claude Code and AI agents.",
+  "rating": 7
+}

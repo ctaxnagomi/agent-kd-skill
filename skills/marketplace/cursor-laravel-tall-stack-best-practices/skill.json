@@ -1,0 +1,22 @@
+{
+  "name": "cursor-laravel-tall-stack-best-practices",
+  "id": "marketplace-cursor-laravel-tall-stack-best-practices",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Laravel TALL stack best practices for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-laravel-tall-stack-best-practices/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-laravel-tall-stack-best-practices/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-laravel-tall-stack-best-practices/SKILL.md"
+  },
+  "invoke": "@cursor-laravel-tall-stack-best-practices"
+}

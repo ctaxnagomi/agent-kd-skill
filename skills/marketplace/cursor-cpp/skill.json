@@ -1,0 +1,22 @@
+{
+  "name": "cursor-cpp",
+  "id": "marketplace-cursor-cpp",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "C++ development rules for Cursor AI.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 7,
+  "install": {
+    "opencode": "~/.config/opencode/skills/cursor-cpp/SKILL.md",
+    "claudecode": "~/.claude/skills/cursor-cpp/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/cursor-cpp/SKILL.md"
+  },
+  "invoke": "@cursor-cpp"
+}

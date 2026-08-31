@@ -1,0 +1,22 @@
+{
+  "name": "gemini-cli",
+  "id": "marketplace-gemini-cli",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Google Gemini CLI agent.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 6,
+  "install": {
+    "opencode": "~/.config/opencode/skills/gemini-cli/SKILL.md",
+    "claudecode": "~/.claude/skills/gemini-cli/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/gemini-cli/SKILL.md"
+  },
+  "invoke": "@gemini-cli"
+}

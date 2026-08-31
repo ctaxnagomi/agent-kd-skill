@@ -1,0 +1,22 @@
+{
+  "name": "firecrawl-mcp-server",
+  "id": "marketplace-firecrawl-mcp-server",
+  "role": "marketplace",
+  "category": "marketplace",
+  "platform": "universal",
+  "description": "Web scraping and crawling via MCP.",
+  "version": "1.0.0",
+  "author": "Community",
+  "license": "MIT",
+  "tags": [
+    "marketplace",
+    "community"
+  ],
+  "rating": 8,
+  "install": {
+    "opencode": "~/.config/opencode/skills/firecrawl-mcp-server/SKILL.md",
+    "claudecode": "~/.claude/skills/firecrawl-mcp-server/SKILL.md",
+    "hermes": "~/.hermes/skills/marketplace/firecrawl-mcp-server/SKILL.md"
+  },
+  "invoke": "@firecrawl-mcp-server"
+}
