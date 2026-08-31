@@ -1,7 +1,7 @@
 # Agent Memory — AGENT KD SKILL
 
 > Persistent project context for AI agents resuming work on this repository.
-> Updated: 2026-08-25 (latest session)
+> Updated: 2026-09-01 (latest session)
 
 ---
 
@@ -155,15 +155,19 @@ ctaxnagomi@users.noreply.github.com
 | deep | AGENT DEEP | `#9BFF5A` | `#9BFF5A → #023A00` |
 | micro | AGENT MICRO | `#4DD8FF` | `#4DD8FF → #07AE00` |
 | custom | CUSTOM SKILL | `#FFB347` | `#FFB347 → #FF6B00` |
+| tool | TOOL | `#56FF50` | `#00D237 → #023A00` |
+| hermes | HERMES | `#FF6B6B` | `#FF6B6B → #C62828` |
+| marketplace | MARKETPLACE | `#FFD700` | `#FFD700 → #FFA500` |
 
 ---
 
-## Session History (2026-08-25)
+## Session History
 
 ### Commits (newest first)
 
 | Hash | Message |
 |------|---------|
+| `6c72a95` | Add marketplace category (107 skills) + 5 category pages: Plugins, MCP, Frameworks, Prompts, Corpus Learn MD |
 | `dfd64f3` | How-to-use guide on every SKILL.md + card, FAQ page (17 Q&As), footer nav with FAQs link |
 | `da779f9` | Rename all custom skill .md to SKILL.md for opencode discovery, update assembly.json refs |
 | `73c56dd` | Lazy loading: batched RAF rendering (16/frame), carousel pause-offscreen, content-visibility:auto, search debounce, RAF-throttled scroll reveal |
@@ -207,6 +211,8 @@ ctaxnagomi@users.noreply.github.com
 15. **FAQs page**: Created `faq.html` with 17 Q&As covering installation, usage, roles, contribution, and technical details.
 16. **Footer nav**: Added FAQs, GitHub, and KrackedDevs links to site footer.
 17. **Gmail draft**: Created email progress report at `C:\Users\User\AppData\Local\Temp\opencode\gmail-draft.txt` — BrowserOS neo MCP wasn't connected in this session (server running on port 9011 but tools not exposed to agent).
+18. **Marketplace category**: Added 107 community skills from `agent-kd-skills.txt` as 3-file bundles under `skills/marketplace/`. Added to ROLES + gold gradient. Marketplaces are `npx mdskills install <repo>` from various GitHub sources.
+19. **Category pages**: Split non-skill content into 5 dedicated pages sharing the same design system: `plugins.html` (9 plugins), `mcp.html` (10 MCP servers), `frameworks.html` (17 framework rulesets), `prompts.html` (15 prompts/personas/hooks/statuslines), `corpus-learn.html` (CORPUS LEARN MD — agent frameworks, subagents, apps). All share sidebar nav + footer nav linking between pages.
 
 ### External Credits
 

@@ -5,6 +5,9 @@ A gallery of **SKILL.md** variants for AI coding agents — organized by agent r
 
 Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor, and Gemini CLI.
 
+- **Marketplace skills** — 107 community skills from the `agent-kd-skills.txt` corpus, added under the new gold-accented `MARKETPLACE` category. Installable via `npx mdskills install <repo>`.
+- **5 category pages** — New pages sharing the same design system: **Plugins**, **MCP**, **Frameworks**, **Prompts**, and **CORPUS LEARN MD** (agent frameworks, subagents, apps). Navigable from the sidebar and footer on every page.
+
 ## What's new?
 
 - **Skewed glass card system** — Translucent panels with per-category color gradients, floating glass orbs, and frosted content panels. Cards unskew on hover for a reveal effect.
@@ -36,7 +39,7 @@ Every skill folder is a self-contained unit of three files:
 
 ## Features.
 
-- **10 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), **Tool** (model deployment), and **Hermes** (Hermes Agent skills).
+- **12 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), **Tool** (model deployment), **Hermes** (Hermes Agent skills), and **Marketplace** (107 community skills).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
 - **31 Matt Pocock skills** — Productivity, engineering, and workflow skills with star ratings.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
@@ -103,9 +106,21 @@ AGENT KD SKILL/
     ├── custom/             # CUSTOM SKILL · 31 Matt Pocock skills (3-file bundles)
     └── custom/             # tool · 1 Deepseek Harness skill (3-file bundle)
     └── hermes/             # HERMES · 7 Hermes Agent skills (3-file bundles)
+    └── marketplace/        # MARKETPLACE · 107 community skills (3-file bundles)
 ```
 
-### Skills inventory (100)
+### Category Pages
+
+| Page | Content |
+|------|---------|
+| `index.html` | Gallery — SKILL.md variants by agent role + marketplace |
+| `plugins.html` | Plugins — document, presentation, and design tools |
+| `mcp.html` | MCP — Model Context Protocol servers |
+| `frameworks.html` | Frameworks — tech stack rulesets (Cursor AI etc.) |
+| `prompts.html` | Prompts — tasks, few-shot, personas, hooks, statuslines, output styles |
+| `corpus-learn.html` | CORPUS LEARN MD — agent frameworks, subagents, apps |
+
+### Skills inventory (200+)
 
 | Role | Count | Skills | Platform |
 | --- | --- | --- | --- |
@@ -119,6 +134,7 @@ AGENT KD SKILL/
 | CUSTOM SKILL | 31 | Agent Memory · Ask Matt · Code Review · Codebase Design · Diagnosing Bugs · Domain Modeling · Git Guardrails · Grill Me · Grill With Docs · Handoff · Implement · Improve Architecture · Migrate to Shoehorn · Prototype · Research · Resolving Merge Conflicts · Scaffold Exercises · Setup Matt Pocock Skills · Setup Pre-Commit · Teach · TDD · To Questionnaire · To Spec · To Tickets · Triage · Wait What · Wayfinder · Wizard · Writing for Agents | Universal |
 | tool | 1 | Deepseek Harness | Universal |
 | hermes | 7 | Systematic Debugging · Test-Driven Development · GitHub Code Review · Plan · Simplify Code · Code Wiki · Create Hermes Skill | Universal |
+| marketplace | 107 | Community skills (see category pages) | Universal |
 
 ## Adding a skill
 
