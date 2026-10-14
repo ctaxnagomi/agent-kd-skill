@@ -169,6 +169,7 @@ ctaxnagomi@users.noreply.github.com
 
 | Hash | Message |
 |------|---------|
+| `ec1a332` | Add patch notes popup (What's new) shown once per version on visit |
 | `15c9c6f` | Feature REA and Hermes skills on the home carousel (tool + hermes roles) |
 | `3a0b4bc` | Update agent memory: REA tool skill + Hermes desktop/phone-control session (585845a) |
 | `585845a` | Add REA (Reverse Engineer Anything) tool skill + hero, and Hermes desktop/phone-control skills |
@@ -223,6 +224,7 @@ ctaxnagomi@users.noreply.github.com
 21. **Hermes desktop/phone control**: Added 3 `hermes` skills — `computer-use` (drive desktop in background, no focus steal, via cua-driver), `bot-screen` (stream a bot's desktop into Hermes Desktop and take over from anywhere incl. phone for login/2FA/CAPTCHA), `phone-companion` (HenWorks Android PC companion: mesh "run on computer" + desktop handoff, NaCl-encrypted no cloud).
 22. **Repo recovery**: The temp working copy `C:\Users\User\AppData\Local\Temp\agent-kd-skill` was wiped by Windows temp cleanup (only subdirs survived). Recovered by fast-forwarding the persistent clone at `C:\Users\User\Documents\Default Project\AGENT KD SKILL` to `origin/master` (d78abd3). **Work in the persistent path, not temp.**
 23. **Carousel featured set**: `renderCarousel` now filters `role === "custom" || "tool" || "hermes"` (was custom-only), so REA and the Hermes skills appear in the home marquee. Name fallback strips any leading role prefix (`/^[a-z]+-/`).
+24. **Patch notes popup**: Dismissible "What's new" dialog (`#patchNotes` in index.html, styles under `.patchnotes*`, logic in `PATCH_NOTES` + `initPatchNotes` in app.js). Auto-shows once per version (keyed by `agks-patch-seen` in localStorage), reopens from the footer "What's new" link (`#patchNotesOpen`). EN-only content (like the hero/digest), version `2026.10.14`. Bump `PATCH_NOTES.version` to re-trigger.
 
 ### External Credits
 
