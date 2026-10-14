@@ -18,12 +18,13 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 - **Matt Pocock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
 - **Deepseek Harness** — `tool` category skill for fetching, configuring, and deploying Deepseek models with full repo instructions and agent integration.
 - **Hero section** — "Reverse Engineer Anything" REA banner with toxic green accent glow.
+- **Patch notes popup** — A dismissible "What's new" dialog shown once per version on visit (returning visitors aren't nagged); reopen anytime from the footer "What's new" link. Dismissal is remembered in `localStorage` under `agks-patch-seen`.
 - **Horizontal carousel** — Non-stop left-to-right scrolling marquee of featured `.md` skills (custom, tool, and hermes — including REA).
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
 - **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
 - **How to use? guide** — Every SKILL.md includes beginner-friendly installation instructions. Every product card shows a "How to use?" monospace link.
 - **FAQs page** — 17 frequently asked questions covering installation, usage, roles, and contribution.
-- **Footer navigation** — FAQs, GitHub, and KrackedDevs links in the site footer.
+- **Footer navigation** — FAQs, What's new, GitHub, and KrackedDevs links in the site footer.
 - **Mobile input zoom fix** — `maximum-scale=1` viewport + `font-size: 16px` on all form elements prevents auto-zoom on iOS/Android.
 - **Viewport lock** — No horizontal drag/scroll, no rubber-band overscroll on mobile.
 - **Lazy loading** — Deferred scripts, lazy-loaded images, page fade-in transition.

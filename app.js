@@ -450,6 +450,20 @@
     }
   };
 
+  /* ---------------- patch notes ---------------- */
+
+  var PATCH_NOTES = {
+    version: "2026.10.14",
+    date: "Released October 14, 2026",
+    items: [
+      "<b>REA — Reverse Engineer Anything</b>: a new tool skill that wires your agent to Ghidra, Hopper, and IDA over MCP, returning evidence and unknowns for native, Electron, .NET, Android, firmware, and browser targets.",
+      "<b>Hermes desktop &amp; phone control</b>: new Computer Use, Bot Screen, and Phone Companion skills let you drive a desktop in the background and take over from your phone.",
+      "<b>New hero</b>: the home banner now spotlights REA reverse engineering.",
+      "<b>Carousel</b>: now features tool and hermes skills alongside the custom set.",
+      "<b>Bigger catalog</b>: 689 skills across 12 agent roles, including a 107-skill marketplace."
+    ]
+  };
+
   /* ---------------- state ---------------- */
 
   var lang = localStorage.getItem("agks-lang") === "zh" ? "zh" : "en";
@@ -1135,6 +1149,65 @@
     carouselObserver.observe(carousel);
   }
 
+  /* ---------------- patch notes popup ---------------- */
+
+  function renderPatchNotes() {
+    var v = document.getElementById("patchVersion");
+    if (v) v.textContent = PATCH_NOTES.version;
+    var d = document.getElementById("patchDate");
+    if (d) d.textContent = PATCH_NOTES.date;
+    var list = document.getElementById("patchList");
+    if (!list) return;
+    var html = "";
+    for (var i = 0; i < PATCH_NOTES.items.length; i++) {
+      html += "<li>" + PATCH_NOTES.items[i] + "</li>";
+    }
+    list.innerHTML = html;
+  }
+
+  function openPatchNotes() {
+    var el = document.getElementById("patchNotes");
+    if (el) el.hidden = false;
+  }
+
+  function closePatchNotes() {
+    var el = document.getElementById("patchNotes");
+    if (!el) return;
+    el.hidden = true;
+    try { localStorage.setItem("agks-patch-seen", PATCH_NOTES.version); } catch (ex) {}
+  }
+
+  function initPatchNotes() {
+    var el = document.getElementById("patchNotes");
+    if (!el) return;
+    renderPatchNotes();
+
+    var closeBtn = document.getElementById("patchClose");
+    if (closeBtn) closeBtn.addEventListener("click", closePatchNotes);
+    var dismissBtn = document.getElementById("patchDismiss");
+    if (dismissBtn) dismissBtn.addEventListener("click", closePatchNotes);
+    el.addEventListener("click", function (e) {
+      if (e.target === el) closePatchNotes();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !el.hidden) closePatchNotes();
+    });
+
+    var openLink = document.getElementById("patchNotesOpen");
+    if (openLink) {
+      openLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        openPatchNotes();
+      });
+    }
+
+    var seen = null;
+    try { seen = localStorage.getItem("agks-patch-seen"); } catch (ex) {}
+    if (seen !== PATCH_NOTES.version) {
+      setTimeout(openPatchNotes, 900);
+    }
+  }
+
   /* ---------------- init ---------------- */
 
   render();
@@ -1145,4 +1218,5 @@
   initStarRating();
   initSidebar();
   initOverscrollGuard();
+  initPatchNotes();
 })();
