@@ -1,0 +1,18 @@
+{
+  "name": "bot-screen",
+  "id": "hermes-bot-screen",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "Stream a bot's own desktop into Hermes Desktop and take over from anywhere — including your phone — for logins, 2FA, CAPTCHAs, and payments, then hand control back.",
+  "version": "1.0.0",
+  "author": "Hermes Agent",
+  "license": "MIT",
+  "tags": ["bot-screen", "desktop", "takeover", "remote", "phone", "vnc", "headless", "handoff"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/bot-screen/SKILL.md",
+    "opencode": "~/.config/opencode/skills/bot-screen/SKILL.md",
+    "claudecode": "~/.claude/skills/bot-screen/SKILL.md"
+  },
+  "invoke": "@bot-screen"
+}

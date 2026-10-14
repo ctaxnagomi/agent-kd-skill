@@ -1,0 +1,10 @@
+{
+  "name": "computer-use",
+  "version": "2.1.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Drive the user's desktop in the background — click, type, scroll, drag — without moving the real cursor, stealing keyboard focus, or switching virtual desktops."
+}

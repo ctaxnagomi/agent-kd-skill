@@ -1,0 +1,18 @@
+{
+  "name": "phone-companion",
+  "id": "hermes-phone-companion",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "Pair your phone and computer into one Hermes brain over your own network — dispatch a task from the phone and run it on the computer, or hand whole conversations between desktop and phone.",
+  "version": "1.0.0",
+  "author": "HenWorks",
+  "license": "AGPL-3.0",
+  "tags": ["phone", "remote", "mesh", "handoff", "pairing", "desktop", "android", "encrypted"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/phone-companion/SKILL.md",
+    "opencode": "~/.config/opencode/skills/phone-companion/SKILL.md",
+    "claudecode": "~/.claude/skills/phone-companion/SKILL.md"
+  },
+  "invoke": "@phone-companion"
+}

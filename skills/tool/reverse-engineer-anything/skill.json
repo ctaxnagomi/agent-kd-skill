@@ -1,0 +1,21 @@
+{
+  "name": "reverse-engineer-anything",
+  "id": "tool-reverse-engineer-anything",
+  "role": "tool",
+  "category": "tool",
+  "platform": "universal",
+  "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA — evidence and unknowns, from app behavior down to native binaries.",
+  "version": "1.0.0",
+  "author": "morluto / REA",
+  "license": "MIT",
+  "tags": ["reverse-engineering", "binary", "decompile", "ghidra", "hopper", "ida", "electron", "android", "firmware", "mcp"],
+  "install": {
+    "opencode": "~/.config/opencode/skills/reverse-engineer-anything/SKILL.md",
+    "claudecode": "~/.claude/skills/reverse-engineer-anything/SKILL.md",
+    "codex": "~/.codex/skills/reverse-engineer-anything/SKILL.md",
+    "cursor": "~/.cursor/skills/reverse-engineer-anything/SKILL.md",
+    "geminicli": "~/.gemini/skills/reverse-engineer-anything/SKILL.md",
+    "hermes": "~/.hermes/skills/tool/reverse-engineer-anything/SKILL.md"
+  },
+  "invoke": "@reverse-engineer-anything"
+}

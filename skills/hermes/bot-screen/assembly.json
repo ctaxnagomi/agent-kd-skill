@@ -1,0 +1,10 @@
+{
+  "name": "bot-screen",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Stream a bot's own desktop into Hermes Desktop and take over from anywhere — including your phone — for logins, 2FA, CAPTCHAs, and payments, then hand control back."
+}

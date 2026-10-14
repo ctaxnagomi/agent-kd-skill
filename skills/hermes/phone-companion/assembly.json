@@ -1,0 +1,10 @@
+{
+  "name": "phone-companion",
+  "version": "1.0.0",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "skillMd": "SKILL.md",
+  "skillJson": "skill.json",
+  "description": "Pair your phone and computer into one Hermes brain over your own network — dispatch a task from the phone and run it on the computer, or hand whole conversations between desktop and phone."
+}

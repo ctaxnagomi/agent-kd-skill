@@ -10,12 +10,14 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 
 ## What's new?
 
+- **REA — Reverse Engineer Anything** — New `tool` skill and hero highlight. [morluto/rea](https://github.com/morluto/rea) wires an agent to Ghidra, Hopper, and IDA (plus JADX, Binwalk, mitmproxy) over MCP and returns **evidence and unknowns** for native binaries, Electron/JavaScript, .NET, Android, firmware, and browser targets. Install with `npx rea-agents setup`.
+- **Hermes desktop-from-phone skills** — Three new `hermes` skills: **Computer Use** (drive the desktop in the background without stealing focus), **Bot Screen** (stream a bot's desktop into Hermes Desktop and take over from anywhere — including your phone — for logins/2FA/CAPTCHAs), and **Phone Companion** (mesh + desktop handoff between phone and computer, NaCl-encrypted, no cloud).
 - **Skewed glass card system** — Translucent panels with per-category color gradients, floating glass orbs, and frosted content panels. Cards unskew on hover for a reveal effect.
 - **Neon border-trace buttons** — Four animated border lines that chase clockwise around the button perimeter with triple-layer glow on hover.
 - **Minimalistic translucent iOS sidebar** — `backdrop-filter: blur(20px) saturate(1.4)` glass panel with smooth expand/collapse on hover.
 - **Matt Pocock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
-- **Deepseek Harness** — New `tool` category skill for fetching, configuring, and deploying Deepseek models with full repo instructions and agent integration.
-- **Hero section** — "Deepseek Harness is Here!" banner with toxic green accent glow.
+- **Deepseek Harness** — `tool` category skill for fetching, configuring, and deploying Deepseek models with full repo instructions and agent integration.
+- **Hero section** — "Reverse Engineer Anything" REA banner with toxic green accent glow.
 - **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
 - **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
@@ -39,7 +41,7 @@ Every skill folder is a self-contained unit of three files:
 
 ## Features.
 
-- **12 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), **Tool** (model deployment), **Hermes** (Hermes Agent skills), and **Marketplace** (107 community skills).
+- **12 agent roles** — Automated Planning, Guided Implementation, Compact Execution, cross-platform Agent Capabilities, Sub-agent Orchestration, Deep Research, Micro-agent Fleet, **Custom Skill** (community-contributed), **Tool** (model deployment + reverse engineering), **Hermes** (Hermes Agent skills, incl. desktop/phone control), and **Marketplace** (107 community skills).
 - **5 platforms** — Claude Code, opencode, Codex CLI, Cursor, Gemini CLI.
 - **31 Matt Pocock skills** — Productivity, engineering, and workflow skills with star ratings.
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
@@ -103,9 +105,9 @@ AGENT KD SKILL/
     ├── agent-sub/          # AGENT SUB · 15 universal skills + grill-me
     ├── agent-deep/         # AGENT DEEP · 15 universal skills
     ├── agent-micro/        # AGENT MICRO · 15 universal skills
-    ├── custom/             # CUSTOM SKILL · 31 Matt Pocock skills (3-file bundles)
-    └── custom/             # tool · 1 Deepseek Harness skill (3-file bundle)
-    └── hermes/             # HERMES · 7 Hermes Agent skills (3-file bundles)
+    ├── custom/             # CUSTOM SKILL · 31 Matt Pocock skills + Deepseek Harness (tool role)
+    ├── tool/               # TOOL · Reverse Engineer Anything (REA)
+    ├── hermes/             # HERMES · 10 Hermes Agent skills (desktop + phone control)
     └── marketplace/        # MARKETPLACE · 107 community skills (3-file bundles)
 ```
 
@@ -132,8 +134,8 @@ AGENT KD SKILL/
 | AGENT DEEP | 15 | Research Plan · Source Priority · Chunked Digestion · Multi-source · Iterative Refinement · Contradiction · Verification · Summarization · Long Context · Knowledge Graph · Citation · Checkpointing · Reasoning Trace · Context Budget · Synthesis | Universal |
 | AGENT MICRO | 15 | Single Purpose · Prompt Minimalism · Strict Schema · Tool Minimalism · No-Prose · Batching · Context Precision · Retry · Caching · Composition · Orchestration · Observability · Output Schema · Timeboxing · Reuse | Universal |
 | CUSTOM SKILL | 31 | Agent Memory · Ask Matt · Code Review · Codebase Design · Diagnosing Bugs · Domain Modeling · Git Guardrails · Grill Me · Grill With Docs · Handoff · Implement · Improve Architecture · Migrate to Shoehorn · Prototype · Research · Resolving Merge Conflicts · Scaffold Exercises · Setup Matt Pocock Skills · Setup Pre-Commit · Teach · TDD · To Questionnaire · To Spec · To Tickets · Triage · Wait What · Wayfinder · Wizard · Writing for Agents | Universal |
-| tool | 1 | Deepseek Harness | Universal |
-| hermes | 7 | Systematic Debugging · Test-Driven Development · GitHub Code Review · Plan · Simplify Code · Code Wiki · Create Hermes Skill | Universal |
+| tool | 2 | Deepseek Harness · Reverse Engineer Anything (REA) | Universal |
+| hermes | 10 | Computer Use · Bot Screen · Phone Companion · Systematic Debugging · Test-Driven Development · GitHub Code Review · Plan · Simplify Code · Code Wiki · Create Hermes Skill | Universal |
 | marketplace | 107 | Community skills (see category pages) | Universal |
 
 ## Adding a skill

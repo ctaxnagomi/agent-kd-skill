@@ -1,0 +1,18 @@
+{
+  "name": "computer-use",
+  "id": "hermes-computer-use",
+  "role": "hermes",
+  "category": "hermes",
+  "platform": "universal",
+  "description": "Drive the user's desktop in the background — click, type, scroll, drag — without moving the real cursor, stealing keyboard focus, or switching virtual desktops.",
+  "version": "2.1.0",
+  "author": "Hermes Agent",
+  "license": "MIT",
+  "tags": ["desktop", "automation", "gui", "computer-use", "background", "cross-platform"],
+  "install": {
+    "hermes": "~/.hermes/skills/hermes/computer-use/SKILL.md",
+    "opencode": "~/.config/opencode/skills/computer-use/SKILL.md",
+    "claudecode": "~/.claude/skills/computer-use/SKILL.md"
+  },
+  "invoke": "@computer-use"
+}
