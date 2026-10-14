@@ -201,18 +201,19 @@
     <div class="patchnotes-box">
       <div class="patchnotes-head">
         <div>
-          <span class="patchnotes-eyebrow">PATCH NOTES</span>
-          <h3 id="patchTitle">What's new in <span class="patchnotes-version">v<span id="patchVersion"></span></span></h3>
+          <span class="patchnotes-eyebrow" id="patchEyebrow">PATCH NOTES</span>
+          <h3 id="patchTitle"><span id="patchTitleText">What's new in</span> <span class="patchnotes-version">v<span id="patchVersion"></span></span></h3>
         </div>
         <button class="modal-close" id="patchClose" type="button" aria-label="Close">&times;</button>
       </div>
+      <div class="patchnotes-langs" id="patchLangs" role="tablist" aria-label="Language"></div>
       <div class="patchnotes-body">
         <p class="patchnotes-date" id="patchDate"></p>
         <ul class="patchnotes-list" id="patchList"></ul>
       </div>
       <div class="patchnotes-actions">
-        <a class="btn" href="https://github.com/ctaxnagomi/agent-kd-skill/commits/master" target="_blank" rel="noopener"><span></span><span></span><span></span><span></span>Full changelog</a>
-        <button class="btn btn-primary" id="patchDismiss" type="button"><span></span><span></span><span></span><span></span>Got it</button>
+        <a class="btn" href="https://github.com/ctaxnagomi/agent-kd-skill/commits/master" target="_blank" rel="noopener"><span></span><span></span><span></span><span></span><span class="pn-label" id="patchChangelogText">Full changelog</span></a>
+        <button class="btn btn-primary" id="patchDismiss" type="button"><span></span><span></span><span></span><span></span><span class="pn-label" id="patchDismissText">Got it</span></button>
       </div>
     </div>
   </div>

@@ -452,17 +452,135 @@
 
   /* ---------------- patch notes ---------------- */
 
+  var PATCH_LANG_ORDER = ["en", "zh", "ja", "ko", "es", "fr", "de", "ru"];
+
   var PATCH_NOTES = {
     version: "2026.10.14",
-    date: "Released October 14, 2026",
-    items: [
-      "<b>REA — Reverse Engineer Anything</b>: a new tool skill that wires your agent to Ghidra, Hopper, and IDA over MCP, returning evidence and unknowns for native, Electron, .NET, Android, firmware, and browser targets.",
-      "<b>Hermes desktop &amp; phone control</b>: new Computer Use, Bot Screen, and Phone Companion skills let you drive a desktop in the background and take over from your phone.",
-      "<b>New hero</b>: the home banner now spotlights REA reverse engineering.",
-      "<b>Carousel</b>: now features tool and hermes skills alongside the custom set.",
-      "<b>Bigger catalog</b>: 689 skills across 12 agent roles, including a 107-skill marketplace."
-    ]
+    lang: {
+      en: {
+        label: "EN",
+        eyebrow: "PATCH NOTES",
+        title: "What's new in",
+        date: "Released October 14, 2026",
+        full: "Full changelog",
+        gotit: "Got it",
+        items: [
+          "<b>REA — Reverse Engineer Anything</b>: a new tool skill that wires your agent to Ghidra, Hopper, and IDA over MCP, returning evidence and unknowns for native, Electron, .NET, Android, firmware, and browser targets.",
+          "<b>Hermes desktop &amp; phone control</b>: new Computer Use, Bot Screen, and Phone Companion skills let you drive a desktop in the background and take over from your phone.",
+          "<b>New hero</b>: the home banner now spotlights REA reverse engineering.",
+          "<b>Carousel</b>: now features tool and hermes skills alongside the custom set.",
+          "<b>Bigger catalog</b>: 689 skills across 12 agent roles, including a 107-skill marketplace."
+        ]
+      },
+      zh: {
+        label: "中文",
+        eyebrow: "补丁说明",
+        title: "更新内容 ·",
+        date: "发布于 2026 年 10 月 14 日",
+        full: "完整更新日志",
+        gotit: "知道了",
+        items: [
+          "<b>REA — 逆向一切</b>：全新的 tool 技能，通过 MCP 将你的代理接入 Ghidra、Hopper 与 IDA，为原生程序、Electron、.NET、Android、固件与浏览器目标返回证据与未知项。",
+          "<b>Hermes 桌面与手机控制</b>：新增 Computer Use、Bot Screen 与 Phone Companion 技能，可在后台操控桌面，并从手机接管。",
+          "<b>全新主视觉</b>：首页横幅现已聚焦 REA 逆向工程。",
+          "<b>轮播栏</b>：除自定义技能外，现已展示 tool 与 hermes 技能。",
+          "<b>更全的目录</b>：12 个代理角色、共 689 个技能，包含 107 个 marketplace 技能。"
+        ]
+      },
+      ja: {
+        label: "日本語",
+        eyebrow: "パッチノート",
+        title: "新着情報 ·",
+        date: "2026年10月14日 公開",
+        full: "変更履歴",
+        gotit: "OK",
+        items: [
+          "<b>REA — Reverse Engineer Anything</b>：MCP 経由でエージェントを Ghidra・Hopper・IDA に接続する新しい tool スキル。ネイティブ、Electron、.NET、Android、ファームウェア、ブラウザを対象に、証拠と未解決点を返します。",
+          "<b>Hermes のデスクトップ／スマホ操作</b>：新しい Computer Use、Bot Screen、Phone Companion スキルで、バックグラウンドでデスクトップを操作し、スマホから引き継げます。",
+          "<b>新しいヒーロー</b>：ホームのバナーが REA リバースエンジニアリングを特集。",
+          "<b>カルーセル</b>：custom に加えて tool と hermes のスキルも表示。",
+          "<b>カタログ拡大</b>：12 のエージェントロール、689 スキル（marketplace 107 件を含む）。"
+        ]
+      },
+      ko: {
+        label: "한국어",
+        eyebrow: "패치 노트",
+        title: "새로운 소식 ·",
+        date: "2026년 10월 14일 공개",
+        full: "전체 변경 로그",
+        gotit: "확인",
+        items: [
+          "<b>REA — 무엇이든 리버스 엔지니어링</b>: MCP를 통해 에이전트를 Ghidra, Hopper, IDA에 연결하는 새로운 tool 스킬로, 네이티브·Electron·.NET·Android·펌웨어·브라우저 대상의 증거와 미지점을 반환합니다.",
+          "<b>Hermes 데스크톱 및 휴대폰 제어</b>: 새로운 Computer Use, Bot Screen, Phone Companion 스킬로 백그라운드에서 데스크톱을 조작하고 휴대폰에서 이어받을 수 있습니다.",
+          "<b>새 히어로</b>: 홈 배너가 이제 REA 리버스 엔지니어링을 조명합니다.",
+          "<b>캐러셀</b>: custom뿐 아니라 tool과 hermes 스킬도 표시됩니다.",
+          "<b>더 커진 카탈로그</b>: 12개 에이전트 역할, 총 689개 스킬(107개 marketplace 포함)."
+        ]
+      },
+      es: {
+        label: "ES",
+        eyebrow: "NOTAS DEL PARCHE",
+        title: "Novedades en",
+        date: "Publicado el 14 de octubre de 2026",
+        full: "Registro completo",
+        gotit: "Entendido",
+        items: [
+          "<b>REA — Ingeniería inversa de lo que sea</b>: una nueva skill de tipo tool que conecta tu agente a Ghidra, Hopper e IDA vía MCP, devolviendo evidencia e incógnitas para objetivos nativos, Electron, .NET, Android, firmware y navegador.",
+          "<b>Control de escritorio y móvil con Hermes</b>: las nuevas skills Computer Use, Bot Screen y Phone Companion permiten manejar un escritorio en segundo plano y retomar el control desde el móvil.",
+          "<b>Nuevo hero</b>: el banner de inicio ahora destaca la ingeniería inversa de REA.",
+          "<b>Carrusel</b>: ahora muestra skills tool y hermes además de las custom.",
+          "<b>Catálogo más amplio</b>: 689 skills en 12 roles de agente, incluido un marketplace de 107."
+        ]
+      },
+      fr: {
+        label: "FR",
+        eyebrow: "NOTES DE VERSION",
+        title: "Nouveautés de",
+        date: "Publié le 14 octobre 2026",
+        full: "Journal complet",
+        gotit: "Compris",
+        items: [
+          "<b>REA — Rétro-ingénierie de tout</b> : une nouvelle skill de type tool qui relie votre agent à Ghidra, Hopper et IDA via MCP, et renvoie preuves et inconnues pour les cibles natives, Electron, .NET, Android, firmware et navigateur.",
+          "<b>Contrôle du bureau et du téléphone via Hermes</b> : les nouvelles skills Computer Use, Bot Screen et Phone Companion permettent de piloter un bureau en arrière-plan et de prendre le relais depuis votre téléphone.",
+          "<b>Nouveau hero</b> : la bannière d'accueil met désormais en avant la rétro-ingénierie REA.",
+          "<b>Carrousel</b> : affiche désormais les skills tool et hermes en plus des custom.",
+          "<b>Catalogue élargi</b> : 689 skills dans 12 rôles d'agent, dont un marketplace de 107."
+        ]
+      },
+      de: {
+        label: "DE",
+        eyebrow: "PATCH NOTES",
+        title: "Neu in",
+        date: "Veröffentlicht am 14. Oktober 2026",
+        full: "Vollständiges Changelog",
+        gotit: "Verstanden",
+        items: [
+          "<b>REA — Alles re-engineeren</b>: ein neuer Tool-Skill, der deinen Agenten über MCP mit Ghidra, Hopper und IDA verbindet und für native, Electron-, .NET-, Android-, Firmware- und Browser-Ziele Belege und Unbekanntes liefert.",
+          "<b>Desktop- und Handy-Steuerung mit Hermes</b>: die neuen Skills Computer Use, Bot Screen und Phone Companion steuern einen Desktop im Hintergrund und übernehmen vom Handy aus.",
+          "<b>Neues Hero</b>: das Startbanner hebt jetzt REA-Reverse-Engineering hervor.",
+          "<b>Karussell</b>: zeigt jetzt zusätzlich zu custom auch tool- und hermes-Skills.",
+          "<b>Größerer Katalog</b>: 689 Skills in 12 Agenten-Rollen, inklusive 107 Marketplace-Skills."
+        ]
+      },
+      ru: {
+        label: "RU",
+        eyebrow: "ПРИМЕЧАНИЯ К ОБНОВЛЕНИЮ",
+        title: "Что нового в",
+        date: "Опубликовано 14 октября 2026 г.",
+        full: "Полный список",
+        gotit: "Понятно",
+        items: [
+          "<b>REA — Реверс-инжиниринг чего угодно</b>: новый навык типа tool, который через MCP подключает агента к Ghidra, Hopper и IDA и возвращает доказательства и неизвестные для нативных, Electron, .NET, Android, firmware и браузерных целей.",
+          "<b>Управление компьютером и телефоном через Hermes</b>: новые навыки Computer Use, Bot Screen и Phone Companion позволяют управлять рабочим столом в фоне и перехватывать управление с телефона.",
+          "<b>Новый hero</b>: баннер на главной теперь посвящён реверс-инжинирингу REA.",
+          "<b>Карусель</b>: теперь показывает навыки tool и hermes помимо custom.",
+          "<b>Больше в каталоге</b>: 689 навыков в 12 ролях агента, включая 107 навыков marketplace."
+        ]
+      }
+    }
   };
+
+  var patchLang = "en";
 
   /* ---------------- state ---------------- */
 
@@ -1151,18 +1269,65 @@
 
   /* ---------------- patch notes popup ---------------- */
 
+  function patchData(l) {
+    return PATCH_NOTES.lang[l] || PATCH_NOTES.lang.en;
+  }
+
   function renderPatchNotes() {
+    var data = patchData(patchLang);
     var v = document.getElementById("patchVersion");
     if (v) v.textContent = PATCH_NOTES.version;
+    var eyebrow = document.getElementById("patchEyebrow");
+    if (eyebrow) eyebrow.textContent = data.eyebrow;
+    var titleText = document.getElementById("patchTitleText");
+    if (titleText) titleText.textContent = data.title;
     var d = document.getElementById("patchDate");
-    if (d) d.textContent = PATCH_NOTES.date;
+    if (d) d.textContent = data.date;
+    var full = document.getElementById("patchChangelogText");
+    if (full) full.textContent = data.full;
+    var gotit = document.getElementById("patchDismissText");
+    if (gotit) gotit.textContent = data.gotit;
     var list = document.getElementById("patchList");
     if (!list) return;
     var html = "";
-    for (var i = 0; i < PATCH_NOTES.items.length; i++) {
-      html += "<li>" + PATCH_NOTES.items[i] + "</li>";
+    for (var i = 0; i < data.items.length; i++) {
+      html += "<li>" + data.items[i] + "</li>";
     }
     list.innerHTML = html;
+  }
+
+  function renderPatchLangs() {
+    var box = document.getElementById("patchLangs");
+    if (!box) return;
+    var html = "";
+    for (var i = 0; i < PATCH_LANG_ORDER.length; i++) {
+      var id = PATCH_LANG_ORDER[i];
+      var data = PATCH_NOTES.lang[id];
+      if (!data) continue;
+      html += '<button type="button" class="patchnotes-lang' + (id === patchLang ? " active" : "") +
+        '" role="tab" data-lang="' + id + '" aria-selected="' + (id === patchLang) + '">' +
+        escapeHtml(data.label) + "</button>";
+    }
+    box.innerHTML = html;
+  }
+
+  function setPatchLang(id) {
+    if (!PATCH_NOTES.lang[id]) return;
+    patchLang = id;
+    try { localStorage.setItem("agks-patch-lang", id); } catch (ex) {}
+    renderPatchLangs();
+    renderPatchNotes();
+  }
+
+  function detectPatchLang() {
+    var stored = null;
+    try { stored = localStorage.getItem("agks-patch-lang"); } catch (ex) {}
+    if (stored && PATCH_NOTES.lang[stored]) return stored;
+    var nav = (navigator.language || "en").toLowerCase();
+    var base = nav.split("-")[0];
+    if (PATCH_NOTES.lang[base]) return base;
+    if (lang === "zh") return "zh";
+    return "en";
   }
 
   function openPatchNotes() {
@@ -1180,6 +1345,8 @@
   function initPatchNotes() {
     var el = document.getElementById("patchNotes");
     if (!el) return;
+    patchLang = detectPatchLang();
+    renderPatchLangs();
     renderPatchNotes();
 
     var closeBtn = document.getElementById("patchClose");
@@ -1189,6 +1356,13 @@
     el.addEventListener("click", function (e) {
       if (e.target === el) closePatchNotes();
     });
+    var langs = document.getElementById("patchLangs");
+    if (langs) {
+      langs.addEventListener("click", function (e) {
+        var btn = e.target.closest(".patchnotes-lang");
+        if (btn) setPatchLang(btn.getAttribute("data-lang"));
+      });
+    }
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && !el.hidden) closePatchNotes();
     });

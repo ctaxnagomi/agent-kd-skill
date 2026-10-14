@@ -1420,6 +1420,38 @@ button {
   padding: 16px 20px;
 }
 
+.patchnotes-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 20px 0;
+}
+
+.patchnotes-lang {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--text-2);
+  background: var(--inset);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: 4px 11px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.patchnotes-lang:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.patchnotes-lang.active {
+  color: #010502;
+  background: var(--accent-bright);
+  border-color: var(--accent-bright);
+  font-weight: 700;
+}
+
 .patchnotes-date {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -1468,6 +1500,10 @@ button {
 
 .patchnotes-actions .btn {
   flex: 1;
+}
+
+.btn span.pn-label {
+  position: static;
 }
 
 /* ---------------- motion: scroll reveal ---------------- */
