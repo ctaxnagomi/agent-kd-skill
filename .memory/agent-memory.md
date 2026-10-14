@@ -169,6 +169,8 @@ ctaxnagomi@users.noreply.github.com
 
 | Hash | Message |
 |------|---------|
+| `15c9c6f` | Feature REA and Hermes skills on the home carousel (tool + hermes roles) |
+| `3a0b4bc` | Update agent memory: REA tool skill + Hermes desktop/phone-control session (585845a) |
 | `585845a` | Add REA (Reverse Engineer Anything) tool skill + hero, and Hermes desktop/phone-control skills |
 | `d78abd3` | Update README + memory: marketplace category (107 skills), 5 category pages, 12 agent roles |
 | `6c72a95` | Add marketplace category (107 skills) + 5 category pages: Plugins, MCP, Frameworks, Prompts, Corpus Learn MD |
@@ -220,6 +222,7 @@ ctaxnagomi@users.noreply.github.com
 20. **REA skill + hero**: Added `skills/tool/reverse-engineer-anything/` (role `tool`, from [morluto/rea](https://github.com/morluto/rea), MIT). REA is an MCP server/CLI that drives Ghidra/Hopper/IDA + JADX/Binwalk/mitmproxy and returns evidence+unknowns for native, Electron/JS, .NET, Android, firmware, browser targets. Install `npx rea-agents setup`. Replaced the index.html hero ("Deepseek Harness is Here!") with a REA highlight.
 21. **Hermes desktop/phone control**: Added 3 `hermes` skills — `computer-use` (drive desktop in background, no focus steal, via cua-driver), `bot-screen` (stream a bot's desktop into Hermes Desktop and take over from anywhere incl. phone for login/2FA/CAPTCHA), `phone-companion` (HenWorks Android PC companion: mesh "run on computer" + desktop handoff, NaCl-encrypted no cloud).
 22. **Repo recovery**: The temp working copy `C:\Users\User\AppData\Local\Temp\agent-kd-skill` was wiped by Windows temp cleanup (only subdirs survived). Recovered by fast-forwarding the persistent clone at `C:\Users\User\Documents\Default Project\AGENT KD SKILL` to `origin/master` (d78abd3). **Work in the persistent path, not temp.**
+23. **Carousel featured set**: `renderCarousel` now filters `role === "custom" || "tool" || "hermes"` (was custom-only), so REA and the Hermes skills appear in the home marquee. Name fallback strips any leading role prefix (`/^[a-z]+-/`).
 
 ### External Credits
 
@@ -242,4 +245,5 @@ ctaxnagomi@users.noreply.github.com
 | Sidebar border-trace spans conflict with text `<span>` | Use `.sidebar-link-text` class for text span, `span:not(.sidebar-link-text)` for border traces |
 | Mobile sidebar hides border-trace spans | `display: none` on `span:not(.sidebar-link-text)` inside mobile media query |
 | BrowserOS neo MCP tools not exposed | Server runs on port 9011 but tools don't appear in agent tool list — need session restart or `/mcp` toggle |
+| `git push` fails "Invalid username or token" / hangs on GCM | Cached Git Credential Manager token expired; `gh` not installed. Fix: create a temp classic PAT in BrowserOS neo (`github.com/settings/tokens/new`, scope `repo`), push with `git -c credential.helper= push https://ctaxnagomi:<TOKEN>@github.com/ctaxnagomi/agent-kd-skill.git master`, then **delete the token**. Repo is public, so anonymous `git fetch` still works. |
 | Temp working copy wiped by Windows cleanup | Don't work in `%TEMP%`; the persistent clone lives at `Documents\Default Project\AGENT KD SKILL`. Recover by `git fetch` + `git merge --ff-only origin/master` |
