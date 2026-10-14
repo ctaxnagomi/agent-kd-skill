@@ -1,7 +1,7 @@
 # Agent Memory — AGENT KD SKILL
 
 > Persistent project context for AI agents resuming work on this repository.
-> Updated: 2026-09-01 (latest session)
+> Updated: 2026-10-14 (latest session)
 
 ---
 
@@ -45,7 +45,9 @@ create-skills.js            → Generated 28 Matt Pocock skill bundles
 | `index.html` | Gallery page: hero, carousel, sidebar nav, pull indicator, modal, i18n toggle |
 | `data/skills.js` | Generated catalog of all skill entries |
 | `data/compiled/` | 99 compiled skill artifacts + catalog.json |
-| `skills/custom/` | 31 Matt Pocock skill folders (3 files each) + design skill |
+| `skills/custom/` | 31 Matt Pocock skill folders (3 files each) + design skill + deepseek-harness (tool role) |
+| `skills/tool/` | Reverse Engineer Anything (REA) — tool role, 3-file bundle |
+| `skills/hermes/` | 10 Hermes Agent skills (3 files each) incl. computer-use, bot-screen, phone-companion |
 | `skills/agent-sub/grill-me/` | Grill-me skill (3 files) |
 
 ---
@@ -167,6 +169,8 @@ ctaxnagomi@users.noreply.github.com
 
 | Hash | Message |
 |------|---------|
+| `585845a` | Add REA (Reverse Engineer Anything) tool skill + hero, and Hermes desktop/phone-control skills |
+| `d78abd3` | Update README + memory: marketplace category (107 skills), 5 category pages, 12 agent roles |
 | `6c72a95` | Add marketplace category (107 skills) + 5 category pages: Plugins, MCP, Frameworks, Prompts, Corpus Learn MD |
 | `dfd64f3` | How-to-use guide on every SKILL.md + card, FAQ page (17 Q&As), footer nav with FAQs link |
 | `da779f9` | Rename all custom skill .md to SKILL.md for opencode discovery, update assembly.json refs |
@@ -213,6 +217,9 @@ ctaxnagomi@users.noreply.github.com
 17. **Gmail draft**: Created email progress report at `C:\Users\User\AppData\Local\Temp\opencode\gmail-draft.txt` — BrowserOS neo MCP wasn't connected in this session (server running on port 9011 but tools not exposed to agent).
 18. **Marketplace category**: Added 107 community skills from `agent-kd-skills.txt` as 3-file bundles under `skills/marketplace/`. Added to ROLES + gold gradient. Marketplaces are `npx mdskills install <repo>` from various GitHub sources.
 19. **Category pages**: Split non-skill content into 5 dedicated pages sharing the same design system: `plugins.html` (9 plugins), `mcp.html` (10 MCP servers), `frameworks.html` (17 framework rulesets), `prompts.html` (15 prompts/personas/hooks/statuslines), `corpus-learn.html` (CORPUS LEARN MD — agent frameworks, subagents, apps). All share sidebar nav + footer nav linking between pages.
+20. **REA skill + hero**: Added `skills/tool/reverse-engineer-anything/` (role `tool`, from [morluto/rea](https://github.com/morluto/rea), MIT). REA is an MCP server/CLI that drives Ghidra/Hopper/IDA + JADX/Binwalk/mitmproxy and returns evidence+unknowns for native, Electron/JS, .NET, Android, firmware, browser targets. Install `npx rea-agents setup`. Replaced the index.html hero ("Deepseek Harness is Here!") with a REA highlight.
+21. **Hermes desktop/phone control**: Added 3 `hermes` skills — `computer-use` (drive desktop in background, no focus steal, via cua-driver), `bot-screen` (stream a bot's desktop into Hermes Desktop and take over from anywhere incl. phone for login/2FA/CAPTCHA), `phone-companion` (HenWorks Android PC companion: mesh "run on computer" + desktop handoff, NaCl-encrypted no cloud).
+22. **Repo recovery**: The temp working copy `C:\Users\User\AppData\Local\Temp\agent-kd-skill` was wiped by Windows temp cleanup (only subdirs survived). Recovered by fast-forwarding the persistent clone at `C:\Users\User\Documents\Default Project\AGENT KD SKILL` to `origin/master` (d78abd3). **Work in the persistent path, not temp.**
 
 ### External Credits
 
@@ -235,3 +242,4 @@ ctaxnagomi@users.noreply.github.com
 | Sidebar border-trace spans conflict with text `<span>` | Use `.sidebar-link-text` class for text span, `span:not(.sidebar-link-text)` for border traces |
 | Mobile sidebar hides border-trace spans | `display: none` on `span:not(.sidebar-link-text)` inside mobile media query |
 | BrowserOS neo MCP tools not exposed | Server runs on port 9011 but tools don't appear in agent tool list — need session restart or `/mcp` toggle |
+| Temp working copy wiped by Windows cleanup | Don't work in `%TEMP%`; the persistent clone lives at `Documents\Default Project\AGENT KD SKILL`. Recover by `git fetch` + `git merge --ff-only origin/master` |
