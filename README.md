@@ -18,7 +18,7 @@ Built for builders who run agents like Claude Code, opencode, Codex CLI, Cursor,
 - **Matt Pocock Skill MD collection** — 31 curated skills from [mattpocock/skills](https://github.com/mattpocock/skills) added under the `CUSTOM SKILL` category. Productivity, engineering, and workflow skills with full 3-file bundles and star ratings.
 - **Deepseek Harness** — `tool` category skill for fetching, configuring, and deploying Deepseek models with full repo instructions and agent integration.
 - **Hero section** — "Reverse Engineer Anything" REA banner with toxic green accent glow.
-- **Horizontal carousel** — Non-stop left-to-right scrolling marquee of all custom `.md` files.
+- **Horizontal carousel** — Non-stop left-to-right scrolling marquee of featured `.md` skills (custom, tool, and hermes — including REA).
 - **Pull-to-refresh (mobile)** — Drag the centered "Home" pill downward to navigate to [krackeddevs.com](https://www.krackeddevs.com). iOS-style gesture with visual feedback.
 - **Star rating system** — 0–5 stars on every custom skill card (Least Used → Most Popular). Ratings persist in localStorage.
 - **How to use? guide** — Every SKILL.md includes beginner-friendly installation instructions. Every product card shows a "How to use?" monospace link.
@@ -47,7 +47,7 @@ Every skill folder is a self-contained unit of three files:
 - **Live preview** — click any card to read the full markdown (including JSON frontmatter).
 - **Search + filters** — filter cards by role and platform, or search by name/description.
 - **Download all (.zip)** — bundles every skill as a complete 3-file package plus an install guide.
-- **Horizontal carousel** — auto-scrolling marquee of custom skills.
+- **Horizontal carousel** — auto-scrolling marquee of featured skills (custom, tool, hermes).
 - **Star rating** — rate each custom skill 0–5 stars, persisted in localStorage.
 - **Bilingual** — English and Chinese UI.
 - **Compiler-ready structure** — every skill resolves from its `assembly.json` manifest.

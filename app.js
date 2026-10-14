@@ -998,12 +998,14 @@
   function renderCarousel() {
     var track = document.getElementById("carouselTrack");
     if (!track) return;
-    var customSkills = SKILLS.filter(function (s) { return s.role === "custom"; });
+    var featured = SKILLS.filter(function (s) {
+      return s.role === "custom" || s.role === "tool" || s.role === "hermes";
+    });
     var html = "";
     for (var i = 0; i < 2; i++) {
-      for (var j = 0; j < customSkills.length; j++) {
-        var s = customSkills[j];
-        var name = s.title || s.id.replace("custom-", "").replace(/-/g, " ");
+      for (var j = 0; j < featured.length; j++) {
+        var s = featured[j];
+        var name = s.title || s.id.replace(/^[a-z]+-/, "").replace(/-/g, " ");
         html += '<span class="carousel-item">' + escapeHtml(name) + ' <small>.md</small></span>';
       }
     }
